@@ -74,133 +74,76 @@ navbar-dark bg-dark
 </div>
     </header><div class="p-summary entry-summary">
     <table>
-<colgroup>
-<col style="width: 49%">
-<col style="width: 51%">
-</colgroup>
 <thead><tr>
-<th class="head"><p><strong>VIM</strong></p></th>
-<th class="head"><p><strong>EMACS</strong></p></th>
+<th>VIM</th>
+<th>EMACS</th>
 </tr></thead>
 <tbody>
 <tr>
-<td colspan="2"><p>Navigation</p></td>
+<td>---------------------------------------------------</td>
+<td>-----------------------------------------------------</td>
 </tr>
 <tr>
-<td>
-<p>j - move one line down
-k - move one line up
-l - move cursor right
-h - move cursor left
-w - move cursor one word forward
-b - move cursor one word backward</p>
-<p>H moves cursor to HOME of the window
-M moves cursor to MIDDLE of the window
-L moves cursor to BOTTOM of the window</p>
-<p>gg - go to beginning of the buffer
-G - go to end of the buffer</p>
-<p>0 or ^ - go to start of line
-$ - go to end of line</p>
-<p>Ctrl-f to forward one page
-Ctrl-b to backward one page</p>
-<p>ESC - to kill current command
-n &lt;cmd&gt; to repeat command n times</p>
-<p>:set number to show line numbers
-To load by default (:set number) in .vimrc</p>
-<p>Wrap lines
-:set nowrap - to remove wrapping of lines
-:set wrap - to enable wrapping of lines</p>
-<p>:shell or sh go to shell
-exit to come back to vi</p>
-<p>:n to jump to line n</p>
-<p>% find matching parenthesis</p>
-<p>(insert mode)Ctrl+p or Ctrl+n for word completion</p>
-<p>:sort to sort</p>
-<p>:set textwidth=190
-(come to next line once 190 column is reached)</p>
-</td>
-<td>
-<p>C-n move one line down
-C-p move one line up
-C-f move cursor right
-C-n move cursor left
-M-f move cursor one word forward
-M-b move cursor one word backward</p>
-<p>M-0 M-r moves cursor to HOME of the window
-M-m M-r moves cursor to MIDDLE of the window
-M-- M-r moves cursor to BOTTOM of the window</p>
-<p>M-&lt; or ESC-&lt; go to beginning of the buffer
-M-&gt; or ESC-&gt; go to end of the buffer</p>
-<p>C-a go to start of line
-C-e go to end of line</p>
-<p>C-v to forward one page
-M-v to backward one page</p>
-<p>C-g to kill current command
-M-n &lt;cmd&gt; to repeat command n times</p>
-<p>M-x global-linum-mode
-To load by default (global-linum-mode 1) in .emacs</p>
-<p>Wrap lines
-M-x toggle-truncate-lines
-(setq-default truncate-lines t)
-M-x shell go to shell
-Use C-x right or left to go next or previous buffer</p>
-<p>M-g g n to go to line n</p>
-<p>C-M-f find matching parenthesis forward
-C-M-b find matching parenthesis backward</p>
-<p>M-/ for word completion</p>
-<p>M-x sort-lines to sort</p>
-<p>M-x line-number-mode
-M-x column-number-mode
-C-x f to set column width
-M-q to wrap the current paragraph with column width</p>
-</td>
+<td>Navigation</td>
+<td>Navigation</td>
 </tr>
 <tr>
-<td colspan="2"><p>Undo</p></td>
+<td>j - move one line down</td>
+<td>C-n move one line down</td>
 </tr>
 <tr>
-<td><p>u - undo</p></td>
-<td><p>C-_ or C-x u or C-z to undo</p></td>
+<td>k - move one line up</td>
+<td>C-p move one line up</td>
 </tr>
 <tr>
-<td colspan="2"><p>Search</p></td>
+<td>l - move cursor right</td>
+<td>C-f move cursor right</td>
 </tr>
 <tr>
-<td>
-<p>:set incsearch to set increment search
-:set ignorecase to set ignore case while search</p>
-<p>/word to search forward
-n- go to next match
-N- go to previous match</p>
-<p>?word to search backward
-n- go to next match
-N- go to previous match</p>
-<p>By default regexp search</p>
-<ul class="simple">
-<li><p>or gd - to search word under cursor forward</p></li>
-</ul>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">&lt;string&gt;</span>, line 74)</p>
-<p>Bullet list ends without a blank line; unexpected unindent.</p>
-</div>
-<p># - to search word under cursor backward</p>
-</td>
-<td>
-<p>By default increment search
-By default ignore case while search</p>
-<p>C-s to search forward
-C-s go to next match
-C-r go to previous match</p>
-<p>C-r to search backward
-C-r go to next match
-C-s go to previous match</p>
-<p>Use C-M-s or C-M-r for regexp search.
-or Esc-C-r or Esc-C-s</p>
-<p>C-s C-w to search word under cursor forward
-C-r C-w to search word under cursor backward
-C-s C-M-y to start searching the selection</p>
-</td>
+<td>h - move cursor left</td>
+<td>C-n move cursor left</td>
 </tr>
+<tr>
+<td>w - move cursor one word forward</td>
+<td>M-f move cursor one word forward</td>
+</tr>
+<tr>
+<td>b - move cursor one word backward</td>
+<td>M-b move cursor one word backward</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>H moves cursor to HOME of the window</td>
+<td>M-0 M-r moves cursor to HOME of the window</td>
+</tr>
+<tr>
+<td>M moves cursor to MIDDLE of the window</td>
+<td>M-m M-r moves cursor to MIDDLE of the window</td>
+</tr>
+<tr>
+<td>L moves cursor to BOTTOM of the window</td>
+<td>M-- M-r moves cursor to BOTTOM of the window</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gg - go to beginning of the buffer</td>
+<td>M-&lt; or ESC-&lt; go to beginning of the buffer</td>
+</tr>
+<tr>
+<td>G - go to end of the buffer</td>
+<td>M-&gt; or ESC-&gt; go to end of the buffer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr><td><p class="more"><a href="posts/vim-vs-emacs/">Read more…</a></p></td></tr>
 </tbody>
 </table>
 </div>
