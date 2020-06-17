@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vi Cheatsheat | Rajashekar Blog</title>
+<title>Vi Cheatsheat | Rajashekar Chintalapati Blog</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="https://rajashekar.github.io/posts/vi-cheatsheat/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Rajashekar Chintalapati">
-<meta property="og:site_name" content="Rajashekar Blog">
+<meta property="og:site_name" content="Rajashekar Chintalapati Blog">
 <meta property="og:title" content="Vi Cheatsheat">
 <meta property="og:url" content="https://rajashekar.github.io/posts/vi-cheatsheat/">
 <meta property="og:description" content="HOW TO OPEN FILE THRU VI EDITOR
@@ -42,7 +42,7 @@ view filename to only view the file. restricted to write
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
             <a class="navbar-brand blog-header-logo text-dark" href="https://rajashekar.github.io/">
 
-            <span id="blog-title">Rajashekar Blog</span>
+            <span id="blog-title">Rajashekar Chintalapati Blog</span>
         </a>
           </div>
             <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
@@ -104,7 +104,7 @@ view filename to only view the file. restricted to write
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<h3>HOW TO OPEN FILE THRU VI EDITOR</h3>
+<h4>HOW TO OPEN FILE THRU VI EDITOR</h4>
 <pre class="code literal-block"><span></span><code><span class="nv">e</span> <span class="nv">filename</span><span class="o">/</span><span class="nv">vi</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">vi</span>
 <span class="nv">view</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">only</span> <span class="nv">view</span> <span class="nv">the</span> <span class="nv">file</span>. <span class="nv">restricted</span> <span class="nv">to</span> <span class="nv">write</span>
 <span class="nl">:enew</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span>
@@ -112,6 +112,538 @@ view filename to only view the file. restricted to write
 <span class="nl">:vnew</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">V</span> <span class="nv">split</span>
 <span class="nl">:tabe</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">new</span> <span class="nv">tab</span>
 <span class="nl">:e</span><span class="o">!</span> <span class="k">return</span> <span class="nv">to</span> <span class="nv">unmodified</span> <span class="nv">file</span>
+</code></pre>
+
+
+<h4>HOW TO NAVIGATE IN FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">gg</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">start</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">program</span>
+<span class="nv">G</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">the</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">program</span>
+
+
+`` <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">previous</span> <span class="nv">position</span>
+<span class="o">~</span> <span class="nv">to</span> <span class="nv">reverse</span> <span class="nv">the</span> <span class="nv">case</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">letter</span> <span class="nv">under</span> <span class="nv">Cursor</span>
+
+
+<span class="mi">0</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">start</span> <span class="nv">OF</span> <span class="nv">the</span> <span class="nv">line</span>
+$ <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">the</span> <span class="k">end</span> <span class="nv">OF</span> <span class="nv">the</span> <span class="nv">line</span>
+
+
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">u</span> <span class="nv">TO</span> <span class="nv">up</span> <span class="nv">the</span> <span class="nv">half</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">d</span> <span class="nv">TO</span> <span class="nv">down</span> <span class="nv">the</span> <span class="nv">half</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">f</span> <span class="nv">TO</span> <span class="nv">forward</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">b</span> <span class="nv">TO</span> <span class="nv">backward</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">H</span> <span class="nv">moves</span> <span class="nv">cursor</span> <span class="nv">to</span> <span class="nv">HOME</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">M</span> <span class="nv">moves</span> <span class="nv">cursor</span> <span class="nv">to</span> <span class="nv">MIDDLE</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nv">L</span> <span class="nv">moves</span> <span class="nv">cursor</span> <span class="nv">to</span> <span class="nv">BOTTOM</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">page</span>
+<span class="nl">:tabe</span> <span class="nv">or</span> :<span class="nv">tabnew</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">new</span> <span class="nv">tab</span>
+<span class="nl">:tabp</span> <span class="o">-</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">previous</span> <span class="nv">tab</span>
+<span class="nl">:tabn</span> <span class="o">-</span> <span class="nv">move</span> <span class="nv">to</span> <span class="k">next</span> <span class="nv">tab</span>
+<span class="nv">gt</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="k">next</span> <span class="nv">tab</span>
+<span class="nv">gT</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">previous</span> <span class="nv">tab</span>
+<span class="mi">3</span><span class="nv">gt</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="mi">3</span><span class="nv">rd</span> <span class="nv">tab</span>
+</code></pre>
+
+
+<h4>HOW TO SEARCH WORD IN FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="o">/</span><span class="nv">word</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">word</span>
+<span class="o">/</span>\<span class="o">&lt;</span><span class="nv">word</span>\<span class="o">&gt;</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">exact</span> <span class="nv">word</span>, <span class="nv">not</span> <span class="nv">worda</span> <span class="nv">or</span> <span class="nv">worddd</span>
+<span class="o">*</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">exact</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span> <span class="nv">forward</span>
+# <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">exact</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span> <span class="nv">backward</span>
+<span class="nv">gd</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">exact</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span> <span class="nv">forward</span>
+<span class="nv">gD</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">exact</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span> <span class="nv">backward</span>
+<span class="nv">g</span><span class="o">*</span> <span class="nv">or</span> <span class="nv">g</span># <span class="nv">to</span> <span class="nv">find</span> <span class="nv">cursor</span> <span class="nv">word</span> <span class="nv">without</span> \<span class="o">&lt;</span> <span class="nv">and</span> \<span class="o">&gt;</span>
+<span class="nv">J</span> <span class="nv">to</span> <span class="nv">join</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">with</span> <span class="nv">line</span> <span class="nv">below</span> <span class="nv">with</span> <span class="nv">space</span>
+<span class="nv">gJ</span> <span class="nv">to</span> <span class="nv">join</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">with</span> <span class="nv">line</span> <span class="nv">below</span> <span class="nv">without</span> <span class="nv">space</span>
+?<span class="nv">word</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">word</span>
+<span class="o">*</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="k">next</span>
+<span class="nv">n</span> <span class="nv">to</span> <span class="nv">find</span> <span class="k">next</span> <span class="nv">in</span> <span class="ss">(</span><span class="nv">forward</span><span class="ss">)</span>
+<span class="nv">N</span> <span class="nv">to</span> <span class="nv">find</span> <span class="k">next</span> <span class="nv">in</span> <span class="ss">(</span><span class="nv">downward</span><span class="ss">)</span>
+<span class="nl">:g</span><span class="o">/</span> <span class="nv">gives</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">with</span> <span class="nv">search</span> <span class="nv">word</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">//</span><span class="nv">new</span><span class="o">/</span><span class="nv">g</span> <span class="nv">will</span> <span class="nv">replace</span> <span class="nv">the</span> <span class="nv">last</span> <span class="nv">search</span> <span class="nv">word</span> <span class="nv">with</span> <span class="nv">new</span> <span class="nv">globally</span>
+<span class="o">%</span> <span class="nv">in</span> <span class="nv">escapemode</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">other</span> <span class="nv">pair</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">parenthesis</span>
+<span class="nl">:linenumber</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">to</span> <span class="nv">that</span> <span class="nv">line</span> <span class="nv">number</span>
+<span class="nv">nG</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">that</span> <span class="nv">line</span> <span class="nv">n</span>
+<span class="nv">ngg</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">that</span> <span class="nv">line</span> <span class="nv">n</span>
+<span class="nl">:lvim</span> <span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">gj</span> <span class="o">*</span>.<span class="nv">txt</span> <span class="nv">will</span> <span class="nv">search</span> <span class="nv">all</span> <span class="nv">txt</span> <span class="nv">files</span> <span class="nv">with</span> <span class="nv">pattern</span>
+<span class="nl">:lvim</span> <span class="o">/</span><span class="nv">raj</span>\<span class="nv">_</span>.\{<span class="o">-</span>}<span class="nv">shekar</span><span class="o">/</span><span class="nv">gj</span> <span class="o">**/*</span> <span class="nv">to</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">raj</span> <span class="nv">and</span> <span class="nv">after</span> <span class="nv">shekar</span>
+<span class="nl">:lvim</span> <span class="o">/</span><span class="nv">raj</span>\<span class="nv">_</span>.<span class="o">*</span><span class="nv">shekar</span><span class="o">/</span><span class="nv">gj</span> <span class="o">**/*</span> <span class="nv">to</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">raj</span> <span class="nv">and</span> <span class="nv">after</span> <span class="nv">shekar</span>
+<span class="nl">:lvim</span> <span class="o">/</span>\<span class="ss">(</span><span class="nv">raj</span>\<span class="nv">_</span>.<span class="o">*</span><span class="nv">shekar</span>\<span class="ss">)</span>\<span class="o">|</span>\<span class="ss">(</span><span class="nv">shekar</span>\<span class="nv">_</span>.<span class="o">*</span><span class="nv">raj</span>\<span class="ss">)</span><span class="o">/</span><span class="nv">gj</span> <span class="o">**/*</span> <span class="nv">to</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">raj</span> <span class="nv">and</span> <span class="nv">shekar</span> <span class="nv">in</span> <span class="nv">any</span> <span class="nv">order</span> 
+<span class="nl">:lw</span> <span class="nv">used</span> <span class="nv">after</span> <span class="nv">lvim</span> <span class="nv">to</span> <span class="nv">know</span> <span class="nv">the</span> <span class="nv">search</span> <span class="nv">results</span>
+<span class="nl">:lgrep</span> <span class="o">-</span><span class="nv">i</span> <span class="s2">"</span><span class="s">raj</span><span class="s2">"</span> <span class="o">*</span>.<span class="nv">txt</span>  <span class="nv">search</span> <span class="nv">all</span> <span class="nv">txt</span> <span class="nv">files</span> <span class="nv">with</span> <span class="nv">raj</span>
+[<span class="nv">I</span> <span class="nv">to</span> <span class="nv">search</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">containing</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">cursor</span>
+<span class="nl">:lv</span> <span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">gj</span> <span class="o">**/*</span>.<span class="nv">txt</span> <span class="nv">to</span> <span class="nv">search</span> <span class="nv">recursively</span> 
+<span class="o">/^</span><span class="nv">pattern</span> <span class="nv">search</span> <span class="nv">all</span> <span class="nv">lines</span> <span class="nv">starting</span> <span class="nv">with</span> <span class="nv">pattern</span>
+<span class="o">/</span><span class="nv">pattern</span>$ <span class="nv">search</span> <span class="nv">all</span> <span class="nv">lines</span> <span class="nv">ending</span> <span class="nv">with</span> <span class="nv">pattern</span>
+<span class="o">/^</span><span class="nv">pattern</span>.<span class="o">*</span><span class="nv">raj</span>.<span class="o">*</span><span class="nv">shekar</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">search</span> <span class="nv">line</span> <span class="nv">containing</span> <span class="nv">pattern</span> <span class="nv">as</span> <span class="nv">first</span> <span class="nv">word</span> <span class="nv">AND</span> <span class="nv">raj</span> <span class="nv">as</span> <span class="k">next</span> <span class="nv">AND</span> <span class="nv">shekar</span> <span class="nv">in</span> <span class="nv">same</span> <span class="nv">line</span>.
+<span class="o">/</span><span class="nv">pattern</span>\<span class="nv">_</span>.<span class="o">*</span><span class="nv">raj</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">pattern</span> <span class="nv">AND</span> <span class="nv">raj</span> <span class="nv">with</span> <span class="nv">multiple</span> <span class="nv">lines</span> <span class="nv">between</span>
+<span class="o">/</span>.<span class="o">*</span><span class="nv">pattern</span>\<span class="o">&amp;</span>.<span class="o">*</span><span class="nv">raj</span> <span class="o">-</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">pattern</span> <span class="nv">and</span> <span class="nv">raj</span> <span class="nv">in</span> <span class="nv">any</span> <span class="nv">sequence</span> <span class="nv">in</span> <span class="nv">same</span> <span class="nv">line</span>
+<span class="o">/</span><span class="nv">pattern</span>\<span class="o">|</span><span class="nv">raj</span> <span class="o">-</span> <span class="nv">search</span> <span class="k">for</span> <span class="nv">pattern</span> <span class="nv">or</span> <span class="nv">raj</span>.
+<span class="o">/</span>\<span class="o">&lt;</span>\<span class="nv">d</span>\<span class="nv">d</span>\<span class="nv">d</span>\<span class="nv">d</span>\<span class="o">&gt;</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">search</span> <span class="k">for</span> <span class="mi">4</span> <span class="nv">digit</span> <span class="nv">numbers</span>
+<span class="o">/</span>.<span class="o">*</span><span class="nv">word</span>.<span class="o">*</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">highlight</span> <span class="nv">all</span> <span class="nv">lines</span> <span class="nv">containing</span> <span class="nv">search</span> <span class="nv">word</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">word</span><span class="o">//</span><span class="nv">gn</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">count</span> <span class="nv">the</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">occurences</span> <span class="nv">of</span> <span class="nv">word</span> <span class="nv">in</span> <span class="nv">file</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">///</span><span class="nv">gn</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">count</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">of</span> <span class="nv">occureneces</span> <span class="nv">of</span> <span class="nv">previous</span> <span class="nv">word</span>
+<span class="nl">:promptf</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">word</span> <span class="nv">in</span> <span class="nv">windows</span> <span class="nv">style</span>
+<span class="nl">:promptr</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">word</span> <span class="nv">in</span> <span class="nv">windows</span> <span class="nv">style</span>
+</code></pre>
+
+
+<h4>HOW TO SAVE AND QUIT FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:q</span> <span class="nv">to</span> <span class="nv">quit</span>
+<span class="nl">:q</span><span class="o">!</span> <span class="nv">to</span> <span class="nv">quit</span> <span class="nv">without</span> <span class="nv">save</span>
+<span class="nl">:wq</span> <span class="nv">to</span> <span class="nv">save</span> <span class="nv">and</span> <span class="nv">quit</span>
+<span class="nl">:w</span> <span class="nv">to</span> <span class="nv">write</span> <span class="nv">and</span> <span class="nv">be</span> <span class="nv">there</span> <span class="nv">in</span> <span class="nv">program</span>
+<span class="nl">:x</span> <span class="nv">to</span> <span class="nv">write</span> <span class="nv">and</span> <span class="k">exit</span>
+<span class="nl">:x</span><span class="o">!</span> <span class="nv">not</span> <span class="nv">to</span> <span class="nv">write</span> <span class="nv">and</span> <span class="k">exit</span>
+<span class="nv">ZZ</span> <span class="nv">to</span> <span class="nv">save</span> <span class="nv">and</span> <span class="k">exit</span> <span class="nv">in</span> <span class="nv">command</span> <span class="nv">mode</span> <span class="ss">(</span><span class="nv">capital</span> <span class="nv">Z</span><span class="ss">)</span>
+<span class="nl">:w</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">write</span> <span class="nv">the</span> <span class="nv">content</span> <span class="nv">on</span> <span class="nv">file</span>
+<span class="nl">:w</span><span class="o">!</span> <span class="nv">filename2</span> <span class="nv">to</span> <span class="nv">overwrite</span> <span class="nv">the</span> <span class="nv">existing</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">filename2</span>
+</code></pre>
+
+
+<h4>HOW TO CUT,COPY,PASTE</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">dd</span> <span class="nv">to</span> <span class="nv">delete</span>
+<span class="nv">dw</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">the</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">cursor</span>
+<span class="nv">D</span> <span class="nv">to</span> <span class="nv">cut</span> <span class="nv">the</span> <span class="nv">line</span> <span class="nv">upto</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">line</span>
+
+<span class="nv">yy</span> <span class="nv">or</span> <span class="nv">Y</span> <span class="nv">to</span> <span class="nv">copy</span> <span class="nv">the</span> <span class="nv">line</span> <span class="ss">(</span><span class="nv">yank</span> <span class="nv">the</span> <span class="nv">line</span><span class="ss">)</span>
+<span class="nv">yw</span> <span class="nv">to</span> <span class="nv">yank</span> <span class="nv">current</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">cursor</span>
+
+<span class="nl">:1</span>,<span class="mi">10</span><span class="nv">d</span> <span class="o">--</span> <span class="nv">to</span> <span class="nv">cut</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">in</span> <span class="nv">between</span> <span class="mi">1</span> <span class="nv">to</span> <span class="mi">10</span> <span class="nv">inclusive</span>
+<span class="nl">:1</span>,<span class="mi">10</span><span class="nv">y</span> <span class="o">--</span> <span class="nv">to</span> <span class="nv">yank</span><span class="o">/</span><span class="nv">copy</span> <span class="nv">the</span> <span class="nv">text</span> <span class="nv">between</span> <span class="mi">1</span> <span class="nv">to</span> <span class="mi">10</span> <span class="nv">inclusive</span>
+
+:<span class="s1">'</span><span class="s">a,</span><span class="s1">'</span><span class="nv">bd</span> <span class="o">--</span> <span class="nv">to</span> <span class="nv">cut</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">in</span> <span class="nv">between</span> <span class="nv">a</span> <span class="nv">to</span> <span class="nv">b</span> <span class="nv">marked</span> <span class="nv">tags</span> <span class="nv">inclusive</span>
+:<span class="s1">'</span><span class="s">a,</span><span class="s1">'</span><span class="nv">by</span> <span class="o">--</span> <span class="nv">to</span> <span class="nv">yank</span><span class="o">/</span><span class="nv">copy</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">in</span> <span class="nv">between</span> <span class="nv">a</span> <span class="nv">to</span> <span class="nv">b</span> <span class="nv">marked</span> <span class="nv">tags</span> <span class="nv">inclusive</span>
+
+<span class="nl">:1</span>,<span class="mi">10</span> <span class="nv">co</span> <span class="mi">15</span> <span class="nv">to</span> <span class="nv">copy</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">from</span> <span class="mi">1</span> <span class="nv">to</span> <span class="mi">10</span> <span class="ss">(</span><span class="nv">inclusive</span><span class="ss">)</span> <span class="nv">after</span> <span class="mi">15</span><span class="nv">th</span> <span class="nv">line</span>
+<span class="nl">:1</span>,<span class="mi">10</span> <span class="nv">m</span> <span class="mi">15</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">from</span> <span class="mi">1</span> <span class="nv">to</span> <span class="mi">10</span> <span class="ss">(</span><span class="nv">inclusive</span><span class="ss">)</span> <span class="nv">after</span> <span class="mi">15</span><span class="nv">th</span> <span class="nv">line</span>
+
+<span class="nv">p</span> <span class="nv">to</span> <span class="nv">paste</span>
+<span class="nv">shift</span><span class="o">+</span><span class="nv">p</span> <span class="nv">to</span> <span class="nv">paste</span> 
+
+<span class="nv">ddp</span> <span class="nv">to</span> <span class="nv">reverse</span> <span class="mi">2</span> <span class="nv">lines</span> 
+
+<span class="nl">:t</span> <span class="nv">n</span> <span class="o">--</span> <span class="nv">copy</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">after</span> <span class="nv">line</span> <span class="nv">n</span>
+<span class="nl">:xt</span> <span class="nv">n</span> <span class="o">--</span> <span class="nv">copy</span> <span class="nv">line</span> <span class="nv">x</span> <span class="nv">after</span> <span class="nv">line</span> <span class="nv">n</span>
+
+<span class="nl">:m</span> <span class="nv">n</span> <span class="o">--</span> <span class="nv">move</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">after</span> <span class="nv">line</span> <span class="nv">n</span>
+<span class="nl">:xm</span> <span class="nv">n</span> <span class="o">--</span> <span class="nv">move</span> <span class="nv">the</span> <span class="nv">line</span> <span class="nv">x</span> <span class="nv">to</span> <span class="nv">line</span> <span class="nv">after</span> <span class="nv">line</span> <span class="nv">n</span>
+
+<span class="nl">:r</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">paste</span> <span class="nv">that</span> <span class="nv">file</span> <span class="nv">at</span> <span class="nv">cursor</span> <span class="nv">position</span>
+
+<span class="nv">cc</span> <span class="nv">to</span> <span class="nv">change</span> <span class="nv">the</span> <span class="nv">entire</span> <span class="nv">line</span> 
+<span class="nv">cw</span> <span class="nv">to</span> <span class="nv">change</span> <span class="nv">the</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">cursor</span>
+
+<span class="nv">dG</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">from</span> <span class="nv">cursor</span> <span class="nv">line</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">file</span>
+<span class="nv">dgg</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">from</span> <span class="nv">start</span> <span class="nv">of</span> <span class="nv">file</span> <span class="nv">to</span> <span class="nv">cursor</span> <span class="nv">line</span>
+<span class="nv">ggdG</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">contents</span> <span class="nv">in</span> <span class="nv">file</span>
+<span class="nv">ggyG</span> <span class="nv">to</span> <span class="nv">yank</span> <span class="nv">all</span> <span class="nv">contents</span> <span class="nv">in</span> <span class="nv">file</span>
+<span class="nv">d1G</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">from</span> <span class="nv">start</span> <span class="nv">of</span> <span class="nv">file</span> <span class="nv">to</span> <span class="nv">cursor</span> <span class="nv">line</span>
+<span class="nv">nGdd</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">the</span> <span class="nv">line</span> <span class="nv">n</span>
+
+<span class="s2">"</span><span class="s">bdd to yank or cut the line in one register b (it can be any letter from a to z)</span>
+<span class="s2">"</span><span class="s">bp to paste the content in register b </span>
+</code></pre>
+
+
+<h4>HOW TO INSERT TEXT IN FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">a</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">mode</span>
+<span class="nv">i</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">mode</span>
+<span class="nv">A</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">at</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">line</span>
+<span class="nv">I</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">at</span> <span class="nv">first</span> <span class="nv">of</span> <span class="nv">line</span>
+<span class="nv">o</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">in</span> <span class="nv">newline</span> <span class="ss">(</span><span class="k">next</span> <span class="nv">to</span> <span class="nv">cursor</span> <span class="nv">line</span><span class="ss">)</span>
+<span class="nv">O</span> <span class="nv">to</span> <span class="nv">insert</span> <span class="nv">in</span> <span class="nv">above</span> <span class="nv">line</span> <span class="nv">of</span> <span class="nv">cursor</span>
+<span class="nl">:set</span> <span class="nv">ro</span> <span class="nv">readonly</span> <span class="nv">mode</span>
+<span class="nl">:set</span> <span class="nv">ro</span><span class="o">!</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">readonly</span> <span class="nv">mode</span>
+</code></pre>
+
+
+<h4>HOW TO UNDO</h4>
+<pre class="code literal-block"><span></span><code><span class="n">u</span> <span class="k">to</span> <span class="n">Undo</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">r</span> <span class="k">to</span> <span class="n">redo</span> 
+</code></pre>
+
+
+<h4>HOW TO MOVE OUT OF VI TO SHELL TO RUN UNIX COMMAND</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:shell</span> <span class="k">goto</span> <span class="nl">shell</span>
+<span class="nl">:sh</span> <span class="k">goto</span> <span class="nl">shell</span>
+<span class="k">exit</span> <span class="nv">or</span> <span class="nv">Ctrl</span><span class="o">+</span><span class="nv">d</span> <span class="nv">to</span> <span class="k">return</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">vi</span> <span class="nv">editor</span>
+
+:<span class="o">!</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">execute</span> <span class="nv">that</span> <span class="nv">command</span> <span class="k">while</span> <span class="nv">in</span> <span class="nv">VI</span>
+<span class="k">RETURN</span> <span class="nv">to</span> <span class="nv">come</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">vi</span> <span class="nv">editor</span>
+</code></pre>
+
+
+<h4>HOW TO REPLACE TEXT</h4>
+<pre class="code literal-block"><span></span><code>:<span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">old</span><span class="o">/</span><span class="nv">new</span><span class="o">/</span><span class="nv">g</span>  <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">old</span> <span class="nv">word</span><span class="o">/</span><span class="nv">letter</span> <span class="nv">with</span> <span class="nv">new</span> <span class="nv">word</span> <span class="nv">without</span> <span class="nv">confirmation</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">old</span><span class="o">/</span><span class="nv">new</span><span class="o">/</span><span class="nv">gc</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">old</span> <span class="nv">with</span> <span class="nv">new</span> <span class="nv">with</span> <span class="nv">confirmation</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span>\<span class="o">&lt;</span><span class="nv">raj</span>\<span class="o">&gt;/</span><span class="nv">she</span><span class="o">/</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">only</span> <span class="s2">"</span><span class="s">raj</span><span class="s2">"</span> <span class="nv">with</span> <span class="s2">"</span><span class="s">she</span><span class="s2">"</span>,,<span class="nv">not</span> <span class="nv">rajashekar</span> <span class="nv">or</span> <span class="nv">raja</span> 
+
+<span class="nl">:1</span>,$ <span class="nv">s</span><span class="o">/</span><span class="nv">old</span><span class="o">/</span><span class="nv">new</span><span class="o">/</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">all</span> <span class="nv">old</span> <span class="nv">with</span> <span class="nv">new</span> <span class="nv">in</span> <span class="nv">whole</span> <span class="nv">file</span>
+<span class="nv">explanation</span>
+<span class="mi">1</span> <span class="o">--</span> <span class="nv">start</span> <span class="nv">of</span> <span class="nv">file</span>
+$ <span class="o">--</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">file</span>
+<span class="nv">s</span> <span class="o">--</span> <span class="nv">substitute</span>
+<span class="nv">old</span> <span class="o">--</span> <span class="nv">old</span> <span class="nv">text</span>
+<span class="nv">new</span> <span class="o">--</span> <span class="nv">new</span> <span class="nv">text</span>
+<span class="nv">g</span> <span class="o">--</span> <span class="nv">globally</span>
+
+<span class="nl">:n</span>,<span class="nv">m</span> <span class="nv">s</span><span class="o">/</span><span class="nv">old</span><span class="o">/</span><span class="nv">new</span><span class="o">/</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">all</span> <span class="nv">old</span> <span class="nv">to</span> <span class="nv">new</span> <span class="nv">from</span> <span class="nv">line</span> <span class="nv">n</span> <span class="nv">to</span> <span class="nv">m</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span>\<span class="nv">s</span>\<span class="o">+</span>$<span class="o">//</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">all</span> <span class="nv">white</span> <span class="nv">spaces</span> <span class="nv">at</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">each</span> <span class="nv">line</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/^</span>\<span class="nv">s</span>\<span class="o">+//</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">all</span> <span class="nv">white</span> <span class="nv">spaces</span> <span class="nv">at</span> <span class="nv">start</span> <span class="nv">of</span> <span class="nv">each</span> <span class="nv">line</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span>\<span class="nv">r</span><span class="o">//</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">all</span> <span class="o">^</span><span class="nv">M</span> <span class="nv">in</span> <span class="nv">file</span>
+<span class="nl">:bufdo</span> <span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">substitue</span><span class="o">/</span><span class="nv">ge</span> <span class="o">|</span> <span class="nv">update</span> <span class="nv">replace</span> <span class="nv">all</span> <span class="nv">pattern</span> <span class="nv">in</span> <span class="nv">files</span> <span class="nv">to</span> <span class="nv">substitute</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">suck</span>\<span class="o">|</span><span class="nv">buck</span><span class="o">/</span><span class="nv">loopy</span><span class="o">/</span><span class="nv">gc</span> <span class="nv">replace</span> <span class="nv">suck</span> <span class="nv">or</span> <span class="nv">buck</span> <span class="nv">with</span> <span class="nv">loopy</span>
+:<span class="o">%</span><span class="nv">s</span><span class="o">/</span><span class="nv">fred</span><span class="o">/&lt;</span><span class="nv">C</span><span class="o">-</span><span class="nv">R</span><span class="o">&gt;</span><span class="nv">a</span><span class="o">/</span><span class="nv">g</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">fred</span> <span class="nv">with</span> <span class="nv">contents</span> <span class="nv">of</span> <span class="nv">register</span> <span class="s2">"</span><span class="s">a</span><span class="s2">"</span>
+</code></pre>
+
+
+<h4>SET OPTIONS</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">set</span> <span class="nv">options</span>
+<span class="nl">:set</span> <span class="nv">ai</span> <span class="k">for</span> <span class="nv">auto</span> <span class="nv">indent</span>
+<span class="nl">:set</span> <span class="nv">si</span> <span class="k">for</span> <span class="nv">smart</span> <span class="nv">indent</span>
+<span class="nl">:set</span> <span class="nv">noai</span> <span class="k">for</span> <span class="nv">no</span> <span class="nv">auto</span> <span class="nv">indent</span>
+<span class="nl">:set</span> <span class="nv">nu</span> <span class="k">for</span> <span class="nv">number</span> <span class="nv">display</span> <span class="nv">on</span> <span class="nv">left</span> <span class="nv">side</span> <span class="nv">of</span> <span class="nv">line</span>
+<span class="nl">:set</span> <span class="nv">nonu</span> <span class="k">for</span> <span class="nv">remove</span> <span class="nv">the</span> <span class="nv">displaying</span> <span class="nv">numbers</span>
+<span class="nl">:set</span> <span class="nv">vb</span> <span class="nv">t_vb</span><span class="o">=</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">the</span> <span class="k">beep</span> <span class="nv">sound</span> 
+<span class="nl">:set</span> <span class="nv">hls</span> <span class="k">for</span> <span class="nv">highliting</span> <span class="nv">search</span> <span class="nv">word</span>
+<span class="nl">:set</span> <span class="nv">nohls</span> <span class="k">for</span> <span class="nv">not</span> <span class="nv">highlighting</span> <span class="nv">the</span> <span class="nv">search</span> <span class="nv">word</span>
+<span class="nl">:syntax</span> <span class="nv">on</span> <span class="o">--</span> <span class="nv">to</span> <span class="nv">on</span> <span class="nv">syntax</span> <span class="nv">of</span> <span class="nv">programming</span>
+<span class="nl">:set</span> <span class="nv">incsearch</span> <span class="nv">to</span> <span class="nv">set</span> <span class="nv">increment</span> <span class="nv">search</span>
+<span class="nl">:set</span> <span class="nv">ic</span> <span class="nv">to</span> <span class="nv">ignore</span> <span class="nv">case</span> <span class="k">while</span> <span class="nv">search</span>
+<span class="nl">:set</span> <span class="nv">backspace</span><span class="o">=</span><span class="mi">2</span> <span class="nv">to</span> <span class="nv">use</span> <span class="nv">backspace</span> <span class="nv">in</span> <span class="nv">insert</span> <span class="nv">mode</span>
+<span class="nl">:set</span> <span class="nv">wrap</span> <span class="nv">to</span> <span class="nv">wrap</span> <span class="nv">up</span> <span class="nv">the</span> <span class="nv">lines</span> 
+<span class="nl">:set</span> <span class="nv">nowrap</span> <span class="nv">to</span> <span class="nv">not</span> <span class="nv">to</span> <span class="nv">wrap</span> <span class="nv">up</span> <span class="nv">the</span> <span class="nv">lines</span>
+<span class="nl">:set</span> <span class="nv">noerrorbells</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">the</span> <span class="k">beep</span> <span class="nv">sound</span>
+<span class="nl">:set</span> <span class="nv">errorbells</span> <span class="nv">to</span> <span class="nv">set</span> <span class="nv">the</span> <span class="k">beep</span> <span class="nv">sound</span> 
+<span class="nl">:set</span> <span class="nv">novisualbell</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">flash</span>
+<span class="nl">:set</span> <span class="nv">visualbell</span> <span class="nv">to</span> <span class="nv">set</span> <span class="nv">flash</span>
+</code></pre>
+
+
+<h4>ESC</h4>
+<pre class="code literal-block"><span></span><code><span class="n">ctrl</span><span class="o">+</span><span class="p">[</span> <span class="k">is</span> <span class="n">also</span> <span class="k">called</span> <span class="k">as</span> <span class="k">escape</span> <span class="k">mode</span>
+</code></pre>
+
+
+<h4>HOW TO SPLIT SCREEN</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:split</span> <span class="nv">anotherfile</span> <span class="o">//</span> <span class="nv">horizontally</span> <span class="nv">spliting</span> 
+<span class="nl">:sp</span> <span class="nv">filename</span> <span class="o">//</span> <span class="nv">horizontally</span> <span class="nv">spliting</span>
+<span class="nl">:vsplit</span> <span class="nv">anotherfile</span> <span class="o">//</span> <span class="nv">vertically</span> <span class="nv">spliting</span>
+<span class="nl">:vsp</span> <span class="nv">filename</span> <span class="o">//</span> <span class="nv">vertically</span> <span class="nv">spliting</span>
+
+<span class="nv">or</span> <span class="nv">at</span> <span class="nv">shell</span> <span class="nv">prompt</span>
+<span class="nv">vi</span> <span class="o">-</span><span class="nv">o</span> <span class="nv">file1</span>.<span class="nv">txt</span> <span class="nv">file2</span>.<span class="nv">txt</span> <span class="o">//</span> <span class="nv">horizontally</span>
+<span class="nv">vi</span> <span class="o">-</span><span class="nv">O</span> <span class="nv">file1</span>.<span class="nv">txt</span> <span class="nv">file2</span>.<span class="nv">txt</span> <span class="o">//</span> <span class="nv">vertically</span>
+
+<span class="nv">at</span> <span class="nv">escape</span> <span class="nv">mode</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span><span class="o">-</span><span class="nv">v</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">a</span> <span class="nv">new</span> <span class="nv">window</span> <span class="nv">vertically</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span><span class="o">-</span><span class="nv">n</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">a</span> <span class="nv">new</span> <span class="nv">window</span> <span class="nv">horizontally</span>
+
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="o">+</span> <span class="nv">increase</span> <span class="nv">the</span> <span class="nv">size</span> <span class="nv">of</span> <span class="nv">window</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="o">-</span> <span class="nv">decrease</span> <span class="nv">the</span> <span class="nv">size</span> <span class="nv">of</span> <span class="nv">window</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="o">=</span> <span class="nv">to</span> <span class="nv">equalize</span> <span class="nv">the</span> <span class="nv">size</span> <span class="nv">of</span> <span class="nv">each</span> <span class="nv">split</span> <span class="nv">window</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="o">|</span> <span class="nv">to</span> <span class="nv">maximize</span> <span class="nv">in</span> <span class="nv">vertical</span> <span class="nv">split</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">_</span> <span class="nv">to</span> <span class="nv">maximize</span> <span class="nv">in</span> <span class="nv">Horizontal</span> <span class="nv">split</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">h</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">window</span> <span class="nv">left</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">j</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">window</span> <span class="nv">below</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">k</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">window</span> <span class="nv">above</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">l</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">window</span> <span class="nv">right</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">H</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">current</span> <span class="nv">window</span> <span class="nv">to</span> <span class="nv">far</span> <span class="nv">right</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">J</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">current</span> <span class="nv">window</span> <span class="nv">to</span> <span class="nv">far</span> <span class="nv">Down</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">K</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">current</span> <span class="nv">window</span> <span class="nv">to</span> <span class="nv">far</span> <span class="nv">Up</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">L</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">current</span> <span class="nv">window</span> <span class="nv">to</span> <span class="nv">far</span> <span class="nv">left</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">T</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">current</span> <span class="nv">window</span> <span class="nv">to</span> <span class="nv">new</span> <span class="nv">tab</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">n</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">H</span> <span class="nv">split</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">q</span> <span class="nv">to</span> <span class="nv">close</span>
+<span class="nv">ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">o</span> <span class="nv">to</span> <span class="nv">close</span> <span class="nv">all</span> <span class="nv">splits</span> <span class="nv">except</span> <span class="nv">current</span> <span class="nv">window</span> <span class="ss">(</span>:<span class="nv">only</span> <span class="nv">also</span> <span class="k">do</span> <span class="nv">the</span> <span class="nv">same</span><span class="ss">)</span>
+</code></pre>
+
+
+<h4>TO KNOW THE STATUS OF THE PROGRAM</h4>
+<pre class="code literal-block"><span></span><code><span class="n">ctrl</span><span class="o">-</span><span class="k">G</span> 
+<span class="p">:</span><span class="n">f</span> 
+</code></pre>
+
+
+<h4>TO MARK SOME POSITION IN PROGRAM AND COMING TO BACK TO THAT PROGRAM (MARKERS)</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">mp</span> <span class="nv">where</span> <span class="nv">the</span> <span class="nv">position</span> <span class="nv">is</span> <span class="nv">marked</span> <span class="nv">as</span> <span class="nv">p</span> <span class="ss">(</span><span class="nv">it</span> <span class="nv">can</span> <span class="nv">be</span> <span class="nv">anything</span> <span class="nv">from</span> <span class="nv">a</span><span class="o">-</span><span class="nv">z</span><span class="ss">)</span> 
+<span class="nv">to</span> <span class="k">return</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">that</span> <span class="nv">position</span> <span class="nv">p</span> <span class="nv">we</span> <span class="nv">type</span> <span class="s1">'</span><span class="s">p</span>
+
+<span class="s2">"</span><span class="s">ay'b to yank from current cursor line to the mark position b into register a</span>
+<span class="s2">"</span><span class="s">ad'b to cut from current cursor line to the mark position b into register a</span>
+<span class="s2">"</span><span class="s">ap to paste the content in that buffer</span>
+</code></pre>
+
+
+<h4>SETTING KEYS FOR SPECIFIC OPTIONS</h4>
+<pre class="code literal-block"><span></span><code><span class="n">nnormap</span> <span class="o">&lt;</span><span class="k">key</span><span class="o">&gt;</span> <span class="p">:</span><span class="k">set</span> <span class="k">option</span><span class="o">&lt;</span><span class="n">cr</span><span class="o">&gt;</span>
+</code></pre>
+
+
+<h4>TO CLEAN UP CONTROL M'S IN THE FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/&lt;</span><span class="n">control</span> <span class="n">v</span><span class="o">&gt;&lt;</span><span class="n">control</span> <span class="n">m</span><span class="o">&gt;/</span> <span class="o">/</span><span class="k">g</span>
+</code></pre>
+
+
+<h4>LOWER CASE TO UPPER CASE</h4>
+<pre class="code literal-block"><span></span><code><span class="o">~</span>    <span class="k">to</span> <span class="n">switch</span> <span class="k">case</span> <span class="k">of</span> <span class="n">charater</span> <span class="k">under</span> <span class="n">the</span> <span class="k">cursor</span>
+<span class="k">g</span><span class="o">~~</span> <span class="k">to</span> <span class="n">switch</span> <span class="k">case</span> <span class="k">of</span> <span class="n">whole</span> <span class="n">line</span>
+<span class="n">gUU</span> <span class="o">-</span> <span class="k">To</span> <span class="n">make</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">line</span> <span class="k">upper</span> <span class="k">case</span>
+<span class="n">guu</span> <span class="o">-</span> <span class="k">To</span> <span class="n">make</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">line</span> <span class="k">lower</span> <span class="k">case</span>
+<span class="n">U</span>   <span class="o">-</span> <span class="k">In</span> <span class="n">visual</span> <span class="k">mode</span> <span class="n">make</span> <span class="n">selected</span> <span class="k">to</span> <span class="k">upper</span> <span class="k">case</span>
+<span class="n">u</span>   <span class="o">-</span> <span class="k">In</span> <span class="n">visual</span> <span class="k">mode</span> <span class="n">make</span> <span class="n">selected</span> <span class="k">to</span> <span class="k">lower</span> <span class="k">case</span>
+</code></pre>
+
+
+<h4>INDENTING A FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="o">==</span> <span class="nv">makes</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">indent</span>
+<span class="nv">In</span> <span class="nv">visual</span> <span class="nv">mode</span> <span class="nv">select</span> <span class="nv">the</span> <span class="nv">whole</span> <span class="nv">part</span> <span class="nv">and</span> <span class="k">then</span> <span class="o">==</span> <span class="nv">to</span> <span class="nv">indent</span> <span class="nv">the</span> <span class="nv">selected</span> <span class="nv">part</span>
+<span class="nv">good</span> <span class="nv">settings</span>
+<span class="nl">:set</span> <span class="nv">sw</span><span class="o">=</span><span class="mi">4</span>
+<span class="nl">:set</span> <span class="nv">smarttab</span>
+<span class="nl">:set</span> <span class="nv">et</span> 
+</code></pre>
+
+
+<h4>GLOBAL COMMAND</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span> <span class="o">-</span> <span class="nv">list</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">having</span> <span class="nv">pattern</span>
+<span class="nv">Ctrl</span><span class="o">+</span><span class="nv">x</span> <span class="nv">Ctrl</span><span class="o">+</span><span class="nv">l</span> <span class="nv">gives</span> <span class="nv">list</span> <span class="nv">of</span> <span class="nv">lines</span> <span class="nv">to</span> <span class="nv">insert</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">having</span> <span class="nv">pattern</span>
+<span class="nl">:g</span><span class="o">!/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">that</span> <span class="nv">are</span> <span class="nv">not</span> <span class="nv">having</span> <span class="nv">pattern</span>
+<span class="nl">:v</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">that</span> <span class="nv">are</span> <span class="nv">not</span> <span class="nv">having</span> <span class="nv">pattern</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> <span class="nv">copy</span> $ <span class="o">-</span> <span class="nv">copy</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">that</span> <span class="nv">are</span> <span class="nv">having</span> <span class="nv">pattern</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">file</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> <span class="nv">co</span> $ <span class="nv">or</span> :<span class="nv">g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">t</span> $ <span class="nv">also</span> <span class="k">do</span> <span class="nv">the</span> <span class="nv">same</span> <span class="nv">as</span> <span class="nv">above</span>
+<span class="nl">:g</span><span class="o">/^</span>$<span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">empty</span> <span class="nv">lines</span>
+<span class="nl">:g</span><span class="o">/^</span>\<span class="nv">s</span><span class="o">*</span>$<span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">empty</span> <span class="nv">lines</span> <span class="nv">precisely</span>
+<span class="nl">:v</span><span class="o">/</span>\<span class="nv">S</span><span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">empty</span> <span class="nv">lines</span>
+<span class="nl">:v</span><span class="o">/</span>.<span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">delete</span> <span class="nv">all</span> <span class="nv">empty</span> <span class="nv">lines</span>
+<span class="nl">:g</span><span class="o">/</span>.<span class="o">*/</span><span class="nv">m0</span> <span class="o">-</span> <span class="nv">This</span> <span class="nv">will</span> <span class="nv">reverse</span> <span class="nv">the</span> <span class="nv">order</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">file</span>.
+<span class="nl">:g</span><span class="o">/^/</span><span class="nv">m0</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">reverse</span> <span class="nv">the</span> <span class="nv">file</span>
+<span class="nl">:g</span><span class="o">/^</span>$<span class="o">/</span>,<span class="o">/</span>.<span class="o">/-</span><span class="nv">j</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">mulitple</span> <span class="nv">empty</span> <span class="nv">lines</span> <span class="nv">with</span> <span class="nv">single</span> <span class="nv">line</span>
+<span class="nl">:v</span><span class="o">/</span>.<span class="o">/</span>,<span class="o">/</span>.<span class="o">/-</span><span class="nv">j</span> <span class="nv">to</span> <span class="nv">replace</span> <span class="nv">mulitple</span> <span class="nv">empty</span> <span class="nv">lines</span> <span class="nv">with</span> <span class="nv">single</span> <span class="nv">line</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> .<span class="nv">w</span><span class="o">!</span> <span class="o">&gt;&gt;</span> <span class="nv">newfile</span>.<span class="nv">txt</span> <span class="o">-</span> <span class="nv">writes</span> <span class="nv">all</span> <span class="nv">line</span> <span class="nv">having</span> <span class="nv">word</span> <span class="nv">pattern</span> 
+:.<span class="nv">w</span><span class="o">!</span> <span class="o">&gt;&gt;</span> <span class="nv">newfile</span>.<span class="nv">txt</span> <span class="o">-</span> <span class="nv">writes</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">into</span> <span class="nv">newfile</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> <span class="nv">copy</span> $ <span class="o">-</span> <span class="nv">to</span> <span class="nv">paste</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">containing</span> <span class="nv">pattern</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">file</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> <span class="nv">t</span> $ <span class="o">-</span> <span class="nv">same</span> <span class="nv">as</span> <span class="nv">above</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span><span class="o">/</span> <span class="nv">t</span> <span class="mi">5</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">paste</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">containing</span> <span class="nv">pattern</span> <span class="nv">after</span> <span class="nv">line</span> <span class="mi">5</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">start</span><span class="o">/</span>,<span class="o">/</span><span class="k">end</span> <span class="nv">copy</span> $ <span class="o">-</span> <span class="nv">copy</span> <span class="nv">from</span> <span class="nv">start</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">file</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">start</span><span class="o">/</span>,<span class="o">/</span><span class="k">end</span><span class="o">/</span><span class="nv">d</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">start</span> <span class="nv">to</span> <span class="k">end</span> <span class="nv">block</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">start</span><span class="o">/</span>,<span class="o">/</span><span class="k">end</span><span class="o">/</span><span class="nv">j</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">join</span> <span class="nv">start</span> <span class="nv">to</span> <span class="k">end</span>.
+<span class="nl">:g</span><span class="o">/</span><span class="nv">start</span><span class="o">/</span><span class="nv">y</span> <span class="nv">A</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">copy</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">to</span> <span class="nv">register</span> <span class="nv">A</span>
+<span class="nl">:g</span><span class="o">/^</span><span class="nv">pattern</span><span class="o">/</span><span class="nv">s</span><span class="o">/</span>$<span class="o">/</span><span class="k">end</span> <span class="o">-</span> <span class="nv">Add</span> <span class="k">end</span> <span class="k">for</span> <span class="nv">lines</span> <span class="nv">starting</span> <span class="nv">with</span> <span class="nv">pattern</span>
+<span class="nl">:g</span><span class="o">/^/</span><span class="nv">pu</span> <span class="nv">_</span> <span class="nv">to</span> <span class="nv">double</span> <span class="nv">space</span> <span class="nv">the</span> <span class="nv">whole</span> <span class="nv">file</span>
+<span class="nl">:redir</span> @<span class="nv">r</span> <span class="o">-</span> <span class="nv">redirect</span> <span class="nv">to</span> <span class="nv">register</span> <span class="nv">r</span>
+<span class="nl">:g</span><span class="o">/</span><span class="nv">pattern</span> <span class="o">-</span> <span class="nv">search</span> <span class="nv">globally</span>
+<span class="nl">:redir</span> <span class="k">end</span> 
+<span class="s2">"</span><span class="s">rp paste the contents in register r</span>
+</code></pre>
+
+
+<h4>MORE USEFUL COMMANDS</h4>
+<pre class="code literal-block"><span></span><code><span class="p">:</span><span class="n">Ex</span> <span class="n">opens</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">seperate</span> <span class="n">buffer</span> 
+<span class="p">:</span><span class="n">Sex</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">split</span>
+<span class="p">:</span><span class="n">Vex</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">vertical</span> <span class="n">split</span>
+<span class="p">:</span><span class="n">Tex</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="k">new</span> <span class="n">tab</span>
+<span class="p">:</span><span class="n">browse</span> <span class="n">e</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">windows</span> <span class="n">style</span> <span class="k">to</span> <span class="k">open</span>
+<span class="p">:</span><span class="n">bro</span> <span class="n">op</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">windows</span> <span class="n">style</span> <span class="k">to</span> <span class="k">open</span> 
+<span class="p">:</span><span class="n">bro</span> <span class="n">sav</span> <span class="k">open</span> <span class="n">explorer</span> <span class="k">in</span> <span class="n">windows</span> <span class="n">style</span> <span class="k">to</span> <span class="n">save</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">n</span> <span class="p">(</span><span class="k">in</span> <span class="k">insert</span> <span class="k">mode</span><span class="p">)</span> <span class="n">gives</span> <span class="n">list</span> <span class="k">of</span> <span class="n">matching</span> <span class="n">words</span> <span class="k">to</span> <span class="k">insert</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">p</span> <span class="p">(</span><span class="k">in</span> <span class="k">insert</span> <span class="k">mode</span><span class="p">)</span> <span class="n">gives</span> <span class="n">list</span> <span class="k">of</span> <span class="n">matching</span> <span class="n">words</span> <span class="k">to</span> <span class="k">insert</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">x</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">l</span> <span class="n">gives</span> <span class="n">list</span> <span class="k">of</span> <span class="n">lines</span> <span class="k">to</span> <span class="k">insert</span>
+<span class="n">ggVGg</span><span class="o">?</span> <span class="k">to</span> <span class="n">rot13</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">file</span>
+<span class="n">ggg</span><span class="o">?</span><span class="k">G</span> <span class="k">to</span> <span class="n">rot13</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">file</span>
+</code></pre>
+
+
+<h4>FUNCTIONS</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">use</span> <span class="nv">TABS</span> <span class="nv">to</span> <span class="nv">complete</span> <span class="nv">words</span> 
+<span class="nv">function</span><span class="o">!</span> <span class="nv">Tab_Or_Complete</span><span class="ss">()</span>
+  <span class="k">if</span> <span class="nv">col</span><span class="ss">(</span><span class="s1">'</span><span class="s">.</span><span class="s1">'</span><span class="ss">)</span><span class="o">&gt;</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nv">strpart</span><span class="ss">(</span> <span class="nv">getline</span><span class="ss">(</span><span class="s1">'</span><span class="s">.</span><span class="s1">'</span><span class="ss">)</span>, <span class="nv">col</span><span class="ss">(</span><span class="s1">'</span><span class="s">.</span><span class="s1">'</span><span class="ss">)</span><span class="o">-</span><span class="mi">2</span>, <span class="mi">3</span> <span class="ss">)</span> <span class="o">=~</span> <span class="s1">'</span><span class="s">^\w</span><span class="s1">'</span>
+    <span class="k">return</span> <span class="s2">"</span><span class="s">\&lt;C-N&gt;</span><span class="s2">"</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="s2">"</span><span class="s">\&lt;Tab&gt;</span><span class="s2">"</span>
+  <span class="k">endif</span>
+<span class="nv">endfunction</span>
+<span class="nl">:inoremap</span> <span class="o">&lt;</span><span class="nv">Tab</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nv">C</span><span class="o">-</span><span class="nv">R</span><span class="o">&gt;=</span><span class="nv">Tab_Or_Complete</span><span class="ss">()</span><span class="o">&lt;</span><span class="nv">CR</span><span class="o">&gt;</span>
+<span class="nl">:set</span> <span class="nv">dictionary</span><span class="o">=</span><span class="s2">"</span><span class="s">/usr/dict/words</span><span class="s2">"</span>
+</code></pre>
+
+
+<h4>MODES</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">Esc</span> <span class="o">-</span> <span class="nv">escape</span> <span class="nv">mode</span>
+<span class="nv">i</span><span class="o">/</span><span class="nv">I</span> <span class="o">-</span> <span class="nv">Insert</span> <span class="nv">mode</span>
+<span class="nv">a</span> <span class="o">-</span> <span class="nv">insert</span> <span class="nv">after</span> <span class="nv">cursor</span> <span class="nv">position</span>
+<span class="nv">A</span> <span class="o">-</span> <span class="nv">insert</span> <span class="nv">at</span> <span class="k">end</span> <span class="nv">of</span> <span class="nv">line</span>.
+<span class="nv">v</span> <span class="o">-</span> <span class="nv">visual</span> <span class="nv">mode</span>
+<span class="nv">V</span> <span class="o">-</span> <span class="nv">visual</span> <span class="nv">mode</span> <span class="nv">to</span> <span class="nv">select</span> <span class="nv">whole</span> <span class="nv">line</span>
+<span class="nv">gv</span> <span class="o">-</span> <span class="nv">select</span> <span class="nv">last</span> <span class="nv">visual</span> <span class="nv">select</span>
+<span class="nv">o</span> <span class="o">-</span> <span class="nv">navigate</span> <span class="nv">in</span> <span class="nv">visual</span> <span class="nv">select</span>
+<span class="nv">V</span><span class="o">%</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">select</span> <span class="nv">match</span>
+<span class="nv">V</span>}<span class="nv">J</span> <span class="o">-</span> <span class="nv">join</span> <span class="nv">the</span> <span class="nv">selection</span>
+<span class="nv">zf</span> <span class="o">-</span> <span class="nv">in</span> <span class="nv">visual</span> <span class="nv">mode</span>, <span class="nv">fold</span> <span class="nv">selection</span>
+<span class="nv">za</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">and</span> <span class="nv">close</span> <span class="nv">fold</span>
+<span class="nv">zo</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">the</span> <span class="nv">fold</span>
+<span class="nv">zc</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">close</span> <span class="nv">the</span> <span class="nv">fold</span>
+<span class="nv">zR</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">all</span> <span class="nv">folds</span>
+<span class="nv">zM</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">close</span> <span class="nv">all</span> <span class="nv">folds</span>
+
+
+<span class="nv">Ctrl</span> <span class="nv">Q</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">enter</span> <span class="nv">visual</span> <span class="nv">block</span>
+<span class="nv">I</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">add</span> <span class="nv">infront</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">selection</span>
+<span class="nv">A</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">add</span> <span class="nv">after</span> <span class="nv">the</span> <span class="nv">selection</span>
+<span class="nv">c</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">change</span> <span class="nv">the</span> <span class="nv">value</span> <span class="nv">in</span> <span class="nv">selection</span>
+</code></pre>
+
+
+<h4>DIFFERENCE</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:vsp</span> <span class="nv">filename2</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">in</span> <span class="nv">filename1</span><span class="ss">)</span>
+<span class="nl">:windo</span> <span class="nv">diffthis</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">find</span> <span class="nv">diff</span> <span class="nv">between</span> <span class="nv">filename1</span> <span class="nv">and</span> <span class="nv">filename2</span><span class="ss">)</span>
+<span class="k">do</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">obtain</span> <span class="nv">the</span> <span class="nv">difference</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">from</span> <span class="nv">diff</span> <span class="nv">file</span>
+<span class="nv">dp</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">put</span> <span class="nv">the</span> <span class="nv">difference</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">line</span> <span class="nv">to</span> <span class="nv">diff</span> <span class="nv">file</span>
+</code></pre>
+
+
+<h4>MAPPING</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">map</span> <span class="o">&lt;</span><span class="nv">F11</span><span class="o">&gt;</span> : <span class="nv">set</span> <span class="nv">hls</span><span class="o">!</span> <span class="o">&lt;</span><span class="nv">Bar</span><span class="o">&gt;</span> <span class="nv">set</span> <span class="nv">hls</span>? <span class="o">&lt;</span><span class="nv">CR</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nv">CR</span><span class="o">&gt;</span> : <span class="nv">Carriage</span> <span class="k">Return</span>
+<span class="o">&lt;</span><span class="nv">ESC</span><span class="o">&gt;</span> : <span class="nv">Escape</span>
+<span class="o">&lt;</span><span class="nv">LEADER</span><span class="o">&gt;</span> : \
+<span class="o">&lt;</span><span class="nv">BAR</span><span class="o">&gt;</span> : <span class="o">|</span>
+<span class="o">&lt;</span><span class="nv">BACKSPACE</span><span class="o">&gt;</span> : <span class="nv">backspace</span>
+<span class="o">&lt;</span><span class="nv">SILENT</span><span class="o">&gt;</span> : <span class="nv">no</span> <span class="nv">hanging</span> <span class="nv">shell</span> <span class="nv">window</span>
+</code></pre>
+
+
+<h4>ENCRYPTION</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:X</span> <span class="nv">to</span> <span class="nv">set</span> <span class="nv">password</span> <span class="k">for</span> <span class="nv">file</span> <span class="ss">(</span><span class="nv">powerful</span><span class="ss">)</span>
+<span class="nl">:set</span> <span class="nv">key</span><span class="o">=</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">password</span> <span class="k">for</span> <span class="nv">file</span>
+</code></pre>
+
+
+<h4>REGISTERS</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:reg</span> <span class="nv">to</span> <span class="k">show</span> <span class="nv">the</span> <span class="nv">registers</span>
+<span class="s2">"</span><span class="s">ay yank current line to register a [26 registers]</span>
+<span class="s2">"</span><span class="s">ap paste buffer a</span>
+[<span class="nv">A</span><span class="o">-</span><span class="nv">Z</span>] <span class="nv">registers</span> <span class="nv">are</span> <span class="nv">to</span> <span class="nv">append</span>
+[<span class="nv">a</span><span class="o">-</span><span class="nv">z</span>] <span class="nv">registers</span> <span class="nv">are</span> <span class="nv">to</span> <span class="nv">override</span>
+<span class="nv">qaq</span> <span class="nv">to</span> <span class="nv">clear</span> <span class="nv">the</span> <span class="nv">register</span> <span class="nv">a</span> <span class="o">-</span> <span class="nv">record</span> <span class="nv">nothing</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">r</span> <span class="nv">register</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">paste</span> <span class="nv">the</span> <span class="nv">contents</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">register</span> <span class="nv">in</span> <span class="nv">insert</span> <span class="nv">mode</span>
+</code></pre>
+
+
+<h4>BUFFERS</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:ls</span> <span class="nv">to</span> <span class="nv">list</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">buffers</span> 
+<span class="nl">:bp</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="nv">previous</span> <span class="nv">buffer</span>
+<span class="nl">:bn</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">to</span> <span class="k">next</span> <span class="nv">buffer</span>
+<span class="nl">:bd</span> <span class="nv">to</span> <span class="nv">remove</span> <span class="nv">from</span> <span class="nv">buffer</span>
+<span class="nl">:args</span> <span class="o">**/*</span> <span class="nv">to</span> <span class="nv">keep</span> <span class="nv">all</span> <span class="nv">files</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">directory</span> <span class="nv">in</span> <span class="nv">vim</span> <span class="ss">(</span><span class="nv">SUPER</span><span class="ss">)</span>
+<span class="nl">:rew</span> <span class="nv">to</span> <span class="nv">first</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">args</span>
+<span class="nl">:te</span> <span class="nv">Buffers</span> <span class="nv">to</span> <span class="k">show</span> <span class="nv">the</span> <span class="nv">menu</span> <span class="nv">buffer</span>
+<span class="nl">:badd</span> <span class="nv">add</span> <span class="nv">file</span> <span class="nv">to</span> <span class="nv">buffer</span>
+<span class="nl">:b</span># <span class="nv">to</span> <span class="nv">alternate</span> <span class="nv">buffer</span>
+<span class="nv">Ctrl</span><span class="o">-^</span> <span class="nv">is</span> <span class="nv">to</span> <span class="nv">switch</span> <span class="nv">alternate</span> <span class="nv">buffers</span>
+<span class="nl">:tab</span> <span class="nv">ball</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">all</span> <span class="nv">buffers</span> <span class="nv">in</span> <span class="nv">tabs</span>
+<span class="nl">:ball</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">all</span> <span class="nv">buffers</span> <span class="nv">Horizontally</span> 
+<span class="nl">:vert</span> <span class="nv">ball</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">all</span> <span class="nv">buffers</span> <span class="nv">vertically</span>
+<span class="nl">:xa</span> <span class="nv">save</span> <span class="nv">all</span> <span class="nv">buffers</span> <span class="nv">and</span> <span class="k">exit</span>
+<span class="nl">:wa</span> <span class="nv">write</span> <span class="nv">all</span> <span class="nv">buffers</span> 
+</code></pre>
+
+
+<h4>RECORDING</h4>
+<pre class="code literal-block"><span></span><code><span class="n">qq</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">start</span><span class="w"> </span><span class="n">recording</span><span class="w"> </span><span class="n">commands</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">record</span><span class="w"></span>
+<span class="nv">@q</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">execute</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">recording</span><span class="w"></span>
+<span class="n">n</span><span class="nv">@q</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">execute</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">times</span><span class="w"></span>
+<span class="n">qqq</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">recorded</span><span class="w"> </span><span class="n">command</span><span class="w"></span>
+</code></pre>
+
+
+<h4>ABBREVIATION</h4>
+<pre class="code literal-block"><span></span><code><span class="p">:</span><span class="n">abbr</span> <span class="n">USA</span> <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span> <span class="o">-</span> <span class="k">to</span> <span class="k">set</span> <span class="n">the</span> <span class="n">abbreviation</span>
+<span class="k">type</span> <span class="n">USA</span> <span class="p">(</span><span class="k">in</span> <span class="k">insert</span> <span class="k">mode</span><span class="p">)</span> <span class="k">space</span> <span class="n">will</span> <span class="n">give</span> <span class="n">you</span> <span class="n">USA</span><span class="p">.</span>
+<span class="p">:</span><span class="n">unabbr</span> <span class="n">USA</span> <span class="k">to</span> <span class="n">unset</span> <span class="n">the</span> <span class="n">abbreaviation</span>
+</code></pre>
+
+
+<h4>SPELL CHECKING</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:set</span> <span class="nv">spell</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">on</span> <span class="nv">spell</span> <span class="nv">checking</span>
+<span class="nl">:set</span> <span class="nv">nospell</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">off</span> <span class="nv">spell</span> <span class="nv">checking</span>
+<span class="nv">z</span><span class="o">=</span> <span class="nv">to</span> <span class="nv">get</span> <span class="nv">the</span> <span class="nv">spell</span> <span class="nv">corrections</span>
+[<span class="nv">s</span> <span class="nv">to</span> <span class="nv">previous</span> <span class="nv">misspell</span>
+]<span class="nv">s</span> <span class="nv">to</span> <span class="k">next</span> <span class="nv">misspell</span>
+</code></pre>
+
+
+<h4>INDENTING XML</h4>
+<pre class="code literal-block"><span></span><code><span class="n">nJ</span> <span class="o">-</span> <span class="k">join</span> <span class="n">n</span> <span class="n">lines</span> <span class="k">with</span> <span class="n">one</span> <span class="k">space</span> <span class="k">in</span> <span class="k">between</span>
+<span class="n">ggVGJ</span> <span class="o">-</span> <span class="k">to</span> <span class="k">join</span> <span class="k">all</span> <span class="n">the</span> <span class="n">lines</span> <span class="k">with</span> <span class="n">one</span> <span class="k">space</span> <span class="k">in</span> <span class="k">between</span> 
+<span class="n">ggVg</span> <span class="p">:</span><span class="n">j</span> <span class="o">-</span> <span class="k">to</span> <span class="k">join</span> <span class="k">all</span> <span class="n">the</span> <span class="n">lines</span> <span class="k">with</span> <span class="n">one</span> <span class="k">space</span> <span class="k">in</span> <span class="k">between</span>  
+<span class="n">ggVg</span> <span class="p">:</span><span class="n">j</span><span class="o">!</span> <span class="o">-</span> <span class="k">to</span> <span class="k">join</span> <span class="k">as</span> <span class="n">it</span> <span class="k">is</span>
+<span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/&gt;&lt;/&gt;</span><span class="err">\</span><span class="n">r</span><span class="o">&lt;/</span><span class="k">g</span>
+<span class="p">:</span><span class="k">set</span> <span class="n">filetype</span><span class="o">=</span><span class="n">xml</span>
+<span class="n">gg</span><span class="o">=</span><span class="k">G</span> <span class="k">or</span> <span class="n">ggVG</span><span class="o">=</span> 
+</code></pre>
+
+
+<h4>INCREMENTING AND DECREMENTING</h4>
+<pre class="code literal-block"><span></span><code><span class="nl">:nput</span> <span class="o">=</span><span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>,<span class="mi">10</span><span class="ss">)</span> <span class="o">-</span> <span class="nv">puts</span> <span class="mi">1</span> <span class="nv">to</span> <span class="mi">10</span> <span class="nv">numbers</span> <span class="nv">in</span> <span class="nv">incrementing</span> <span class="nv">order</span> <span class="nv">at</span> <span class="nv">line</span> <span class="nv">n</span>
+<span class="nl">:nunmap</span> <span class="o">&lt;</span><span class="nv">C</span><span class="o">-</span><span class="nv">A</span><span class="o">&gt;</span> <span class="nv">will</span> <span class="nv">make</span> <span class="nv">Ctrl</span> <span class="nv">A</span> <span class="ss">(</span><span class="nv">in</span> <span class="nv">windows</span> <span class="nv">to</span> <span class="nv">non</span> <span class="nv">map</span> <span class="nv">from</span> <span class="nv">SELECT</span> <span class="nv">ALL</span><span class="ss">)</span>
+
+<span class="nv">qq</span> <span class="nv">start</span> <span class="nv">recording</span> <span class="nv">in</span> <span class="nv">q</span>
+<span class="nv">yy</span> <span class="nv">yank</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">line</span>
+<span class="nv">p</span> <span class="nv">paste</span> <span class="nv">to</span> <span class="k">next</span> <span class="nv">line</span>
+<span class="nv">Ctrl</span> <span class="nv">A</span> <span class="nv">to</span> <span class="nv">increment</span> <span class="ss">(</span><span class="nv">Ctrl</span> <span class="nv">x</span> <span class="nv">to</span> <span class="nv">decrement</span><span class="ss">)</span>
+<span class="nv">q</span> <span class="nv">to</span> <span class="nv">stop</span> <span class="nv">the</span> <span class="nv">recording</span>
+<span class="mi">12</span>@<span class="nv">q</span> <span class="nv">to</span> <span class="nv">repeat</span> <span class="nv">the</span> <span class="nv">recording</span>
+
+
+<span class="nl">:for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>,<span class="mi">10</span><span class="ss">)</span> <span class="o">|</span> <span class="nv">put</span> <span class="o">=</span> <span class="s1">'</span><span class="s">insert into</span><span class="s1">'</span>.<span class="nv">i</span> <span class="o">|</span> <span class="nv">endfor</span>
+<span class="nv">to</span> <span class="nv">add</span> <span class="nv">line</span> <span class="nv">numbers</span>
+<span class="nl">:g</span><span class="o">/^/</span><span class="nv">exe</span> <span class="s2">"</span><span class="s">:s/^</span><span class="s2">"</span>.<span class="nv">line</span><span class="ss">(</span><span class="s2">"</span><span class="s">.</span><span class="s2">"</span><span class="ss">)</span>.<span class="s2">"</span><span class="s"> . </span><span class="s2">"</span>
+<span class="nv">exe</span> <span class="nv">will</span> <span class="nv">execute</span> <span class="nv">strings</span> <span class="nv">in</span> <span class="s2">""</span>
+. <span class="nv">is</span> <span class="nv">used</span> <span class="nv">to</span> <span class="nv">concat</span><span class="s1">'</span>
+<span class="nv">line</span><span class="ss">(</span><span class="s2">"</span><span class="s">.</span><span class="s2">"</span><span class="ss">)</span> <span class="nv">gives</span> <span class="nv">the</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">current</span> <span class="nv">line</span>
+</code></pre>
+
+
+<h4>In insert mode, auto completion</h4>
+<pre class="code literal-block"><span></span><code><span class="nv">Ctrl</span><span class="o">-</span><span class="nv">n</span> <span class="nv">or</span> <span class="nv">Ctrl</span> <span class="nv">p</span> <span class="o">-</span> <span class="k">for</span> <span class="nv">matching</span> <span class="nv">words</span> <span class="nv">under</span> <span class="nv">cursor</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">to</span> <span class="nv">delete</span> <span class="nv">the</span> <span class="nv">word</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">r</span> <span class="nv">register</span> <span class="o">-</span> <span class="nv">to</span> <span class="nv">paste</span> <span class="nv">the</span> <span class="nv">register</span> <span class="nv">contents</span>
+<span class="nv">Ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">l</span> <span class="nv">or</span> <span class="nv">Ctrl</span><span class="o">-</span><span class="nv">w</span> <span class="nv">Ctrl</span><span class="o">-</span><span class="nv">l</span> <span class="nv">to</span> <span class="nv">match</span> <span class="nv">the</span> <span class="nv">lines</span> <span class="nv">under</span> <span class="nv">the</span> <span class="nv">cursor</span> 
+</code></pre>
+
+
+<h4>SORTING</h4>
+<pre class="code literal-block"><span></span><code><span class="p">:</span><span class="n">sort</span> <span class="k">to</span> <span class="n">sort</span> <span class="n">alphabetically</span>
+<span class="p">:</span><span class="n">sort</span><span class="o">!</span> <span class="k">to</span> <span class="n">reverse</span> <span class="n">the</span> <span class="k">order</span>
+<span class="p">:</span><span class="n">sort</span> <span class="n">n</span> <span class="k">to</span> <span class="n">sort</span> <span class="n">numbers</span>
+<span class="p">:</span><span class="n">sort</span> <span class="n">u</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">duplicates</span>
+</code></pre>
+
+
+<h4>Tracing</h4>
+<pre class="code literal-block"><span></span><code>`` <span class="nv">to</span> <span class="nv">go</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">last</span> <span class="nv">position</span>
+<span class="s1">'</span><span class="s">. to go back to the last modified line</span>
+`. <span class="nv">to</span> <span class="nv">go</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">last</span> <span class="nv">exact</span> <span class="nv">position</span>
+<span class="nv">C</span><span class="o">-</span><span class="nv">o</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">back</span> <span class="nv">to</span> <span class="nv">previous</span> <span class="nv">positions</span> <span class="ss">(</span><span class="nv">OLD</span><span class="ss">)</span>
+<span class="nv">C</span><span class="o">-</span><span class="nv">i</span> <span class="nv">to</span> <span class="nv">move</span> <span class="nv">front</span> <span class="nv">positions</span> <span class="k">if</span> <span class="nv">any</span> <span class="ss">(</span><span class="nv">new</span><span class="ss">)</span>
+<span class="nl">:jumps</span> <span class="nv">to</span> <span class="nv">know</span> <span class="nv">the</span> <span class="nv">movements</span>
+<span class="nl">:history</span> <span class="nv">to</span> <span class="nv">know</span> <span class="nv">the</span> <span class="nv">previous</span> <span class="nv">commands</span>
+</code></pre>
+
+
+<h4>Using back reference while substitue</h4>
+<pre class="code literal-block"><span></span><code><span class="err">\</span><span class="p">(</span><span class="o">^</span><span class="p">.</span><span class="o">*</span><span class="err">$\</span><span class="p">)</span> <span class="o">-</span> <span class="k">select</span> <span class="n">whole</span> <span class="n">line</span> 
+<span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/</span><span class="err">\</span><span class="p">(</span><span class="o">^</span><span class="p">.</span><span class="o">*</span><span class="err">$\</span><span class="p">)</span><span class="o">/</span><span class="n">blah</span> <span class="err">\</span><span class="mi">1</span> <span class="n">blah</span><span class="o">/</span><span class="k">g</span> <span class="o">-</span> <span class="o">*</span><span class="n">POWERFUL</span><span class="o">*</span> <span class="k">on</span> <span class="k">every</span> <span class="n">line</span> <span class="k">add</span> <span class="n">blah</span> <span class="k">at</span> <span class="k">first</span> <span class="k">and</span> <span class="k">last</span>
+<span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/</span><span class="err">\</span><span class="p">(</span><span class="n">raj</span><span class="err">\</span><span class="p">)</span><span class="err">\</span><span class="p">(</span><span class="n">shekar</span><span class="err">\</span><span class="p">)</span><span class="o">/</span><span class="err">\</span><span class="mi">2</span><span class="err">\</span><span class="mi">1</span><span class="o">/</span><span class="k">g</span> <span class="o">-</span> <span class="n">Swapping</span> <span class="mi">2</span> <span class="n">numbers</span> <span class="k">with</span> <span class="n">help</span> <span class="k">of</span> <span class="n">back</span> <span class="n">reference</span>
+</code></pre>
+
+
+<h4>Editing at column</h4>
+<pre class="code literal-block"><span></span><code><span class="n">Ctrl</span><span class="o">+</span><span class="n">q</span> <span class="o">-</span> <span class="k">column</span> <span class="k">mode</span>
+<span class="o">/</span><span class="err">\</span><span class="o">%</span><span class="mi">25</span><span class="k">c</span> <span class="o">-</span> <span class="k">select</span> <span class="mi">25</span><span class="n">th</span> <span class="k">column</span>
+<span class="o">/</span><span class="err">\</span><span class="o">%&gt;</span><span class="mi">25</span><span class="k">c</span> <span class="o">-</span> <span class="k">select</span> <span class="k">all</span> <span class="k">after</span> <span class="mi">25</span><span class="n">th</span> <span class="k">column</span>
 </code></pre>
 </div>
     </div>
