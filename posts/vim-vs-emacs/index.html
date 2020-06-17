@@ -402,13 +402,11 @@ navbar-dark bg-dark
 <td>M-x cua-mode to enable column editing (toggles)</td>
 </tr>
 <tr>
-<td>I <any-character> ESC - to start insert at start of the block</any-character>
-</td>
+<td>I <code>&lt;any-character&gt;</code> ESC - to start insert at start of the block</td>
 <td>C-RET to start the selection (toggles)</td>
 </tr>
 <tr>
-<td>A <any-character> ESC - to start insert at end of the block</any-character>
-</td>
+<td>A <code>&lt;any-character&gt;</code> ESC - to start insert at end of the block</td>
 <td>once mark is set traverse using C-n/p/f/b/a/e to select region</td>
 </tr>
 <tr>
@@ -505,11 +503,13 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td></td>
-<td><space> to replace</space></td>
+<td>
+<code>&lt;SPACE&gt;</code> to replace</td>
 </tr>
 <tr>
 <td></td>
-<td><del> to skip</del></td>
+<td>
+<code>&lt;DEL&gt;</code> to skip</td>
 </tr>
 <tr>
 <td></td>
@@ -553,7 +553,8 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td>yy or Vy - to copy current line (including current line)</td>
-<td><delete> to delete previous character</delete></td>
+<td>
+<code>&lt;Delete&gt;</code> to delete previous character</td>
 </tr>
 <tr>
 <td>ddp - swap current line and next line</td>
@@ -561,8 +562,7 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td></td>
-<td>M-<delete> to delete previous words</delete>
-</td>
+<td>M-<code>&lt;Delete&gt;</code> to delete previous words</td>
 </tr>
 <tr>
 <td></td>
@@ -605,8 +605,8 @@ navbar-dark bg-dark
 <td>M-x nxml-mode</td>
 </tr>
 <tr>
-<td>:%s/&gt;\s*&gt;\r&lt;/g</td>
-<td>M-x replace-regexp RET  &gt; *&lt; RET &gt;C-q C-j&lt; RET</td>
+<td><code>:%s/&gt;\s*&lt;/&gt;\r&lt;/g</code></td>
+<td><code>M-x replace-regexp RET  &gt; *&lt; RET &gt;C-q C-j&lt; RET</code></td>
 </tr>
 <tr>
 <td>ggVG=</td>
@@ -722,13 +722,11 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td>:x to write and exit</td>
-<td>C-x <right> go to next buffer</right>
-</td>
+<td>C-x <code>&lt;Right&gt;</code> go to next buffer</td>
 </tr>
 <tr>
 <td>:x! not to write and exit</td>
-<td>C-x <left> go to previous buffer</left>
-</td>
+<td>C-x <code>&lt;Left&gt;</code> go to previous buffer</td>
 </tr>
 <tr>
 <td>ZZ to save and exit in command mode (capital Z)</td>
@@ -736,8 +734,7 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td>:w filename to write the content on file</td>
-<td>C-x b <buffer name> to switch to that buffer</buffer>
-</td>
+<td>C-x b <code>&lt;buffer name&gt;</code> to switch to that buffer</td>
 </tr>
 <tr>
 <td>:w! filename2 to overwrite the existing filename to filename2</td>
@@ -937,8 +934,7 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td>V"ay - in visual mode, to register a</td>
-<td>M-x view-register <cr> a to view contents of register a</cr>
-</td>
+<td>M-x view-register <code>&lt;CR&gt;</code> a to view contents of register a</td>
 </tr>
 <tr>
 <td>V"Ay - append current selection to register a</td>
@@ -1055,8 +1051,7 @@ navbar-dark bg-dark
 <tr>
 <td>:g/<regexp>/d to delete matching lines</regexp>
 </td>
-<td>M-&lt; M-x delete-matching-lines RET <regexp> RET</regexp>
-</td>
+<td>M-&lt; M-x delete-matching-lines RET <code>&lt;regexp&gt;</code> RET</td>
 </tr>
 <tr>
 <td>To delete empty lines</td>
@@ -1076,8 +1071,7 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td></td>
-<td>M-&lt; M-x flush-lines RET <regexp> RET</regexp>
-</td>
+<td>M-&lt; M-x flush-lines RET <code>&lt;regexp&gt;</code>RET</td>
 </tr>
 <tr>
 <td>-------------------------------------------------------------------</td>
@@ -1099,8 +1093,7 @@ navbar-dark bg-dark
 </tr>
 <tr>
 <td></td>
-<td>M-&lt; M-x keep-lines RET <regexp> RET</regexp>
-</td>
+<td>M-&lt; M-x keep-lines RET <code>&lt;regexp&gt;</code> RET</td>
 </tr>
 <tr>
 <td>-------------------------------------------------------------------</td>
@@ -1113,8 +1106,7 @@ navbar-dark bg-dark
 <tr>
 <td>:g/<regexp>/y A to copy matching lines to register a</regexp>
 </td>
-<td>M-&lt; M-x keep-lines RET <regexp> RET</regexp>
-</td>
+<td>M-&lt; M-x keep-lines RET <code>&lt;regexp&gt;</code> RET</td>
 </tr>
 <tr>
 <td>"ap to paste matching lines</td>
@@ -1204,8 +1196,7 @@ navbar-dark bg-dark
 <tr>
 <td>:v/<regexp>/y A to copy non-matching lines to register a</regexp>
 </td>
-<td>M-&lt; M-x flush-lines RET <regexp> RET</regexp>
-</td>
+<td>M-&lt; M-x flush-lines RET <code>&lt;regexp&gt;</code> RET</td>
 </tr>
 <tr>
 <td></td>
