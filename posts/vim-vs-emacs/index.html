@@ -108,8 +108,8 @@ navbar-dark bg-dark
 <td>-----------------------------------------------------</td>
 </tr>
 <tr>
-<td>Navigation</td>
-<td>Navigation</td>
+<td><strong>Navigation</strong></td>
+<td><strong>Navigation</strong></td>
 </tr>
 <tr>
 <td>j - move one line down</td>
@@ -306,8 +306,8 @@ navbar-dark bg-dark
 <td>-----------------------------------------------------</td>
 </tr>
 <tr>
-<td>Undo</td>
-<td>Undo</td>
+<td><strong>Undo</strong></td>
+<td><strong>Undo</strong></td>
 </tr>
 <tr>
 <td>u - undo</td>
@@ -318,8 +318,8 @@ navbar-dark bg-dark
 <td>-----------------------------------------------------</td>
 </tr>
 <tr>
-<td>Search</td>
-<td>Search</td>
+<td><strong>Search</strong></td>
+<td><strong>Search</strong></td>
 </tr>
 <tr>
 <td>:set incsearch to set increment search</td>
@@ -390,8 +390,834 @@ navbar-dark bg-dark
 <td>C-s C-M-y to start searching the selection</td>
 </tr>
 <tr>
-<td>---------------------------------------------------</td>
-<td>-----------------------------------------------------</td>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Column editing</strong></td>
+<td><strong>Column editing</strong></td>
+</tr>
+<tr>
+<td>Ctrl+q or Ctrl+v to start column editing</td>
+<td>M-x cua-mode to enable column editing (toggles)</td>
+</tr>
+<tr>
+<td>I <any-character> ESC - to start insert at start of the block</any-character>
+</td>
+<td>C-RET to start the selection (toggles)</td>
+</tr>
+<tr>
+<td>A <any-character> ESC - to start insert at end of the block</any-character>
+</td>
+<td>once mark is set traverse using C-n/p/f/b/a/e to select region</td>
+</tr>
+<tr>
+<td>h/j/k/l to select the block.</td>
+<td>After selection</td>
+</tr>
+<tr>
+<td>d - cut the selected region</td>
+<td>C-x to cut the selected region</td>
+</tr>
+<tr>
+<td>y - yank the selected region</td>
+<td>C-c or M-w to copy the region</td>
+</tr>
+<tr>
+<td>gv - to select the previous visual selection.</td>
+<td>C-y or C-v to paste the region</td>
+</tr>
+<tr>
+<td></td>
+<td>Start typing having mouse at the start of the</td>
+</tr>
+<tr>
+<td></td>
+<td>region to insert at the start of region</td>
+</tr>
+<tr>
+<td></td>
+<td>Same goes to end of the region</td>
+</tr>
+<tr>
+<td></td>
+<td>Ret to move around the corners of the region.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Rectangles -</td>
+</tr>
+<tr>
+<td></td>
+<td>C-Space to set mark</td>
+</tr>
+<tr>
+<td></td>
+<td>move to any other region,</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r k to kill the region</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r y to paste that region</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r c to clear the region with spaces</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r t String to replace rectangle block with String</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r r a to copy the rectangle area to register a</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r i a to paste the rectangle area to register a</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Replace</strong></td>
+<td><strong>Replace</strong></td>
+</tr>
+<tr>
+<td>:%s/xyz/abc/g  - to replace xyz with abc</td>
+<td>M-x replace-string RET xyz RET abc RET to replace xyz with abc</td>
+</tr>
+<tr>
+<td>:%s/xyz/abc/gc - to replace xyz with abc with confirmation.</td>
+<td>M-x query-replace RET xyz RET abc RET to replace xyz with abc</td>
+</tr>
+<tr>
+<td></td>
+<td>by asking user</td>
+</tr>
+<tr>
+<td></td>
+<td><space> to replace</space></td>
+</tr>
+<tr>
+<td></td>
+<td><del> to skip</del></td>
+</tr>
+<tr>
+<td></td>
+<td>! to replace others</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>M-% to replace same as M-x query-replace</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Cut, Copy and Paste</strong></td>
+<td><strong>Cut, Copy and Paste</strong></td>
+</tr>
+<tr>
+<td>0D or ^D - cut from cursor to end of line (no newline)</td>
+<td>C-k cut from current cursor to end of the line (no newline)</td>
+</tr>
+<tr>
+<td>dd or Vd - cut current cursor to end of line (including current line)</td>
+<td>C-k C-k to cut the whole line (including new line)</td>
+</tr>
+<tr>
+<td>D - cut from current cursor to end of line (no newline)</td>
+<td>C-Shift-n C-w to cut the current line (including new line)</td>
+</tr>
+<tr>
+<td>x  - to delete character under cursor</td>
+<td>M-k cut from current cursor to end of sentence</td>
+</tr>
+<tr>
+<td>dw - delete next word</td>
+<td>C-d to delete next character</td>
+</tr>
+<tr>
+<td>yy or Vy - to copy current line (including current line)</td>
+<td><delete> to delete previous character</delete></td>
+</tr>
+<tr>
+<td>ddp - swap current line and next line</td>
+<td>M-d to delete next word</td>
+</tr>
+<tr>
+<td></td>
+<td>M-<delete> to delete previous words</delete>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>C-y paste</td>
+</tr>
+<tr>
+<td></td>
+<td>C-@ or C-Space mark set</td>
+</tr>
+<tr>
+<td></td>
+<td>C-w cut from mark set to cursor</td>
+</tr>
+<tr>
+<td></td>
+<td>M-w Copy from mark set to cursor</td>
+</tr>
+<tr>
+<td></td>
+<td>C-a C-Space C-n M-w to copy whole line  (including new line)</td>
+</tr>
+<tr>
+<td></td>
+<td>C-Shift-n M-w to copy the whole line (including new line)</td>
+</tr>
+<tr>
+<td></td>
+<td>C-a C-Space C-n C-w C-n C-y swap current line and next line</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Indenting XML</strong></td>
+<td><strong>Indenting XML</strong></td>
+</tr>
+<tr>
+<td>:set ft=xml</td>
+<td>M-x nxml-mode</td>
+</tr>
+<tr>
+<td>:%s/&gt;\s*&gt;\r&lt;/g</td>
+<td>M-x replace-regexp RET  &gt; *&lt; RET &gt;C-q C-j&lt; RET</td>
+</tr>
+<tr>
+<td>ggVG=</td>
+<td>C-M-\ to indent</td>
+</tr>
+<tr>
+<td>J - to join line with one space</td>
+<td>M-x replace-regexp RET C-q C-j RET Space RET join lines 1 space</td>
+</tr>
+<tr>
+<td>gJ - to join lines with no space</td>
+<td>M-x replace-regexp RET C-q C-j RET RET to join lines no space</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Dealing with case</strong></td>
+<td><strong>Dealing with case</strong></td>
+</tr>
+<tr>
+<td>gUU - to make whole current line to upper case</td>
+<td>C-a C-Space C-n C-x C-u - to make whole current line to uppercase</td>
+</tr>
+<tr>
+<td>guu - to make whole current line to lower case</td>
+<td>C-a C-Space C-n C-x C-l - to make whole current line to lowercase</td>
+</tr>
+<tr>
+<td>ggVGU - to make whole file to upper case</td>
+<td>M-&lt; C-Space M-&gt; C-x C-u - to make whole file to upper case</td>
+</tr>
+<tr>
+<td>ggVGu - to make whole file to lower case</td>
+<td>M-&lt; C-Space M-&gt; C-x C-l - to make whole file to lower case</td>
+</tr>
+<tr>
+<td>~ - to invert case.</td>
+<td>M-l to make next word lower case</td>
+</tr>
+<tr>
+<td></td>
+<td>M-u to make next word upper case</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Dealing with files &amp; Buffers</strong></td>
+<td><strong>Dealing with files &amp; Buffers</strong></td>
+</tr>
+<tr>
+<td>:e filename/vi filename to open file in vi</td>
+<td>C-x C-f to find the file to load into buffer</td>
+</tr>
+<tr>
+<td>:view filename to only view the file. restricted to write</td>
+<td>C-x C-q to only view the file. restricted to write (toggles)</td>
+</tr>
+<tr>
+<td>:set ro readonly mode</td>
+<td>C-x b <em>scratch</em> to edit new file</td>
+</tr>
+<tr>
+<td>:set ro! readonly mode</td>
+<td>C-x 2 to split horizontally same file</td>
+</tr>
+<tr>
+<td>:enew to edit new file</td>
+<td>C-x 3 to split vertically same file</td>
+</tr>
+<tr>
+<td>:sp to edit same file in H split</td>
+<td>C-x 4 C-f <em>scratch</em> to open file in H split</td>
+</tr>
+<tr>
+<td>:vsp to edit same file in V split</td>
+<td>C-x 4 b buffer to open buffer in V split</td>
+</tr>
+<tr>
+<td>:new to edit new file in H split</td>
+<td>C-x 3 C-x b buffer to open new buffer in V split</td>
+</tr>
+<tr>
+<td>:vnew to edit new file in V split</td>
+<td>C-x C-s to save buffer to file</td>
+</tr>
+<tr>
+<td>:tabe to edit new file in new tab</td>
+<td>C-x s to save some buffers</td>
+</tr>
+<tr>
+<td>:e! return to unmodified file</td>
+<td>C-c C-x to exit emacs</td>
+</tr>
+<tr>
+<td>:q to quit</td>
+<td>to maximize in vertical split</td>
+</tr>
+<tr>
+<td>:q! to quit without save</td>
+<td></td>
+</tr>
+<tr>
+<td>:wq to save and quit</td>
+<td></td>
+</tr>
+<tr>
+<td>:w to write and be there in program</td>
+<td>C-x C-b to list all buffers</td>
+</tr>
+<tr>
+<td>:x to write and exit</td>
+<td>C-x <right> go to next buffer</right>
+</td>
+</tr>
+<tr>
+<td>:x! not to write and exit</td>
+<td>C-x <left> go to previous buffer</left>
+</td>
+</tr>
+<tr>
+<td>ZZ to save and exit in command mode (capital Z)</td>
+<td>C-x k to kill current buffer</td>
+</tr>
+<tr>
+<td>:w filename to write the content on file</td>
+<td>C-x b <buffer name> to switch to that buffer</buffer>
+</td>
+</tr>
+<tr>
+<td>:w! filename2 to overwrite the existing filename to filename2</td>
+<td>C-x h select everything in buffer</td>
+</tr>
+<tr>
+<td></td>
+<td>M-x buffer-menu to list all buffers in separate window</td>
+</tr>
+<tr>
+<td>:ls to list all the buffers</td>
+<td>~ clear modified flag on that buffer</td>
+</tr>
+<tr>
+<td>:buffers to list all buffers</td>
+<td>k mark buffer for delete</td>
+</tr>
+<tr>
+<td>:buffer n to jump to buffer n</td>
+<td>x to delete all marked buffers</td>
+</tr>
+<tr>
+<td>:bp to move to previous buffer</td>
+<td>o to open the buffer in below split window</td>
+</tr>
+<tr>
+<td>:bn to move to next buffer</td>
+<td>Note - * says it is modified, % means it is read only file</td>
+</tr>
+<tr>
+<td>:bd to remove from buffer</td>
+<td>C-x 1 keep open only the current window</td>
+</tr>
+<tr>
+<td>:args *<em>/</em> to keep all files in the current directory in vim (SUPER)</td>
+<td>M-x make-frame same as above</td>
+</tr>
+<tr>
+<td>:rew to first file in args</td>
+<td>C-x o to switch between windows</td>
+</tr>
+<tr>
+<td>:te Buffers to show the menu buffer</td>
+<td>C-M-v to scroll the other window</td>
+</tr>
+<tr>
+<td>:badd add file to buffer</td>
+<td></td>
+</tr>
+<tr>
+<td>:b# to alternate buffer</td>
+<td>C-x } to increase the size of window horizontally</td>
+</tr>
+<tr>
+<td>Ctrl-^ is to switch alternate buffers</td>
+<td>C-x { to decrease the size of window vertically</td>
+</tr>
+<tr>
+<td>:tab ball to open all buffers in tabs</td>
+<td></td>
+</tr>
+<tr>
+<td>:ball to open all buffers Horizontally</td>
+<td></td>
+</tr>
+<tr>
+<td>:vert ball to open all buffers vertically</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl+w o keep open only the current window</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl+w w to switch between windows</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w-v to open a new window vertically</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w-n to open a new window horizontally</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w + increase the size of window</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w - decrease the size of window</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w = to equalize the size of each split window</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w _ to maximize in Horizontal split</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w h to move to the window left</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w j to move to the window below</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w k to move to the window above</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w l to move to the window right</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w H to move current window to far right</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w J to move current window to far Down</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w K to move current window to far Up</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w L to move current window to far left</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w T to move current window to new tab</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w n to open new file in H split</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w q to close</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl-w o to close all splits except current window (:only also do the same)</td>
+<td></td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>Registers</strong></td>
+<td><strong>Registers</strong></td>
+</tr>
+<tr>
+<td>Marking registers -</td>
+<td>Marking registers -</td>
+</tr>
+<tr>
+<td>ma - to mark position on a</td>
+<td>C-x r Space a - to mark position on a</td>
+</tr>
+<tr>
+<td>'a - to jump to position a</td>
+<td>C-x r j a - to jump to position on a</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Copying &amp; paste to registers -</td>
+<td>Copying &amp; paste to registers -</td>
+</tr>
+<tr>
+<td>"ayy - yank current line to register a</td>
+<td>C-x r s a yank selected region to register a</td>
+</tr>
+<tr>
+<td>"Ayy - append current line to register a</td>
+<td>C-x r i a insert selected region</td>
+</tr>
+<tr>
+<td>V"ay - in visual mode, to register a</td>
+<td>M-x view-register <cr> a to view contents of register a</cr>
+</td>
+</tr>
+<tr>
+<td>V"Ay - append current selection to register a</td>
+<td>M-x append-to-register to append selected region to register a</td>
+</tr>
+<tr>
+<td>"ap to paste content of register a</td>
+<td>M-x prepend-to-register to prepend selected region to register a</td>
+</tr>
+<tr>
+<td>:reg to view all registers</td>
+<td>C-x r r a to copy the rectangle area to register a</td>
+</tr>
+<tr>
+<td>:reg a to view contents in register a</td>
+<td>C-x r i a to paste the rectangle area to register a</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>To remove duplicate lines</strong></td>
+<td><strong>To remove duplicate lines</strong></td>
+</tr>
+<tr>
+<td>:sort u to remove duplicate lines</td>
+<td>Keep below functions in .emacs file</td>
+</tr>
+<tr>
+<td></td>
+<td>;; To remove duplicate lines</td>
+</tr>
+<tr>
+<td></td>
+<td>(defun uniquify-all-lines-region (start end)</td>
+</tr>
+<tr>
+<td></td>
+<td>"Find duplicate lines in region START to END keeping first occurrence."</td>
+</tr>
+<tr>
+<td></td>
+<td>(interactive "*r")</td>
+</tr>
+<tr>
+<td></td>
+<td>(save-excursion</td>
+</tr>
+<tr>
+<td></td>
+<td>(let ((end (copy-marker end)))</td>
+</tr>
+<tr>
+<td></td>
+<td>(while</td>
+</tr>
+<tr>
+<td></td>
+<td>(progn</td>
+</tr>
+<tr>
+<td></td>
+<td>(goto-char start)</td>
+</tr>
+<tr>
+<td></td>
+<td>(re-search-forward "^\(.<em>\)\n\(\(.</em>\n\)*\)\1\n" end t))</td>
+</tr>
+<tr>
+<td></td>
+<td>(replace-match "\1\n\2")))))</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>(defun remove-duplicate-lines ()</td>
+</tr>
+<tr>
+<td></td>
+<td>"Delete duplicate lines in buffer and keep first occurrence."</td>
+</tr>
+<tr>
+<td></td>
+<td>(interactive "*")</td>
+</tr>
+<tr>
+<td></td>
+<td>(uniquify-all-lines-region (point-min) (point-max)))</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>M-x remove-duplicate-lines</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>To delete matching lines</strong></td>
+<td><strong>To delete matching lines</strong></td>
+</tr>
+<tr>
+<td>:g/<regexp>/d to delete matching lines</regexp>
+</td>
+<td>M-&lt; M-x delete-matching-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td>To delete empty lines</td>
+<td>To delete empty lines</td>
+</tr>
+<tr>
+<td>:g/^\s*$/d</td>
+<td>M-&lt; M-x delete-matching-lines RET ^ *$ RET</td>
+</tr>
+<tr>
+<td></td>
+<td>Note: there is space between ^ and *</td>
+</tr>
+<tr>
+<td></td>
+<td>or</td>
+</tr>
+<tr>
+<td></td>
+<td>M-&lt; M-x flush-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>To delete non-matching lines</strong></td>
+<td><strong>To delete non-matching lines</strong></td>
+</tr>
+<tr>
+<td>:v/<regexp>/d to delete non-matching lines</regexp>
+</td>
+<td>M-&lt; M-x delete-non-matching-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>or</td>
+</tr>
+<tr>
+<td></td>
+<td>M-&lt; M-x keep-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>To copy matching lines</strong></td>
+<td><strong>To copy matching lines</strong></td>
+</tr>
+<tr>
+<td>:g/<regexp>/y A to copy matching lines to register a</regexp>
+</td>
+<td>M-&lt; M-x keep-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td>"ap to paste matching lines</td>
+<td>C-x h C-x r s a copy matching lines to register a</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r i a to paste matching lines</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>function to copy matching lines to buffer</td>
+</tr>
+<tr>
+<td></td>
+<td>reference - http://stackoverflow.com/questions/2289883/emacs-copy-matching-lines</td>
+</tr>
+<tr>
+<td></td>
+<td>;; To copy matching lines to another buffer <em>matched</em>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>(defun copy-lines-matching (re)</td>
+</tr>
+<tr>
+<td></td>
+<td>"find all lines matching the regexp RE in the current buffer</td>
+</tr>
+<tr>
+<td></td>
+<td>putting the matching lines in a buffer named <em>matching</em>"</td>
+</tr>
+<tr>
+<td></td>
+<td>(interactive "sRegexp to match: ")</td>
+</tr>
+<tr>
+<td></td>
+<td>(let ((result-buffer (get-buffer-create "<em>matching</em>")))</td>
+</tr>
+<tr>
+<td></td>
+<td>(with-current-buffer result-buffer (erase-buffer))</td>
+</tr>
+<tr>
+<td></td>
+<td>(save-match-data</td>
+</tr>
+<tr>
+<td></td>
+<td>(save-excursion</td>
+</tr>
+<tr>
+<td></td>
+<td>(goto-char (point-min))</td>
+</tr>
+<tr>
+<td></td>
+<td>(while (re-search-forward re nil t)</td>
+</tr>
+<tr>
+<td></td>
+<td>(princ (buffer-substring-no-properties (line-beginning-position) (line-beginning-position 2))</td>
+</tr>
+<tr>
+<td></td>
+<td>result-buffer))))</td>
+</tr>
+<tr>
+<td></td>
+<td>(pop-to-buffer result-buffer)))</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td><strong>To copy non-matching lines</strong></td>
+<td><strong>To copy non-matching lines</strong></td>
+</tr>
+<tr>
+<td>:v/<regexp>/y A to copy non-matching lines to register a</regexp>
+</td>
+<td>M-&lt; M-x flush-lines RET <regexp> RET</regexp>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x h C-x r s a copy matching lines to register a</td>
+</tr>
+<tr>
+<td></td>
+<td>C-x r i a to paste matching lines</td>
+</tr>
+<tr>
+<td>-------------------------------------------------------------------</td>
+<td>-------------------------------------------------------------------------------------</td>
 </tr>
 </tbody>
 </table>
