@@ -19,7 +19,7 @@ view filename to only view the file. restricted to write
 :tabe to edit new file in new tab
 :e! return to unmodified file
 ```
-
+<!-- TEASER_END -->
 ### HOW TO NAVIGATE IN FILE 
 ```
 gg to go to start of the program
