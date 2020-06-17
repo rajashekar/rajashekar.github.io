@@ -1,3 +1,4 @@
+<!--
 .. title: VIM vs EMACS
 .. slug: vim-vs-emacs
 .. date: 2020-06-17 09:56:46 UTC-07:00
@@ -6,12 +7,12 @@
 .. link: 
 .. description: 
 .. type: text
+-->
 
-+---------------------------------------------------+-----------------------------------------------------+
-| **VIM**                                           | **EMACS**                                           |
-+===================================================+=====================================================+
-| Navigation                                                                                              |       
-+---------------------------------------------------+-----------------------------------------------------+
+| VIM                                               |  EMACS                                              |
+|---------------------------------------------------|-----------------------------------------------------|
+|---------------------------------------------------|-----------------------------------------------------|
+| Navigation                                        | Navigation                                          |       
 | j - move one line down                            | C-n move one line down                              |
 | k - move one line up                              | C-p move one line up                                |
 | l - move cursor right                             | C-f move cursor right                               |
@@ -26,6 +27,7 @@
 | gg - go to beginning of the buffer                | M-< or ESC-< go to beginning of the buffer          |
 | G - go to end of the buffer                       | M-> or ESC-> go to end of the buffer                |
 |                                                   |                                                     |
+<!-- TEASER_END -->
 | 0 or ^ - go to start of line                      | C-a go to start of line                             |
 | $ - go to end of line                             | C-e go to end of line                               |
 |                                                   |                                                     |
@@ -58,13 +60,11 @@
 | :set textwidth=190                                | M-x column-number-mode                              |
 | (come to next line once 190 column is reached)    | C-x f to set column width                           |
 |                                                   | M-q to wrap the current paragraph with column width |
-+---------------------------------------------------+-----------------------------------------------------+
-| Undo                                                                                                    |
-+---------------------------------------------------+-----------------------------------------------------+
+|---------------------------------------------------|-----------------------------------------------------|
+| Undo                                              |  Undo                                               |
 | u - undo                                          | C-_ or C-x u or C-z to undo                         |
-+---------------------------------------------------+-----------------------------------------------------+
-| Search                                                                                                  | 
-+---------------------------------------------------+-----------------------------------------------------+
+|---------------------------------------------------|-----------------------------------------------------|
+| Search                                            |  Search                                             | 
 | :set incsearch to set increment search            | By default increment search                         |
 | :set ignorecase to set ignore case while search   | By default ignore case while search                 |
 |                                                   |                                                     |
@@ -82,4 +82,4 @@
 | # - to search word under cursor backward          | C-s C-w to search word under cursor forward         |
 |                                                   | C-r C-w to search word under cursor backward        |
 |                                                   | C-s C-M-y to start searching the selection          |
-+---------------------------------------------------+-----------------------------------------------------+
+|---------------------------------------------------|-----------------------------------------------------|
