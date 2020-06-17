@@ -1,6 +1,6 @@
 <!--
-.. title: Vi Cheatsheat
-.. slug: vi-cheatsheat
+.. title: Vi cheat sheet
+.. slug: vi-cheatsheet
 .. date: 2020-06-17 02:54:58 UTC-07:00
 .. tags: 
 .. category: 
