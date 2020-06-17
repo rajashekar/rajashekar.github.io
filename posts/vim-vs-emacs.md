@@ -85,8 +85,8 @@
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **Column editing**                                                          | **Column editing**                                                                            |
 | Ctrl+q or Ctrl+v to start column editing                                    | M-x cua-mode to enable column editing (toggles)                                               |
-| I <any-character> ESC - to start insert at start of the block               | C-RET to start the selection (toggles)                                                        |
-| A <any-character> ESC - to start insert at end of the block                 | once mark is set traverse using C-n/p/f/b/a/e to select region                                |
+| I `<any-character>` ESC - to start insert at start of the block               | C-RET to start the selection (toggles)                                                        |
+| A `<any-character>` ESC - to start insert at end of the block                 | once mark is set traverse using C-n/p/f/b/a/e to select region                                |
 | h/j/k/l to select the block.                                                | After selection                                                                               |
 | d - cut the selected region                                                 | C-x to cut the selected region                                                                |
 | y - yank the selected region                                                | C-c or M-w to copy the region                                                                 |
@@ -110,8 +110,8 @@
 | :%s/xyz/abc/g  - to replace xyz with abc                                    | M-x replace-string RET xyz RET abc RET to replace xyz with abc                                |
 | :%s/xyz/abc/gc - to replace xyz with abc with confirmation.                 | M-x query-replace RET xyz RET abc RET to replace xyz with abc                                 |
 |                                                                             | by asking user                                                                                |
-|                                                                             | <SPACE> to replace                                                                            |
-|                                                                             | <DEL> to skip                                                                                 |
+|                                                                             | `<SPACE>` to replace                                                                            |
+|                                                                             | `<DEL>` to skip                                                                                 |
 |                                                                             | ! to replace others                                                                           |
 |                                                                             |                                                                                               |
 |                                                                             | M-% to replace same as M-x query-replace                                                      |
@@ -122,9 +122,9 @@
 | D - cut from current cursor to end of line (no newline)                     | C-Shift-n C-w to cut the current line (including new line)                                    |
 | x  - to delete character under cursor                                       | M-k cut from current cursor to end of sentence                                                |
 | dw - delete next word                                                       | C-d to delete next character                                                                  |
-| yy or Vy - to copy current line (including current line)                    | <Delete> to delete previous character                                                         |
+| yy or Vy - to copy current line (including current line)                    | `<Delete>` to delete previous character                                                         |
 | ddp - swap current line and next line                                       | M-d to delete next word                                                                       |
-|                                                                             | M-<Delete> to delete previous words                                                           |
+|                                                                             | M-`<Delete>` to delete previous words                                                           |
 |                                                                             | C-y paste                                                                                     |
 |                                                                             | C-@ or C-Space mark set                                                                       |
 |                                                                             | C-w cut from mark set to cursor                                                               |
@@ -135,7 +135,7 @@
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **Indenting XML**                                                           | **Indenting XML**                                                                             |
 | :set ft=xml                                                                 | M-x nxml-mode                                                                                 |
-| :%s/>\s*</>\r</g                                                            | M-x replace-regexp RET  > *< RET >C-q C-j< RET                                                |
+| `:%s/>\s*</>\r</g`                                                            | `M-x replace-regexp RET  > *< RET >C-q C-j< RET`                                                |
 | ggVG=                                                                       | C-M-\ to indent                                                                               |
 | J - to join line with one space                                             | M-x replace-regexp RET C-q C-j RET Space RET join lines 1 space                               |
 | gJ - to join lines with no space                                            | M-x replace-regexp RET C-q C-j RET RET to join lines no space                                 |
@@ -164,10 +164,10 @@
 | :q! to quit without save                                                    |                                                                                               |
 | :wq to save and quit                                                        |                                                                                               |
 | :w to write and be there in program                                         | C-x C-b to list all buffers                                                                   |
-| :x to write and exit                                                        | C-x <Right> go to next buffer                                                                 |
-| :x! not to write and exit                                                   | C-x <Left> go to previous buffer                                                              |
+| :x to write and exit                                                        | C-x `<Right>` go to next buffer                                                                 |
+| :x! not to write and exit                                                   | C-x `<Left>` go to previous buffer                                                              |
 | ZZ to save and exit in command mode (capital Z)                             | C-x k to kill current buffer                                                                  |
-| :w filename to write the content on file                                    | C-x b <buffer name> to switch to that buffer                                                  |
+| :w filename to write the content on file                                    | C-x b `<buffer name>` to switch to that buffer                                                  |
 | :w! filename2 to overwrite the existing filename to filename2               | C-x h select everything in buffer                                                             |
 |                                                                             | M-x buffer-menu to list all buffers in separate window                                        |
 | :ls to list all the buffers                                                 | ~ clear modified flag on that buffer                                                          |
@@ -217,7 +217,7 @@
 | Copying & paste to registers -                                              | Copying & paste to registers -                                                                |
 | "ayy - yank current line to register a                                      | C-x r s a yank selected region to register a                                                  |
 | "Ayy - append current line to register a                                    | C-x r i a insert selected region                                                              |
-| V"ay - in visual mode, to register a                                        | M-x view-register <CR> a to view contents of register a                                       |
+| V"ay - in visual mode, to register a                                        | M-x view-register `<CR>` a to view contents of register a                                       |
 | V"Ay - append current selection to register a                               | M-x append-to-register to append selected region to register a                                |
 | "ap to paste content of register a                                          | M-x prepend-to-register to prepend selected region to register a                              |
 | :reg to view all registers                                                  | C-x r r a to copy the rectangle area to register a                                            |
@@ -246,20 +246,20 @@
 |                                                                             | M-x remove-duplicate-lines                                                                    |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **To delete matching lines**                                                | **To delete matching lines**                                                                  |
-| :g/<regexp>/d to delete matching lines                                      | M-< M-x delete-matching-lines RET <regexp> RET                                                |
+| :g/<regexp>/d to delete matching lines                                      | M-< M-x delete-matching-lines RET `<regexp>` RET                                                |
 | To delete empty lines                                                       | To delete empty lines                                                                         |
 | :g/^\s*$/d                                                                  | M-< M-x delete-matching-lines RET ^ *$ RET                                                    |
 |                                                                             | Note: there is space between ^ and *                                                          |
 |                                                                             | or                                                                                            |
-|                                                                             | M-< M-x flush-lines RET <regexp> RET                                                          |
+|                                                                             | M-< M-x flush-lines RET `<regexp> `RET                                                          |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **To delete non-matching lines**                                            | **To delete non-matching lines**                                                              |
 | :v/<regexp>/d to delete non-matching lines                                  | M-< M-x delete-non-matching-lines RET <regexp> RET                                            |
 |                                                                             | or                                                                                            |
-|                                                                             | M-< M-x keep-lines RET <regexp> RET                                                           |
+|                                                                             | M-< M-x keep-lines RET `<regexp>` RET                                                           |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **To copy matching lines**                                                  | **To copy matching lines**                                                                    |
-| :g/<regexp>/y A to copy matching lines to register a                        | M-< M-x keep-lines RET <regexp> RET                                                           |
+| :g/<regexp>/y A to copy matching lines to register a                        | M-< M-x keep-lines RET `<regexp>` RET                                                           |
 | "ap to paste matching lines                                                 | C-x h C-x r s a copy matching lines to register a                                             |
 |                                                                             | C-x r i a to paste matching lines                                                             |
 |                                                                             |                                                                                               |
@@ -281,7 +281,7 @@
 |                                                                             | (pop-to-buffer result-buffer)))                                                               |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **To copy non-matching lines**                                              | **To copy non-matching lines**                                                                |
-| :v/<regexp>/y A to copy non-matching lines to register a                    | M-< M-x flush-lines RET <regexp> RET                                                          |
+| :v/<regexp>/y A to copy non-matching lines to register a                    | M-< M-x flush-lines RET `<regexp>` RET                                                          |
 |                                                                             | C-x h C-x r s a copy matching lines to register a                                             |
 |                                                                             | C-x r i a to paste matching lines                                                             |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
