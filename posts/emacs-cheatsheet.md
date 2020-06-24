@@ -9,20 +9,44 @@
 .. type: text
 -->
 
+### Extended commands
+```
+M-x followed by long command 
+C-x followed by letter or Ctrl & letter
+C-c followed by letter or Ctrl & letter
+```
+
 ### Dealing with files
 ```
 C-x C-f to find the file to load into buffer
 C-x C-s to save buffer to file
 C-x s to save some buffers
 C-c C-x to exit emacs
-```
 
-### Extended commands
-```
-C-x followed by letter
-M-x followed by long command 
+C-x r m to bookmark the current file
+C-x r b to find the bookmark 
+C-x r l to list all bookmarks
 ```
 <!-- TEASER_END -->
+
+## Extending above with with Helm mode 
+```
+(require 'helm-fuzzy-find)
+(require 'helm-config)
+(require 'helm-ls-git)
+;; setting helm M-x
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x C-d") 'helm-browse-project)
+(global-set-key (kbd "C-x f") 'helm-multi-files)
+(global-set-key (kbd "C-x C-r") 'helm-recentf)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-set-key (kbd "C-c h o") 'helm-occur)
+(global-set-key (kbd "C-c h g") 'helm-google-suggest)
+(helm-mode 1)
+```
 
 ### Navigation
 ```
