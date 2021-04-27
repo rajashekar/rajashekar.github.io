@@ -1,6 +1,6 @@
 <!--
-.. title: Regex cheatsheet
-.. slug: regex-cheatsheet
+.. title: Regex
+.. slug: regex
 .. date: 2020-06-17 05:41:20 UTC-07:00
 .. tags: 
 .. category: 
@@ -9,7 +9,9 @@
 .. type: text
 -->
 
-### Regex Cheatsheet
+### Regex
+
+Below are few commands and examples of Regular expressions.
 
 <img src="/images/regex_standards.png"/>
 

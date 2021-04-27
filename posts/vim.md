@@ -1,6 +1,6 @@
 <!--
-.. title: Vi cheatsheet
-.. slug: vi-cheatsheet
+.. title: Vim
+.. slug: vim
 .. date: 2020-06-17 02:54:58 UTC-07:00
 .. tags: 
 .. category: 
@@ -9,8 +9,10 @@
 .. type: text
 -->
 
+Below are few commands to get familiarize with Vim Editor
+
 ### HOW TO OPEN FILE THRU VI EDITOR
-```
+```bash
 e filename/vi filename to open file in vi
 view filename to only view the file. restricted to write
 :enew to edit new file
@@ -21,7 +23,7 @@ view filename to only view the file. restricted to write
 ```
 <!-- TEASER_END -->
 ### HOW TO NAVIGATE IN FILE 
-```
+```bash
 gg to go to start of the program
 G to go to the end of the program
 
@@ -50,7 +52,7 @@ gT to move to previous tab
 ```
 
 ### HOW TO SEARCH WORD IN FILE
-```
+```bash
 /word to find the word
 /\<word\> to find exact word, not worda or worddd
 * to find the exact word under the cursor forward
@@ -93,7 +95,7 @@ ngg to go that line n
 ```
 
 ### HOW TO SAVE AND QUIT FILE
-```
+```bash
 :q to quit
 :q! to quit without save
 :wq to save and quit
@@ -106,7 +108,7 @@ ZZ to save and exit in command mode (capital Z)
 ```
 
 ### HOW TO CUT,COPY,PASTE 
-```
+```bash
 dd to delete
 dw to delete the word under cursor
 D to cut the line upto end of the line
@@ -151,7 +153,7 @@ nGdd to delete the line n
 ```
 
 ### HOW TO INSERT TEXT IN FILE
-```
+```bash
 a to insert mode
 i to insert mode
 A to insert at end of line
@@ -163,13 +165,13 @@ O to insert in above line of cursor
 ```
 
 ### HOW TO UNDO
-```
+```bash
 u to Undo
 Ctrl+r to redo 
 ```
 
 ### HOW TO MOVE OUT OF VI TO SHELL TO RUN UNIX COMMAND
-```
+```bash
 :shell goto shell
 :sh goto shell
 exit or Ctrl+d to return back to vi editor
@@ -179,7 +181,7 @@ RETURN to come back to vi editor
 ```
 
 ### HOW TO REPLACE TEXT
-```
+```bash
 :%s/old/new/g  to replace old word/letter with new word without confirmation
 :%s/old/new/gc to replace old with new with confirmation
 :%s/\<raj\>/she/g to replace only "raj" with "she",,not rajashekar or raja 
@@ -203,7 +205,7 @@ g -- globally
 ```
 
 ### SET OPTIONS
-```
+```bash
 set options
 :set ai for auto indent
 :set si for smart indent
@@ -226,12 +228,12 @@ set options
 ```
 
 ### ESC
-```
+```bash
 ctrl+[ is also called as escape mode
 ```
 
 ### HOW TO SPLIT SCREEN
-```
+```bash
 :split anotherfile // horizontally spliting 
 :sp filename // horizontally spliting
 :vsplit anotherfile // vertically spliting
@@ -265,13 +267,13 @@ ctrl-w o to close all splits except current window (:only also do the same)
 ```
 
 ### TO KNOW THE STATUS OF THE PROGRAM
-```
+```bash
 ctrl-G 
 :f 
 ```
 
 ### TO MARK SOME POSITION IN PROGRAM AND COMING TO BACK TO THAT PROGRAM (MARKERS)
-```
+```bash
 mp where the position is marked as p (it can be anything from a-z) 
 to return back to that position p we type 'p
 
@@ -281,17 +283,17 @@ to return back to that position p we type 'p
 ```
 
 ### SETTING KEYS FOR SPECIFIC OPTIONS
-```
+```bash
 nnormap <key> :set option<cr>
 ```
 
 ### TO CLEAN UP CONTROL M'S IN THE FILE 
-```
+```bash
 :%s/<control v><control m>/ /g
 ```
 
 ### LOWER CASE TO UPPER CASE
-```
+```bash
 ~    to switch case of charater under the cursor
 g~~ to switch case of whole line
 gUU - To make the whole line upper case
@@ -301,7 +303,7 @@ u   - In visual mode make selected to lower case
 ```
 
 ### INDENTING A FILE
-```
+```bash
 == makes the current line indent
 In visual mode select the whole part and then == to indent the selected part
 good settings
@@ -311,7 +313,7 @@ good settings
 ```
 
 ### GLOBAL COMMAND
-```
+```bash
 :g/pattern - list all the lines having pattern
 Ctrl+x Ctrl+l gives list of lines to insert
 :g/pattern/d - delete all the lines having pattern
@@ -345,7 +347,7 @@ Ctrl+x Ctrl+l gives list of lines to insert
 ```
 
 ### MORE USEFUL COMMANDS
-```
+```bash
 :Ex opens explorer in seperate buffer 
 :Sex open explorer in split
 :Vex open explorer in vertical split
@@ -361,7 +363,7 @@ ggg?G to rot13 the whole file
 ```
 
 ### FUNCTIONS
-```
+```bash
 use TABS to complete words 
 function! Tab_Or_Complete()
   if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
@@ -373,8 +375,9 @@ endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 :set dictionary="/usr/dict/words"
 ```
+
 ### MODES
-```
+```bash
 Esc - escape mode
 i/I - Insert mode
 a - insert after cursor position
@@ -400,7 +403,7 @@ c - to change the value in selection
 ```
 
 ### DIFFERENCE 
-```
+```bash
 :vsp filename2 - (in filename1)
 :windo diffthis - (find diff between filename1 and filename2)
 do - to obtain the difference for the current line from diff file
@@ -408,7 +411,7 @@ dp - to put the difference for the current line to diff file
 ```
 
 ### MAPPING
-```
+```bash
 map <F11> : set hls! <Bar> set hls? <CR>
 <CR> : Carriage Return
 <ESC> : Escape
@@ -419,13 +422,13 @@ map <F11> : set hls! <Bar> set hls? <CR>
 ```
 
 ### ENCRYPTION 
-```
+```bash
 :X to set password for file (powerful)
 :set key= to remove password for file
 ```
 
 ### REGISTERS
-```
+```bash
 :reg to show the registers
 "ay yank current line to register a [26 registers]
 "ap paste buffer a
@@ -436,7 +439,7 @@ Ctrl-r register - to paste the contents of the register in insert mode
 ```
 
 ### BUFFERS
-```
+```bash
 :ls to list all the buffers 
 :bp to move to previous buffer
 :bn to move to next buffer
@@ -455,7 +458,7 @@ Ctrl-^ is to switch alternate buffers
 ```
 
 ### RECORDING
-```
+```bash
 qq is to start recording commands - use (a-z) to record
 @q to execute command in recording
 n@q to execute command n times
@@ -463,14 +466,14 @@ qqq to remove recorded command
 ```
 
 ### ABBREVIATION
-```
+```bash
 :abbr USA United States of America - to set the abbreviation
 type USA (in insert mode) space will give you USA.
 :unabbr USA to unset the abbreaviation
 ```
 
 ### SPELL CHECKING
-```
+```bash
 :set spell - to on spell checking
 :set nospell - to off spell checking
 z= to get the spell corrections
@@ -479,7 +482,7 @@ z= to get the spell corrections
 ```
 
 ### INDENTING XML
-```
+```bash
 nJ - join n lines with one space in between
 ggVGJ - to join all the lines with one space in between 
 ggVg :j - to join all the lines with one space in between  
@@ -490,7 +493,7 @@ gg=G or ggVG=
 ```
 
 ### INCREMENTING AND DECREMENTING 
-```
+```bash
 :nput =range(1,10) - puts 1 to 10 numbers in incrementing order at line n
 :nunmap <C-A> will make Ctrl A (in windows to non map from SELECT ALL)
 
@@ -511,7 +514,7 @@ line(".") gives the number of current line
 ```
 
 ### In insert mode, auto completion
-```
+```bash
 Ctrl-n or Ctrl p - for matching words under cursor
 Ctrl-w to delete the word under the cursor
 Ctrl-r register - to paste the register contents
@@ -519,7 +522,7 @@ Ctrl-w l or Ctrl-w Ctrl-l to match the lines under the cursor
 ```
 
 ### SORTING
-```
+```bash
 :sort to sort alphabetically
 :sort! to reverse the order
 :sort n to sort numbers
@@ -527,7 +530,7 @@ Ctrl-w l or Ctrl-w Ctrl-l to match the lines under the cursor
 ```
 
 ### Tracing
-```
+```bash
 `` to go back to last position
 '. to go back to the last modified line
 `. to go back to the last exact position
@@ -538,14 +541,14 @@ C-i to move front positions if any (new)
 ```
 
 ### Using back reference while substitue
-```
+```bash
 \(^.*$\) - select whole line 
 :%s/\(^.*$\)/blah \1 blah/g - *POWERFUL* on every line add blah at first and last
 :%s/\(raj\)\(shekar\)/\2\1/g - Swapping 2 numbers with help of back reference
 ```
 
 ### Editing at column
-```
+```bash
 Ctrl+q - column mode
 /\%25c - select 25th column
 /\%>25c - select all after 25th column

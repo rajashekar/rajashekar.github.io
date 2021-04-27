@@ -1,6 +1,6 @@
 <!--
-.. title: Emacs cheatsheet
-.. slug: emacs-cheatsheet
+.. title: Emacs 
+.. slug: emacs
 .. date: 2020-06-17 11:21:11 UTC-07:00
 .. tags: 
 .. category: 
@@ -9,15 +9,17 @@
 .. type: text
 -->
 
+Below are few commands to get familiarize with Emacs Editor
+
 ### Extended commands
-```
+```bash
 M-x followed by long command 
 C-x followed by letter or Ctrl & letter
 C-c followed by letter or Ctrl & letter
 ```
 
 ### Dealing with files
-```
+```bash
 C-x C-f to find the file to load into buffer
 C-x C-s to save buffer to file
 C-x s to save some buffers
@@ -30,7 +32,7 @@ C-x r l to list all bookmarks
 <!-- TEASER_END -->
 
 ## Extending above with with Helm mode 
-```
+```bash
 (require 'helm-fuzzy-find)
 (require 'helm-config)
 (require 'helm-ls-git)
@@ -49,7 +51,7 @@ C-x r l to list all bookmarks
 ```
 
 ### Navigation
-```
+```bash
 C-a Start of the line
 C-e end of the line
 C-f forward one cursor
@@ -70,14 +72,14 @@ C-u 0 C-l to move the current line to the top of the buffer
 ```
 
 ### Undo
-```
+```bash
 C-_ to undo
 C-x u to undo
 C-z to undo
 ```
 
 ### Search
-```
+```bash
 C-s Increment search forward
 C-r Increment search backward
 C-M-s regex increment search forward
@@ -85,7 +87,7 @@ C-M-r regex increment search backward
 ```
 
 ### Replace
-```
+```bash
 M-x replace-string RET xyz RET abc RET to replace xyz with abc
 M-x query-replace RET xyz RET abc RET to replace xyz with abc
 by asking user
@@ -97,7 +99,7 @@ M-% to replace same as M-x query-replace
 ```
 
 ### Cut, Copy & Paste
-```
+```bash
 C-k cut from current cursor to end of the line (no newline)
 M-k cut from current cursor to end of sentence
 C-d to delete next character
@@ -113,7 +115,7 @@ C-k C-k to cut the whole line (including new line)
 ```
 
 ### Buffers
-```
+```bash
 C-x k to kill current buffer
 C-x <Right> go to next buffer
 C-x <Left> go to previous buffer
@@ -127,7 +129,7 @@ C-x h select everything in buffer
 ```
 
 ### Capitalize
-```
+```bash
 M-u to make upper case
 M-l to make lower case
 C-x C-u to make region to upper case
@@ -135,7 +137,7 @@ C-x C-l to make region to lower case
 ```
 
 ### Windows
-```
+```bash
 C-x 1 kill all other windows
 C-x 2 to split horizontally
 C-x 3 to split vertically
@@ -147,20 +149,20 @@ C-M-v to scroll the other window
 ```
 
 ### Modes
-```
+```bash
 M-x <mode-name>  to change mode
 Ex: M-x auto-fill-mode to change to auto fill mode
 C-u 40 C-x f to change the line width to 40
 ```
 
 ### In Cygwin After starting X server
-```
+```bash
 emacs - to start GNU emacs - Best use GNU Emacs
 Display= xemacs - to start xemacs - May have older versions
 ```
 
 ### Column Editing 
-```
+```bash
 M-x cua-mode to enable column editing (toggles)
 C-RET to start the selection (toggles)
 once mark is set traverse using C-n/p/f/b/a/e to select region
@@ -190,14 +192,14 @@ Ex:
 ```
 
 ### Indenting XML
-```
+```bash
 M-x nxml-mode
 M-x replace-regexp RET  > *< RET >C-q C-j< RET 
 C-M-\ to indent
 ```
 
 ### Macros
-```
+```bash
 C-x (  to start recording macro
 C-x ) to end recording macro
 C-x e to execute last macro
