@@ -4,7 +4,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Notes">
+<meta name="description" content="Rajashekar Notes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rajashekar Chintalapati Blog</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="canonical" href="https://rajashekar.github.io/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="prefetch" href="posts/emacs/" type="text/html">
+<link rel="prefetch" href="posts/tmux/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -59,7 +59,41 @@ bg-dark
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/emacs/" class="u-url">Emacs </a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/tmux/" class="u-url">Tmux</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Rajashekar Chintalapati
+            </span></p>
+            <p class="dateline">
+            <a href="posts/tmux/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-04-27T13:16:41-07:00" itemprop="datePublished" title="2021-04-27 13:16">2021-04-27 13:16</time></a>
+            </p>
+                <p class="commentline">            <a href="posts/tmux/#disqus_thread" data-disqus-identifier="cache/posts/tmux.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<h4>Tmux Plugin Manager</h4>
+<pre class="code literal-block"><span></span><code>git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+</code></pre>
+
+<p>Put this at the bottom of ~/.tmux.conf ($XDG_CONFIG_HOME/tmux/tmux.conf works too):  </p>
+<pre class="code literal-block"><span></span><code><span class="c1"># List of plugins</span>
+<span class="nb">set</span> -g @plugin <span class="s1">'tmux-plugins/tpm'</span>
+<span class="nb">set</span> -g @plugin <span class="s1">'tmux-plugins/tmux-sensible'</span>
+
+<span class="c1"># Other examples:</span>
+<span class="c1"># set -g @plugin 'github_username/plugin_name'</span>
+<span class="c1"># set -g @plugin 'git@github.com:user/plugin'</span>
+<span class="c1"># set -g @plugin 'git@bitbucket.com:user/plugin'</span>
+</code></pre>
+
+<p class="more"><a href="posts/tmux/">Read more…</a></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/emacs/" class="u-url">Emacs </a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Rajashekar Chintalapati

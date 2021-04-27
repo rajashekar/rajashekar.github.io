@@ -14,12 +14,16 @@
   <lastmod>2020-11-19T18:43:00Z</lastmod>
  </url>
  <url>
+  <loc>https://rajashekar.github.io/archive/2021/</loc>
+  <lastmod>2021-04-27T20:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://rajashekar.github.io/archive/archive.html</loc>
-  <lastmod>2021-04-27T19:43:00Z</lastmod>
+  <lastmod>2021-04-27T20:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://rajashekar.github.io/categories.html</loc>
-  <lastmod>2021-04-27T19:43:00Z</lastmod>
+  <lastmod>2021-04-27T20:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://rajashekar.github.io/categories/</loc>
@@ -39,7 +43,7 @@
  </url>
  <url>
   <loc>https://rajashekar.github.io/listings/hello.py.html</loc>
-  <lastmod>2021-04-27T19:43:00Z</lastmod>
+  <lastmod>2021-04-27T20:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://rajashekar.github.io/pages/about-nikola/</loc>
@@ -108,6 +112,10 @@
  <url>
   <loc>https://rajashekar.github.io/posts/regex/</loc>
   <lastmod>2021-04-27T20:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://rajashekar.github.io/posts/tmux/</loc>
+  <lastmod>2021-04-27T20:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://rajashekar.github.io/posts/vim/</loc>
