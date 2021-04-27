@@ -8,6 +8,7 @@
 .. description: 
 .. type: text
 .. nocomments: True
+.. status: private
 -->
 <img width="20%" src="/images/Profile_pic_round.png"/><br>
 Hi, I'm Rajashekar, a Full Stack Software Engineer interested in developing software applications.
