@@ -14,7 +14,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="canonical" href="https://rajashekar.github.io/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="prefetch" href="posts/emacs-cheatsheet/" type="text/html">
+<link rel="prefetch" href="posts/emacs/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -22,10 +22,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://rajashekar.github.io/">
+        <a class="navbar-brand" href=".">
 
             <span id="blog-title">Rajashekar Chintalapati Blog</span>
         </a>
@@ -58,150 +59,61 @@ navbar-dark bg-dark
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/emacs-cheatsheet/" class="u-url">Emacs cheatsheet</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/emacs/" class="u-url">Emacs </a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Rajashekar Chintalapati
             </span></p>
             <p class="dateline">
-            <a href="posts/emacs-cheatsheet/" rel="bookmark">
+            <a href="posts/emacs/" rel="bookmark">
             <time class="published dt-published" datetime="2020-06-17T11:21:11-07:00" itemprop="datePublished" title="2020-06-17 11:21">2020-06-17 11:21</time></a>
             </p>
-                <p class="commentline">            <a href="posts/emacs-cheatsheet/#disqus_thread" data-disqus-identifier="cache/posts/emacs-cheatsheet.html">Comments</a>
+                <p class="commentline">            <a href="posts/emacs/#disqus_thread" data-disqus-identifier="cache/posts/emacs.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="p-summary entry-summary">
     <div>
+<p>Below are few commands to get familiarize with Emacs Editor</p>
 <h4>Extended commands</h4>
-<pre class="code literal-block"><span></span><code><span class="n">M</span><span class="o">-</span><span class="n">x</span> <span class="n">followed</span> <span class="k">by</span> <span class="n">long</span> <span class="n">command</span> 
-<span class="k">C</span><span class="o">-</span><span class="n">x</span> <span class="n">followed</span> <span class="k">by</span> <span class="n">letter</span> <span class="k">or</span> <span class="n">Ctrl</span> <span class="o">&amp;</span> <span class="n">letter</span>
-<span class="k">C</span><span class="o">-</span><span class="k">c</span> <span class="n">followed</span> <span class="k">by</span> <span class="n">letter</span> <span class="k">or</span> <span class="n">Ctrl</span> <span class="o">&amp;</span> <span class="n">letter</span>
+<pre class="code literal-block"><span></span><code>M-x followed by long <span class="nb">command</span> 
+C-x followed by letter or Ctrl <span class="p">&amp;</span> letter
+C-c followed by letter or Ctrl <span class="p">&amp;</span> letter
 </code></pre>
-
 
 <h4>Dealing with files</h4>
-<pre class="code literal-block"><span></span><code><span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">C</span><span class="o">-</span><span class="nv">f</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">file</span> <span class="nv">to</span> <span class="nv">load</span> <span class="nv">into</span> <span class="nv">buffer</span>
-<span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">C</span><span class="o">-</span><span class="nv">s</span> <span class="nv">to</span> <span class="nv">save</span> <span class="nv">buffer</span> <span class="nv">to</span> <span class="nv">file</span>
-<span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">s</span> <span class="nv">to</span> <span class="nv">save</span> <span class="nv">some</span> <span class="nv">buffers</span>
-<span class="nv">C</span><span class="o">-</span><span class="nv">c</span> <span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">to</span> <span class="k">exit</span> <span class="nv">emacs</span>
+<pre class="code literal-block"><span></span><code>C-x C-f to find the file to load into buffer
+C-x C-s to save buffer to file
+C-x s to save some buffers
+C-c C-x to <span class="nb">exit</span> emacs
 
-<span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">r</span> <span class="nv">m</span> <span class="nv">to</span> <span class="nv">bookmark</span> <span class="nv">the</span> <span class="nv">current</span> <span class="nv">file</span>
-<span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">r</span> <span class="nv">b</span> <span class="nv">to</span> <span class="nv">find</span> <span class="nv">the</span> <span class="nv">bookmark</span> 
-<span class="nv">C</span><span class="o">-</span><span class="nv">x</span> <span class="nv">r</span> <span class="nv">l</span> <span class="nv">to</span> <span class="nv">list</span> <span class="nv">all</span> <span class="nv">bookmarks</span>
+C-x r m to bookmark the current file
+C-x r b to find the bookmark 
+C-x r l to list all bookmarks
 </code></pre>
 
-
-<p class="more"><a href="posts/emacs-cheatsheet/">Read more…</a></p>
+<p class="more"><a href="posts/emacs/">Read more…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/vim-vs-emacs/" class="u-url">VIM vs EMACS</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/regex/" class="u-url">Regex</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Rajashekar Chintalapati
             </span></p>
             <p class="dateline">
-            <a href="posts/vim-vs-emacs/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-06-17T09:56:46-07:00" itemprop="datePublished" title="2020-06-17 09:56">2020-06-17 09:56</time></a>
-            </p>
-                <p class="commentline">            <a href="posts/vim-vs-emacs/#disqus_thread" data-disqus-identifier="cache/posts/vim-vs-emacs.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <table>
-<thead><tr>
-<th>VIM</th>
-<th>EMACS</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>---------------------------------------------------</td>
-<td>-----------------------------------------------------</td>
-</tr>
-<tr>
-<td><strong>Navigation</strong></td>
-<td><strong>Navigation</strong></td>
-</tr>
-<tr>
-<td>j - move one line down</td>
-<td>C-n move one line down</td>
-</tr>
-<tr>
-<td>k - move one line up</td>
-<td>C-p move one line up</td>
-</tr>
-<tr>
-<td>l - move cursor right</td>
-<td>C-f move cursor right</td>
-</tr>
-<tr>
-<td>h - move cursor left</td>
-<td>C-n move cursor left</td>
-</tr>
-<tr>
-<td>w - move cursor one word forward</td>
-<td>M-f move cursor one word forward</td>
-</tr>
-<tr>
-<td>b - move cursor one word backward</td>
-<td>M-b move cursor one word backward</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>H moves cursor to HOME of the window</td>
-<td>M-0 M-r moves cursor to HOME of the window</td>
-</tr>
-<tr>
-<td>M moves cursor to MIDDLE of the window</td>
-<td>M-m M-r moves cursor to MIDDLE of the window</td>
-</tr>
-<tr>
-<td>L moves cursor to BOTTOM of the window</td>
-<td>M-- M-r moves cursor to BOTTOM of the window</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>gg - go to beginning of the buffer</td>
-<td>M-&lt; or ESC-&lt; go to beginning of the buffer</td>
-</tr>
-<tr>
-<td>G - go to end of the buffer</td>
-<td>M-&gt; or ESC-&gt; go to end of the buffer</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr><td><p class="more"><a href="posts/vim-vs-emacs/">Read more…</a></p></td></tr>
-</tbody>
-</table>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/regex-cheatsheet/" class="u-url">Regex cheatsheet</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Rajashekar Chintalapati
-            </span></p>
-            <p class="dateline">
-            <a href="posts/regex-cheatsheet/" rel="bookmark">
+            <a href="posts/regex/" rel="bookmark">
             <time class="published dt-published" datetime="2020-06-17T05:41:20-07:00" itemprop="datePublished" title="2020-06-17 05:41">2020-06-17 05:41</time></a>
             </p>
-                <p class="commentline">            <a href="posts/regex-cheatsheet/#disqus_thread" data-disqus-identifier="cache/posts/regex-cheatsheet.html">Comments</a>
+                <p class="commentline">            <a href="posts/regex/#disqus_thread" data-disqus-identifier="cache/posts/regex.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="p-summary entry-summary">
     <div>
-<h4>Regex Cheatsheet</h4>
+<h4>Regex</h4>
+<p>Below are few commands and examples of Regular expressions.</p>
 <p><img src="images/regex_standards.png"></p>
 <p>1) Dot - <code>.</code> any character except newline </p>
 <p>2) <code>\w</code> <code>\d</code> <code>\s</code> - word, digit, whitespace</p>
@@ -225,45 +137,44 @@ navbar-dark bg-dark
 <span class="s2">"123"</span> <span class="s2">"123"</span> <span class="s2">"1234"</span> <span class="s2">"123456"</span>
 </code></pre>
 
-
-<p class="more"><a href="posts/regex-cheatsheet/">Read more…</a></p>
+<p class="more"><a href="posts/regex/">Read more…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/vi-cheatsheet/" class="u-url">Vi cheatsheet</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/vim/" class="u-url">Vim</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Rajashekar Chintalapati
             </span></p>
             <p class="dateline">
-            <a href="posts/vi-cheatsheet/" rel="bookmark">
+            <a href="posts/vim/" rel="bookmark">
             <time class="published dt-published" datetime="2020-06-17T02:54:58-07:00" itemprop="datePublished" title="2020-06-17 02:54">2020-06-17 02:54</time></a>
             </p>
-                <p class="commentline">            <a href="posts/vi-cheatsheet/#disqus_thread" data-disqus-identifier="cache/posts/vi-cheatsheet.html">Comments</a>
+                <p class="commentline">            <a href="posts/vim/#disqus_thread" data-disqus-identifier="cache/posts/vim.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="p-summary entry-summary">
     <div>
+<p>Below are few commands to get familiarize with Vim Editor</p>
 <h4>HOW TO OPEN FILE THRU VI EDITOR</h4>
-<pre class="code literal-block"><span></span><code><span class="nv">e</span> <span class="nv">filename</span><span class="o">/</span><span class="nv">vi</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">open</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">vi</span>
-<span class="nv">view</span> <span class="nv">filename</span> <span class="nv">to</span> <span class="nv">only</span> <span class="nv">view</span> <span class="nv">the</span> <span class="nv">file</span>. <span class="nv">restricted</span> <span class="nv">to</span> <span class="nv">write</span>
-<span class="nl">:enew</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span>
-<span class="nl">:new</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">H</span> <span class="nv">split</span>
-<span class="nl">:vnew</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">V</span> <span class="nv">split</span>
-<span class="nl">:tabe</span> <span class="nv">to</span> <span class="nv">edit</span> <span class="nv">new</span> <span class="nv">file</span> <span class="nv">in</span> <span class="nv">new</span> <span class="nv">tab</span>
-<span class="nl">:e</span><span class="o">!</span> <span class="k">return</span> <span class="nv">to</span> <span class="nv">unmodified</span> <span class="nv">file</span>
+<pre class="code literal-block"><span></span><code>e filename/vi filename to open file in vi
+view filename to only view the file. restricted to write
+:enew to edit new file
+:new to edit new file in H split
+:vnew to edit new file in V split
+:tabe to edit new file in new tab
+:e! <span class="k">return</span> to unmodified file
 </code></pre>
 
-
-<p class="more"><a href="posts/vi-cheatsheet/">Read more…</a></p>
+<p class="more"><a href="posts/vim/">Read more…</a></p>
 </div>
     </div>
     </article>
 </div>
 
                <script>var disqus_shortname="rajashekr";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
-            Contents © 2020         <a href="mailto:rajshekar.ch@gmail.com">Rajashekar Chintalapati</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2021         <a href="mailto:rajshekar.ch@gmail.com">Rajashekar Chintalapati</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
             
@@ -274,9 +185,7 @@ navbar-dark bg-dark
         <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script><!-- Global Site Tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vim | Rajashekar Chintalapati Blog</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="canonical" href="https://rajashekar.github.io/posts/vim/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<meta name="author" content="Rajashekar Chintalapati">
+<link rel="next" href="../regex/" title="Regex" type="text/html">
+<meta property="og:site_name" content="Rajashekar Chintalapati Blog">
+<meta property="og:title" content="Vim">
+<meta property="og:url" content="https://rajashekar.github.io/posts/vim/">
+<meta property="og:description" content="Below are few commands to get familiarize with Vim Editor
+HOW TO OPEN FILE THRU VI EDITOR
+e filename/vi filename to open file in vi
+view filename to only view the file. restricted to write
+:enew to ed">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-06-17T02:54:58-07:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../">
+
+            <span id="blog-title">Rajashekar Chintalapati Blog</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto"></ul>
+<form method="get" action="https://www.google.com/search" class="form-inline my-2 my-lg-0" role="search">
+ <div class="form-group">
+ <input type="text" name="q" class="form-control mr-sm-2" placeholder="Search">
+</div>
+ <button type="submit" class="btn btn-secondary my-2 my-sm-0">
+    <i class="fas fa-search"></i></button>
+ 
+ <input type="hidden" name="sitesearch" value="https://rajashekar.github.io/">
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Vim</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Rajashekar Chintalapati
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-06-17T02:54:58-07:00" itemprop="datePublished" title="2020-06-17 02:54">2020-06-17 02:54</time></a>
+            </p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/vim.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Below are few commands to get familiarize with Vim Editor</p>
+<h4>HOW TO OPEN FILE THRU VI EDITOR</h4>
+<pre class="code literal-block"><span></span><code>e filename/vi filename to open file in vi
+view filename to only view the file. restricted to write
+:enew to edit new file
+:new to edit new file in H split
+:vnew to edit new file in V split
+:tabe to edit new file in new tab
+:e! <span class="k">return</span> to unmodified file
+</code></pre>
+
+<!-- TEASER_END -->
+<h4>HOW TO NAVIGATE IN FILE</h4>
+<pre class="code literal-block"><span></span><code>gg to go to start of the program
+G to go to the end of the program
+
+
+<span class="sb">``</span> to go to the previous position
+~ to reverse the <span class="k">case</span> of the letter under Cursor
+
+
+<span class="m">0</span> to go to the start OF the line
+$ to go to the end OF the line
+
+
+Ctrl-u TO up the half the page
+Ctrl-d TO down the half the page
+Ctrl-f TO forward the page
+Ctrl-b TO backward the page
+H moves cursor to HOME of the page
+M moves cursor to MIDDLE of the page
+L moves cursor to BOTTOM of the page
+:tabe or :tabnew to open new tab
+:tabp - move to previous tab
+:tabn - move to next tab
+gt to move to next tab
+gT to move to previous tab
+3gt to move to 3rd tab
+</code></pre>
+
+<h4>HOW TO SEARCH WORD IN FILE</h4>
+<pre class="code literal-block"><span></span><code>/word to find the word
+/<span class="se">\&lt;</span>word<span class="se">\&gt;</span> to find exact word, not worda or worddd
+* to find the exact word under the cursor forward
+<span class="c1"># to find the exact word under the cursor backward</span>
+gd to find the exact word under the cursor forward
+gD to find the exact word under the cursor backward
+g* or g# to find cursor word without <span class="se">\&lt;</span> and <span class="se">\&gt;</span>
+J to join current line with line below with space
+gJ to join current line with line below without space
+?word to find the word
+* to find the next
+n to find next in <span class="o">(</span>forward<span class="o">)</span>
+N to find next in <span class="o">(</span>downward<span class="o">)</span>
+:g/ gives the lines with search word
+:%s//new/g will replace the last search word with new globally
+% in escapemode to find the other pair of the parenthesis
+:linenumber to go to that line number
+nG to go that line n
+ngg to go that line n
+:lvim /pattern/gj *.txt will search all txt files with pattern
+:lvim /raj<span class="se">\_</span>.<span class="se">\{</span>-<span class="o">}</span>shekar/gj **/* to search <span class="k">for</span> raj and after shekar
+:lvim /raj<span class="se">\_</span>.*shekar/gj **/* to search <span class="k">for</span> raj and after shekar
+:lvim /<span class="se">\(</span>raj<span class="se">\_</span>.*shekar<span class="se">\)\|\(</span>shekar<span class="se">\_</span>.*raj<span class="se">\)</span>/gj **/* to search <span class="k">for</span> raj and shekar in any order 
+:lw used after lvim to know the search results
+:lgrep -i <span class="s2">"raj"</span> *.txt  search all txt files with raj
+<span class="o">[</span>I to search all the lines containing word under cursor
+:lv /pattern/gj **/*.txt to search recursively 
+/^pattern search all lines starting with pattern
+/pattern$ search all lines ending with pattern
+/^pattern.*raj.*shekar - to search line containing pattern as first word AND raj as next AND shekar in same line.
+/pattern<span class="se">\_</span>.*raj - to search <span class="k">for</span> pattern AND raj with multiple lines between
+/.*pattern<span class="se">\&amp;</span>.*raj - search <span class="k">for</span> pattern and raj in any sequence in same line
+/pattern<span class="se">\|</span>raj - search <span class="k">for</span> pattern or raj.
+/<span class="se">\&lt;\d\d\d\d\&gt;</span> - to search <span class="k">for</span> <span class="m">4</span> digit numbers
+/.*word.* - to highlight all lines containing search word
+:%s/word//gn - to count the number of occurences of word in file
+:%s///gn - to count number of of occureneces of previous word
+:promptf to find word in windows style
+:promptr to replace word in windows style
+</code></pre>
+
+<h4>HOW TO SAVE AND QUIT FILE</h4>
+<pre class="code literal-block"><span></span><code>:q to quit
+:q! to quit without save
+:wq to save and quit
+:w to write and be there in program
+:x to write and <span class="nb">exit</span>
+:x! not to write and <span class="nb">exit</span>
+ZZ to save and <span class="nb">exit</span> in <span class="nb">command</span> mode <span class="o">(</span>capital Z<span class="o">)</span>
+:w filename to write the content on file
+:w! filename2 to overwrite the existing filename to filename2
+</code></pre>
+
+<h4>HOW TO CUT,COPY,PASTE</h4>
+<pre class="code literal-block"><span></span><code>dd to delete
+dw to delete the word under cursor
+D to cut the line upto end of the line
+
+yy or Y to copy the line <span class="o">(</span>yank the line<span class="o">)</span>
+yw to yank current word under cursor
+
+:1,10d -- to cut the lines in between <span class="m">1</span> to <span class="m">10</span> inclusive
+:1,10y -- to yank/copy the text between <span class="m">1</span> to <span class="m">10</span> inclusive
+
+:<span class="s1">'a,'</span>bd -- to cut the lines in between a to b marked tags inclusive
+:<span class="s1">'a,'</span>by -- to yank/copy the lines in between a to b marked tags inclusive
+
+:1,10 co <span class="m">15</span> to copy all the lines from <span class="m">1</span> to <span class="m">10</span> <span class="o">(</span>inclusive<span class="o">)</span> after 15th line
+:1,10 m <span class="m">15</span> to move all the lines from <span class="m">1</span> to <span class="m">10</span> <span class="o">(</span>inclusive<span class="o">)</span> after 15th line
+
+p to paste
+shift+p to paste 
+
+ddp to reverse <span class="m">2</span> lines 
+
+:t n -- copy current line after line n
+:xt n -- copy line x after line n
+
+:m n -- move the current line after line n
+:xm n -- move the line x to line after line n
+
+:r filename to paste that file at cursor position
+
+cc to change the entire line 
+cw to change the word under cursor
+
+dG to delete from cursor line to end of file
+dgg to delete from start of file to cursor line
+ggdG to delete all contents in file
+ggyG to yank all contents in file
+d1G to delete from start of file to cursor line
+nGdd to delete the line n
+
+<span class="s2">"bdd to yank or cut the line in one register b (it can be any letter from a to z)</span>
+<span class="s2">"</span>bp to paste the content in register b 
+</code></pre>
+
+<h4>HOW TO INSERT TEXT IN FILE</h4>
+<pre class="code literal-block"><span></span><code>a to insert mode
+i to insert mode
+A to insert at end of line
+I to insert at first of line
+o to insert in newline <span class="o">(</span>next to cursor line<span class="o">)</span>
+O to insert in above line of cursor
+:set ro <span class="nb">readonly</span> mode
+:set ro! to remove <span class="nb">readonly</span> mode
+</code></pre>
+
+<h4>HOW TO UNDO</h4>
+<pre class="code literal-block"><span></span><code>u to Undo
+Ctrl+r to redo 
+</code></pre>
+
+<h4>HOW TO MOVE OUT OF VI TO SHELL TO RUN UNIX COMMAND</h4>
+<pre class="code literal-block"><span></span><code>:shell goto shell
+:sh goto shell
+<span class="nb">exit</span> or Ctrl+d to <span class="k">return</span> back to vi editor
+
+:! <span class="nb">command</span> to execute that <span class="nb">command</span> <span class="k">while</span> in VI
+RETURN to come back to vi editor
+</code></pre>
+
+<h4>HOW TO REPLACE TEXT</h4>
+<pre class="code literal-block"><span></span><code>:%s/old/new/g  to replace old word/letter with new word without confirmation
+:%s/old/new/gc to replace old with new with confirmation
+:%s/<span class="se">\&lt;</span>raj<span class="se">\&gt;</span>/she/g to replace only <span class="s2">"raj"</span> with <span class="s2">"she"</span>,,not rajashekar or raja 
+
+:1,$ s/old/new/g to replace all old with new in whole file
+explanation
+<span class="m">1</span> -- start of file
+$ -- end of file
+s -- substitute
+old -- old text
+new -- new text
+g -- globally
+
+:n,m s/old/new/g to replace all old to new from line n to m
+:%s/<span class="se">\s\+</span>$//g to remove all white spaces at end of each line
+:%s/^<span class="se">\s\+</span>//g to remove all white spaces at start of each line
+:%s/<span class="se">\r</span>//g to remove all ^M in file
+:bufdo %s/pattern/substitue/ge <span class="p">|</span> update replace all pattern in files to substitute
+:%s/suck<span class="se">\|</span>buck/loopy/gc replace suck or buck with loopy
+:%s/fred/&lt;C-R&gt;a/g to replace fred with contents of register <span class="s2">"a"</span>
+</code></pre>
+
+<h4>SET OPTIONS</h4>
+<pre class="code literal-block"><span></span><code><span class="nb">set</span> options
+:set ai <span class="k">for</span> auto indent
+:set si <span class="k">for</span> smart indent
+:set noai <span class="k">for</span> no auto indent
+:set nu <span class="k">for</span> number display on left side of line
+:set nonu <span class="k">for</span> remove the displaying numbers
+:set vb <span class="nv">t_vb</span><span class="o">=</span> to remove the beep sound 
+:set hls <span class="k">for</span> highliting search word
+:set nohls <span class="k">for</span> not highlighting the search word
+:syntax on -- to on syntax of programming
+:set incsearch to <span class="nb">set</span> increment search
+:set ic to ignore <span class="k">case</span> <span class="k">while</span> search
+:set <span class="nv">backspace</span><span class="o">=</span><span class="m">2</span> to use backspace in insert mode
+:set wrap to wrap up the lines 
+:set nowrap to not to wrap up the lines
+:set noerrorbells to remove the beep sound
+:set errorbells to <span class="nb">set</span> the beep sound 
+:set novisualbell to remove flash
+:set visualbell to <span class="nb">set</span> flash
+</code></pre>
+
+<h4>ESC</h4>
+<pre class="code literal-block"><span></span><code>ctrl+<span class="o">[</span> is also called as escape mode
+</code></pre>
+
+<h4>HOW TO SPLIT SCREEN</h4>
+<pre class="code literal-block"><span></span><code>:split anotherfile // horizontally spliting 
+:sp filename // horizontally spliting
+:vsplit anotherfile // vertically spliting
+:vsp filename // vertically spliting
+
+or at shell prompt
+vi -o file1.txt file2.txt // horizontally
+vi -O file1.txt file2.txt // vertically
+
+at escape mode
+ctrl-w-v to open a new window vertically
+ctrl-w-n to open a new window horizontally
+
+ctrl-w + increase the size of window
+ctrl-w - decrease the size of window
+ctrl-w <span class="o">=</span> to equalize the size of each split window
+ctrl-w <span class="p">|</span> to maximize in vertical split
+ctrl-w _ to maximize in Horizontal split
+ctrl-w h to move to the window left
+ctrl-w j to move to the window below
+ctrl-w k to move to the window above
+ctrl-w l to move to the window right
+ctrl-w H to move current window to far right
+ctrl-w J to move current window to far Down
+ctrl-w K to move current window to far Up
+ctrl-w L to move current window to far left
+ctrl-w T to move current window to new tab
+ctrl-w n to open new file in H split
+ctrl-w q to close
+ctrl-w o to close all splits except current window <span class="o">(</span>:only also <span class="k">do</span> the same<span class="o">)</span>
+</code></pre>
+
+<h4>TO KNOW THE STATUS OF THE PROGRAM</h4>
+<pre class="code literal-block"><span></span><code>ctrl-G 
+:f 
+</code></pre>
+
+<h4>TO MARK SOME POSITION IN PROGRAM AND COMING TO BACK TO THAT PROGRAM (MARKERS)</h4>
+<pre class="code literal-block"><span></span><code>mp where the position is marked as p <span class="o">(</span>it can be anything from a-z<span class="o">)</span> 
+to <span class="k">return</span> back to that position p we <span class="nb">type</span> <span class="s1">'p</span>
+
+<span class="s1">"ay'</span>b to yank from current cursor line to the mark position b into register a
+<span class="s2">"ad'b to cut from current cursor line to the mark position b into register a</span>
+<span class="s2">"</span>ap to paste the content in that buffer
+</code></pre>
+
+<h4>SETTING KEYS FOR SPECIFIC OPTIONS</h4>
+<pre class="code literal-block"><span></span><code>nnormap &lt;key&gt; :set option&lt;cr&gt;
+</code></pre>
+
+<h4>TO CLEAN UP CONTROL M'S IN THE FILE</h4>
+<pre class="code literal-block"><span></span><code>:%s/&lt;control v&gt;&lt;control m&gt;/ /g
+</code></pre>
+
+<h4>LOWER CASE TO UPPER CASE</h4>
+<pre class="code literal-block"><span></span><code>~    to switch <span class="k">case</span> of charater under the cursor
+g~~ to switch <span class="k">case</span> of whole line
+gUU - To make the whole line upper <span class="k">case</span>
+guu - To make the whole line lower <span class="k">case</span>
+U   - In visual mode make selected to upper <span class="k">case</span>
+u   - In visual mode make selected to lower <span class="k">case</span>
+</code></pre>
+
+<h4>INDENTING A FILE</h4>
+<pre class="code literal-block"><span></span><code><span class="o">==</span> makes the current line indent
+In visual mode <span class="k">select</span> the whole part and <span class="k">then</span> <span class="o">==</span> to indent the selected part
+good settings
+:set <span class="nv">sw</span><span class="o">=</span><span class="m">4</span>
+:set smarttab
+:set et 
+</code></pre>
+
+<h4>GLOBAL COMMAND</h4>
+<pre class="code literal-block"><span></span><code>:g/pattern - list all the lines having pattern
+Ctrl+x Ctrl+l gives list of lines to insert
+:g/pattern/d - delete all the lines having pattern
+:g!/pattern/d - delete all the lines that are not having pattern
+:v/pattern/d - delete all the lines that are not having pattern
+:g/pattern/ copy $ - copy all the lines that are having pattern to end of file
+:g/pattern/ co $ or :g/pattern/t $ also <span class="k">do</span> the same as above
+:g/^$/d - delete all empty lines
+:g/^<span class="se">\s</span>*$/d - delete all empty lines precisely
+:v/<span class="se">\S</span>/d - delete all empty lines
+:v/./d - delete all empty lines
+:g/.*/m0 - This will reverse the order of the lines in the current file.
+:g/^/m0 - to reverse the file
+:g/^$/,/./-j to replace mulitple empty lines with single line
+:v/./,/./-j to replace mulitple empty lines with single line
+:g/pattern/ .w! &gt;&gt; newfile.txt - writes all line having word pattern 
+:.w! &gt;&gt; newfile.txt - writes current line into newfile
+:g/pattern/ copy $ - to paste all the lines containing pattern to end of file
+:g/pattern/ t $ - same as above
+:g/pattern/ t <span class="m">5</span> - to paste all the lines containing pattern after line <span class="m">5</span>
+:g/start/,/end copy $ - copy from start to end to end of file
+:g/start/,/end/d - to delete start to end block
+:g/start/,/end/j - to join start to end.
+:g/start/y A - to copy all the lines to register A
+:g/^pattern/s/$/end - Add end <span class="k">for</span> lines starting with pattern
+:g/^/pu _ to double space the whole file
+:redir @r - redirect to register r
+:g/pattern - search globally
+:redir end 
+<span class="s2">"rp paste the contents in register r</span>
+</code></pre>
+
+<h4>MORE USEFUL COMMANDS</h4>
+<pre class="code literal-block"><span></span><code>:Ex opens explorer in seperate buffer 
+:Sex open explorer in split
+:Vex open explorer in vertical split
+:Tex open explorer in new tab
+:browse e open explorer in windows style to open
+:bro op open explorer in windows style to open 
+:bro sav open explorer in windows style to save
+Ctrl+n <span class="o">(</span>in insert mode<span class="o">)</span> gives list of matching words to insert
+Ctrl+p <span class="o">(</span>in insert mode<span class="o">)</span> gives list of matching words to insert
+Ctrl+x Ctrl+l gives list of lines to insert
+ggVGg? to rot13 the whole file
+ggg?G to rot13 the whole file
+</code></pre>
+
+<h4>FUNCTIONS</h4>
+<pre class="code literal-block"><span></span><code>use TABS to <span class="nb">complete</span> words 
+<span class="k">function</span>! Tab_Or_Complete<span class="o">()</span>
+  <span class="k">if</span> col<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>&gt;1 <span class="o">&amp;&amp;</span> strpart<span class="o">(</span> getline<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>, col<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>-2, <span class="m">3</span> <span class="o">)</span> <span class="o">=</span>~ <span class="s1">'^\w'</span>
+    <span class="k">return</span> <span class="s2">"\&lt;C-N&gt;"</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="s2">"\&lt;Tab&gt;"</span>
+  endif
+endfunction
+:inoremap &lt;Tab&gt; &lt;C-R&gt;<span class="o">=</span>Tab_Or_Complete<span class="o">()</span>&lt;CR&gt;
+:set <span class="nv">dictionary</span><span class="o">=</span><span class="s2">"/usr/dict/words"</span>
+</code></pre>
+
+<h4>MODES</h4>
+<pre class="code literal-block"><span></span><code>Esc - escape mode
+i/I - Insert mode
+a - insert after cursor position
+A - insert at end of line.
+v - visual mode
+V - visual mode to <span class="k">select</span> whole line
+gv - <span class="k">select</span> last visual <span class="k">select</span>
+o - navigate in visual <span class="k">select</span>
+V% - to <span class="k">select</span> match
+V<span class="o">}</span>J - join the selection
+zf - in visual mode, fold selection
+za - to open and close fold
+zo - to open the fold
+zc - to close the fold
+zR - to open all folds
+zM - to close all folds
+
+
+Ctrl Q - to enter visual block
+I - to add infront of the selection
+A - to add after the selection
+c - to change the value in selection
+</code></pre>
+
+<h4>DIFFERENCE</h4>
+<pre class="code literal-block"><span></span><code>:vsp filename2 - <span class="o">(</span>in filename1<span class="o">)</span>
+:windo diffthis - <span class="o">(</span>find diff between filename1 and filename2<span class="o">)</span>
+<span class="k">do</span> - to obtain the difference <span class="k">for</span> the current line from diff file
+dp - to put the difference <span class="k">for</span> the current line to diff file
+</code></pre>
+
+<h4>MAPPING</h4>
+<pre class="code literal-block"><span></span><code>map &lt;F11&gt; : <span class="nb">set</span> hls! &lt;Bar&gt; <span class="nb">set</span> hls? &lt;CR&gt;
+&lt;CR&gt; : Carriage Return
+&lt;ESC&gt; : Escape
+&lt;LEADER&gt; : <span class="se">\</span>
+&lt;BAR&gt; : <span class="p">|</span>
+&lt;BACKSPACE&gt; : backspace
+&lt;SILENT&gt; : no hanging shell window
+</code></pre>
+
+<h4>ENCRYPTION</h4>
+<pre class="code literal-block"><span></span><code>:X to <span class="nb">set</span> password <span class="k">for</span> file <span class="o">(</span>powerful<span class="o">)</span>
+:set <span class="nv">key</span><span class="o">=</span> to remove password <span class="k">for</span> file
+</code></pre>
+
+<h4>REGISTERS</h4>
+<pre class="code literal-block"><span></span><code>:reg to show the registers
+<span class="s2">"ay yank current line to register a [26 registers]</span>
+<span class="s2">"</span>ap paste buffer a
+<span class="o">[</span>A-Z<span class="o">]</span> registers are to append
+<span class="o">[</span>a-z<span class="o">]</span> registers are to override
+qaq to clear the register a - record nothing
+Ctrl-r register - to paste the contents of the register in insert mode
+</code></pre>
+
+<h4>BUFFERS</h4>
+<pre class="code literal-block"><span></span><code>:ls to list all the buffers 
+:bp to move to previous buffer
+:bn to move to next buffer
+:bd to remove from buffer
+:args **/* to keep all files in the current directory in vim <span class="o">(</span>SUPER<span class="o">)</span>
+:rew to first file in args
+:te Buffers to show the menu buffer
+:badd add file to buffer
+:b# to alternate buffer
+Ctrl-^ is to switch alternate buffers
+:tab ball to open all buffers in tabs
+:ball to open all buffers Horizontally 
+:vert ball to open all buffers vertically
+:xa save all buffers and <span class="nb">exit</span>
+:wa write all buffers 
+</code></pre>
+
+<h4>RECORDING</h4>
+<pre class="code literal-block"><span></span><code>qq is to start recording commands - use <span class="o">(</span>a-z<span class="o">)</span> to record
+@q to execute <span class="nb">command</span> in recording
+n@q to execute <span class="nb">command</span> n <span class="nb">times</span>
+qqq to remove recorded <span class="nb">command</span>
+</code></pre>
+
+<h4>ABBREVIATION</h4>
+<pre class="code literal-block"><span></span><code>:abbr USA United States of America - to <span class="nb">set</span> the abbreviation
+<span class="nb">type</span> USA <span class="o">(</span>in insert mode<span class="o">)</span> space will give you USA.
+:unabbr USA to <span class="nb">unset</span> the abbreaviation
+</code></pre>
+
+<h4>SPELL CHECKING</h4>
+<pre class="code literal-block"><span></span><code>:set spell - to on spell checking
+:set nospell - to off spell checking
+<span class="nv">z</span><span class="o">=</span> to get the spell corrections
+<span class="o">[</span>s to previous misspell
+<span class="o">]</span>s to next misspell
+</code></pre>
+
+<h4>INDENTING XML</h4>
+<pre class="code literal-block"><span></span><code>nJ - join n lines with one space in between
+ggVGJ - to join all the lines with one space in between 
+ggVg :j - to join all the lines with one space in between  
+ggVg :j! - to join as it is
+:%s/&gt;&lt;/&gt;<span class="se">\r</span>&lt;/g
+:set <span class="nv">filetype</span><span class="o">=</span>xml
+<span class="nv">gg</span><span class="o">=</span>G or <span class="nv">ggVG</span><span class="o">=</span> 
+</code></pre>
+
+<h4>INCREMENTING AND DECREMENTING</h4>
+<pre class="code literal-block"><span></span><code>:nput <span class="o">=</span>range<span class="o">(</span><span class="m">1</span>,10<span class="o">)</span> - puts <span class="m">1</span> to <span class="m">10</span> numbers in incrementing order at line n
+:nunmap &lt;C-A&gt; will make Ctrl A <span class="o">(</span>in windows to non map from SELECT ALL<span class="o">)</span>
+
+qq start recording in q
+yy yank the current line
+p paste to next line
+Ctrl A to increment <span class="o">(</span>Ctrl x to decrement<span class="o">)</span>
+q to stop the recording
+<span class="m">12</span>@q to repeat the recording
+
+
+:for i in range<span class="o">(</span><span class="m">1</span>,10<span class="o">)</span> <span class="p">|</span> <span class="nv">put</span> <span class="o">=</span> <span class="s1">'insert into'</span>.i <span class="p">|</span> endfor
+to add line numbers
+:g/^/exe <span class="s2">":s/^"</span>.line<span class="o">(</span><span class="s2">"."</span><span class="o">)</span>.<span class="s2">" . "</span>
+exe will execute strings in <span class="s2">""</span>
+. is used to concat<span class="err">'</span>
+line<span class="o">(</span><span class="s2">"."</span><span class="o">)</span> gives the number of current line
+</code></pre>
+
+<h4>In insert mode, auto completion</h4>
+<pre class="code literal-block"><span></span><code>Ctrl-n or Ctrl p - <span class="k">for</span> matching words under cursor
+Ctrl-w to delete the word under the cursor
+Ctrl-r register - to paste the register contents
+Ctrl-w l or Ctrl-w Ctrl-l to match the lines under the cursor 
+</code></pre>
+
+<h4>SORTING</h4>
+<pre class="code literal-block"><span></span><code>:sort to sort alphabetically
+:sort! to reverse the order
+:sort n to sort numbers
+:sort u to remove duplicates
+</code></pre>
+
+<h4>Tracing</h4>
+<pre class="code literal-block"><span></span><code><span class="sb">``</span> to go back to last position
+<span class="err">'</span>. to go back to the last modified line
+<span class="sb">`</span>. to go back to the last exact position
+C-o to move back to previous positions <span class="o">(</span>OLD<span class="o">)</span>
+C-i to move front positions <span class="k">if</span> any <span class="o">(</span>new<span class="o">)</span>
+:jumps to know the movements
+:history to know the previous commands
+</code></pre>
+
+<h4>Using back reference while substitue</h4>
+<pre class="code literal-block"><span></span><code><span class="se">\(</span>^.*$<span class="se">\)</span> - <span class="k">select</span> whole line 
+:%s/<span class="se">\(</span>^.*$<span class="se">\)</span>/blah <span class="se">\1</span> blah/g - *POWERFUL* on every line add blah at first and last
+:%s/<span class="se">\(</span>raj<span class="se">\)\(</span>shekar<span class="se">\)</span>/<span class="se">\2\1</span>/g - Swapping <span class="m">2</span> numbers with <span class="nb">help</span> of back reference
+</code></pre>
+
+<h4>Editing at column</h4>
+<pre class="code literal-block"><span></span><code>Ctrl+q - column mode
+/<span class="se">\%</span>25c - <span class="k">select</span> 25th column
+/<span class="se">\%</span>&gt;25c - <span class="k">select</span> all after 25th column
+</code></pre>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="next">
+                <a href="../regex/" rel="next" title="Regex">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="rajashekr",
+            disqus_url="https://rajashekar.github.io/posts/vim/",
+        disqus_title="Vim",
+        disqus_identifier="cache/posts/vim.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="rajashekr";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:rajshekar.ch@gmail.com">Rajashekar Chintalapati</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global Site Tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '<YOUR GOOGLE ANALYTICS IDENTIFIER>');
+</script><!-- Google AdSense --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "<YOUR GOOGLE ADSENSE IDENTIFIER>",
+    enable_page_level_ads: true
+  });
+</script>
+</body>
+</html>

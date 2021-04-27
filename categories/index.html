@@ -21,10 +21,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://rajashekar.github.io/">
+        <a class="navbar-brand" href="../">
 
             <span id="blog-title">Rajashekar Chintalapati Blog</span>
         </a>
@@ -58,7 +59,7 @@ navbar-dark bg-dark
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2020         <a href="mailto:rajshekar.ch@gmail.com">Rajashekar Chintalapati</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2021         <a href="mailto:rajshekar.ch@gmail.com">Rajashekar Chintalapati</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
             
@@ -69,9 +70,7 @@ navbar-dark bg-dark
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script><!-- Global Site Tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
