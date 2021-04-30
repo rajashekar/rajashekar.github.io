@@ -18,11 +18,14 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="og:site_name" content="Rajashekar Chintalapati Blog">
 <meta property="og:title" content="Vim">
 <meta property="og:url" content="https://rajashekar.github.io/posts/vim/">
-<meta property="og:description" content="Below are few commands to get familiarize with Vim Editor
-HOW TO OPEN FILE THRU VI EDITOR
-e filename/vi filename to open file in vi
-view filename to only view the file. restricted to write
-:enew to ed">
+<meta property="og:description" content="Among all the editors I had used, Vim is the best.
+Below are few commands to get familiarize with Vim Editor
+Table of Contents
+
+How to open file
+How to navigate in file
+How to search word in file
+How ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-06-17T02:54:58-07:00">
 </head>
@@ -89,8 +92,56 @@ bg-dark
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Below are few commands to get familiarize with Vim Editor</p>
-<h4>HOW TO OPEN FILE THRU VI EDITOR</h4>
+<h3 id="_1">
+<img src="../../images/vi-emacs-final.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+</h3>
+<!-- TEASER_END -->
+<p>Among all the editors I had used, <a href="https://www.vim.org/">Vim</a> is the best.
+Below are few commands to get familiarize with Vim Editor</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#how-to-open-file">How to open file</a></li>
+<li><a href="#how-to-navigate-in-file">How to navigate in file</a></li>
+<li><a href="#how-to-search-word-in-file">How to search word in file</a></li>
+<li><a href="#how-to-save-and-quit-file">How to save and quit file</a></li>
+<li><a href="#how-to-cut,copy,paste">How to cut,copy,paste</a></li>
+<li><a href="#how-to-insert-text-in-file">How to insert text in file</a></li>
+<li><a href="#how-to-undo">How to undo</a></li>
+<li><a href="#how-to-move-out-of-vi-to-shell-to-run-unix-command">How to move out of vi to shell to run unix command</a></li>
+<li>
+<a href="#how-to-replace-text">How to replace text</a> </li>
+<li><a href="#set-options">Set options</a></li>
+<li><a href="#alternative-way-to-go-escape-mode">Alternative way to go escape mode</a></li>
+<li><a href="#how-to-split-screen">How to split screen</a></li>
+<li><a href="#to-know-the-status-of-the-program">To know the status of the program</a></li>
+<li><a href="#to-mark-some-position-in-program-and-coming-to-back-to-that-program">To mark some position in program and coming to back to that program</a></li>
+<li><a href="#setting-keys-for-specific-options">Setting keys for specific options</a></li>
+<li><a href="#to-clean-up-control-m's-in-the-file">To clean up control m's in the file</a></li>
+<li><a href="#lower-case-to-upper-case">Lower case to upper case</a></li>
+<li><a href="#indenting-a-file">Indenting a file</a></li>
+<li><a href="#global-command">Global command</a></li>
+<li><a href="#more-useful-commands">More useful commands</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#modes">Modes</a></li>
+<li><a href="#difference">Difference</a></li>
+<li><a href="#mapping">Mapping</a></li>
+<li><a href="#encryption">Encryption</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#buffers">Buffers</a></li>
+<li><a href="#recording">Recording</a></li>
+<li><a href="#abbreviation">Abbreviation</a></li>
+<li><a href="#spell-checking">Spell checking</a></li>
+<li><a href="#indenting-xml">Indenting xml</a></li>
+<li><a href="#incrementing-and-decrementing">Incrementing and decrementing</a></li>
+<li><a href="#in-insert-mode,-auto-completion">In insert mode, auto completion</a></li>
+<li><a href="#sorting">Sorting</a></li>
+<li><a href="#tracing">Tracing</a></li>
+<li><a href="#using-back-reference-while-substitue">Using back reference while substitue</a></li>
+<li><a href="#editing-at-column">Editing at column</a></li>
+<li><a href="#plugin-manager">Plugin Manager</a></li>
+<li><a href="#interesting-plugins">Interesting Plugins</a></li>
+</ul>
+<h4 id="how-to-open-file">How to open file</h4>
 <pre class="code literal-block"><span></span><code>e filename/vi filename to open file in vi
 view filename to only view the file. restricted to write
 :enew to edit new file
@@ -101,7 +152,7 @@ view filename to only view the file. restricted to write
 </code></pre>
 
 <!-- TEASER_END -->
-<h4>HOW TO NAVIGATE IN FILE</h4>
+<h4 id="how-to-navigate-in-file">How to navigate in file</h4>
 <pre class="code literal-block"><span></span><code>gg to go to start of the program
 G to go to the end of the program
 
@@ -129,7 +180,7 @@ gT to move to previous tab
 3gt to move to 3rd tab
 </code></pre>
 
-<h4>HOW TO SEARCH WORD IN FILE</h4>
+<h4 id="how-to-search-word-in-file">How to search word in file</h4>
 <pre class="code literal-block"><span></span><code>/word to find the word
 /<span class="se">\&lt;</span>word<span class="se">\&gt;</span> to find exact word, not worda or worddd
 * to find the exact word under the cursor forward
@@ -171,7 +222,7 @@ ngg to go that line n
 :promptr to replace word in windows style
 </code></pre>
 
-<h4>HOW TO SAVE AND QUIT FILE</h4>
+<h4 id="how-to-save-and-quit-file">How to save and quit file</h4>
 <pre class="code literal-block"><span></span><code>:q to quit
 :q! to quit without save
 :wq to save and quit
@@ -183,7 +234,7 @@ ZZ to save and <span class="nb">exit</span> in <span class="nb">command</span> m
 :w! filename2 to overwrite the existing filename to filename2
 </code></pre>
 
-<h4>HOW TO CUT,COPY,PASTE</h4>
+<h4 id="how-to-cutcopypaste">How to cut,copy,paste</h4>
 <pre class="code literal-block"><span></span><code>dd to delete
 dw to delete the word under cursor
 D to cut the line upto end of the line
@@ -227,7 +278,7 @@ nGdd to delete the line n
 <span class="s2">"</span>bp to paste the content in register b 
 </code></pre>
 
-<h4>HOW TO INSERT TEXT IN FILE</h4>
+<h4 id="how-to-insert-text-in-file">How to insert text in file</h4>
 <pre class="code literal-block"><span></span><code>a to insert mode
 i to insert mode
 A to insert at end of line
@@ -238,12 +289,12 @@ O to insert in above line of cursor
 :set ro! to remove <span class="nb">readonly</span> mode
 </code></pre>
 
-<h4>HOW TO UNDO</h4>
+<h4 id="how-to-undo">How to undo</h4>
 <pre class="code literal-block"><span></span><code>u to Undo
 Ctrl+r to redo 
 </code></pre>
 
-<h4>HOW TO MOVE OUT OF VI TO SHELL TO RUN UNIX COMMAND</h4>
+<h4 id="how-to-move-out-of-vi-to-shell-to-run-unix-command">How to move out of vi to shell to run unix command</h4>
 <pre class="code literal-block"><span></span><code>:shell goto shell
 :sh goto shell
 <span class="nb">exit</span> or Ctrl+d to <span class="k">return</span> back to vi editor
@@ -252,7 +303,7 @@ Ctrl+r to redo
 RETURN to come back to vi editor
 </code></pre>
 
-<h4>HOW TO REPLACE TEXT</h4>
+<h4 id="how-to-replace-text">How to replace text</h4>
 <pre class="code literal-block"><span></span><code>:%s/old/new/g  to replace old word/letter with new word without confirmation
 :%s/old/new/gc to replace old with new with confirmation
 :%s/<span class="se">\&lt;</span>raj<span class="se">\&gt;</span>/she/g to replace only <span class="s2">"raj"</span> with <span class="s2">"she"</span>,,not rajashekar or raja 
@@ -275,7 +326,7 @@ g -- globally
 :%s/fred/&lt;C-R&gt;a/g to replace fred with contents of register <span class="s2">"a"</span>
 </code></pre>
 
-<h4>SET OPTIONS</h4>
+<h4 id="set-options">Set options</h4>
 <pre class="code literal-block"><span></span><code><span class="nb">set</span> options
 :set ai <span class="k">for</span> auto indent
 :set si <span class="k">for</span> smart indent
@@ -297,11 +348,11 @@ g -- globally
 :set visualbell to <span class="nb">set</span> flash
 </code></pre>
 
-<h4>ESC</h4>
+<h4 id="alternative-way-to-go-escape-mode">Alternative way to go escape mode</h4>
 <pre class="code literal-block"><span></span><code>ctrl+<span class="o">[</span> is also called as escape mode
 </code></pre>
 
-<h4>HOW TO SPLIT SCREEN</h4>
+<h4 id="how-to-split-screen">How to split screen</h4>
 <pre class="code literal-block"><span></span><code>:split anotherfile // horizontally spliting 
 :sp filename // horizontally spliting
 :vsplit anotherfile // vertically spliting
@@ -334,12 +385,12 @@ ctrl-w q to close
 ctrl-w o to close all splits except current window <span class="o">(</span>:only also <span class="k">do</span> the same<span class="o">)</span>
 </code></pre>
 
-<h4>TO KNOW THE STATUS OF THE PROGRAM</h4>
+<h4 id="to-know-the-status-of-the-program">To know the status of the program</h4>
 <pre class="code literal-block"><span></span><code>ctrl-G 
 :f 
 </code></pre>
 
-<h4>TO MARK SOME POSITION IN PROGRAM AND COMING TO BACK TO THAT PROGRAM (MARKERS)</h4>
+<h4 id="to-mark-some-position-in-program-and-coming-to-back-to-that-program">To mark some position in program and coming to back to that program</h4>
 <pre class="code literal-block"><span></span><code>mp where the position is marked as p <span class="o">(</span>it can be anything from a-z<span class="o">)</span> 
 to <span class="k">return</span> back to that position p we <span class="nb">type</span> <span class="s1">'p</span>
 
@@ -348,15 +399,15 @@ to <span class="k">return</span> back to that position p we <span class="nb">typ
 <span class="s2">"</span>ap to paste the content in that buffer
 </code></pre>
 
-<h4>SETTING KEYS FOR SPECIFIC OPTIONS</h4>
+<h4 id="setting-keys-for-specific-options">Setting keys for specific options</h4>
 <pre class="code literal-block"><span></span><code>nnormap &lt;key&gt; :set option&lt;cr&gt;
 </code></pre>
 
-<h4>TO CLEAN UP CONTROL M'S IN THE FILE</h4>
+<h4 id="to-clean-up-control-ms-in-the-file">To clean up control m's in the file</h4>
 <pre class="code literal-block"><span></span><code>:%s/&lt;control v&gt;&lt;control m&gt;/ /g
 </code></pre>
 
-<h4>LOWER CASE TO UPPER CASE</h4>
+<h4 id="lower-case-to-upper-case">Lower case to upper case</h4>
 <pre class="code literal-block"><span></span><code>~    to switch <span class="k">case</span> of charater under the cursor
 g~~ to switch <span class="k">case</span> of whole line
 gUU - To make the whole line upper <span class="k">case</span>
@@ -365,7 +416,7 @@ U   - In visual mode make selected to upper <span class="k">case</span>
 u   - In visual mode make selected to lower <span class="k">case</span>
 </code></pre>
 
-<h4>INDENTING A FILE</h4>
+<h4 id="indenting-a-file">Indenting a file</h4>
 <pre class="code literal-block"><span></span><code><span class="o">==</span> makes the current line indent
 In visual mode <span class="k">select</span> the whole part and <span class="k">then</span> <span class="o">==</span> to indent the selected part
 good settings
@@ -374,7 +425,7 @@ good settings
 :set et 
 </code></pre>
 
-<h4>GLOBAL COMMAND</h4>
+<h4 id="global-command">Global command</h4>
 <pre class="code literal-block"><span></span><code>:g/pattern - list all the lines having pattern
 Ctrl+x Ctrl+l gives list of lines to insert
 :g/pattern/d - delete all the lines having pattern
@@ -407,7 +458,7 @@ Ctrl+x Ctrl+l gives list of lines to insert
 <span class="s2">"rp paste the contents in register r</span>
 </code></pre>
 
-<h4>MORE USEFUL COMMANDS</h4>
+<h4 id="more-useful-commands">More useful commands</h4>
 <pre class="code literal-block"><span></span><code>:Ex opens explorer in seperate buffer 
 :Sex open explorer in split
 :Vex open explorer in vertical split
@@ -422,7 +473,7 @@ ggVGg? to rot13 the whole file
 ggg?G to rot13 the whole file
 </code></pre>
 
-<h4>FUNCTIONS</h4>
+<h4 id="functions">Functions</h4>
 <pre class="code literal-block"><span></span><code>use TABS to <span class="nb">complete</span> words 
 <span class="k">function</span>! Tab_Or_Complete<span class="o">()</span>
   <span class="k">if</span> col<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>&gt;1 <span class="o">&amp;&amp;</span> strpart<span class="o">(</span> getline<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>, col<span class="o">(</span><span class="s1">'.'</span><span class="o">)</span>-2, <span class="m">3</span> <span class="o">)</span> <span class="o">=</span>~ <span class="s1">'^\w'</span>
@@ -435,7 +486,7 @@ endfunction
 :set <span class="nv">dictionary</span><span class="o">=</span><span class="s2">"/usr/dict/words"</span>
 </code></pre>
 
-<h4>MODES</h4>
+<h4 id="modes">Modes</h4>
 <pre class="code literal-block"><span></span><code>Esc - escape mode
 i/I - Insert mode
 a - insert after cursor position
@@ -460,14 +511,14 @@ A - to add after the selection
 c - to change the value in selection
 </code></pre>
 
-<h4>DIFFERENCE</h4>
+<h4 id="difference">Difference</h4>
 <pre class="code literal-block"><span></span><code>:vsp filename2 - <span class="o">(</span>in filename1<span class="o">)</span>
 :windo diffthis - <span class="o">(</span>find diff between filename1 and filename2<span class="o">)</span>
 <span class="k">do</span> - to obtain the difference <span class="k">for</span> the current line from diff file
 dp - to put the difference <span class="k">for</span> the current line to diff file
 </code></pre>
 
-<h4>MAPPING</h4>
+<h4 id="mapping">Mapping</h4>
 <pre class="code literal-block"><span></span><code>map &lt;F11&gt; : <span class="nb">set</span> hls! &lt;Bar&gt; <span class="nb">set</span> hls? &lt;CR&gt;
 &lt;CR&gt; : Carriage Return
 &lt;ESC&gt; : Escape
@@ -477,12 +528,12 @@ dp - to put the difference <span class="k">for</span> the current line to diff f
 &lt;SILENT&gt; : no hanging shell window
 </code></pre>
 
-<h4>ENCRYPTION</h4>
+<h4 id="encryption">Encryption</h4>
 <pre class="code literal-block"><span></span><code>:X to <span class="nb">set</span> password <span class="k">for</span> file <span class="o">(</span>powerful<span class="o">)</span>
 :set <span class="nv">key</span><span class="o">=</span> to remove password <span class="k">for</span> file
 </code></pre>
 
-<h4>REGISTERS</h4>
+<h4 id="registers">Registers</h4>
 <pre class="code literal-block"><span></span><code>:reg to show the registers
 <span class="s2">"ay yank current line to register a [26 registers]</span>
 <span class="s2">"</span>ap paste buffer a
@@ -492,7 +543,7 @@ qaq to clear the register a - record nothing
 Ctrl-r register - to paste the contents of the register in insert mode
 </code></pre>
 
-<h4>BUFFERS</h4>
+<h4 id="buffers">Buffers</h4>
 <pre class="code literal-block"><span></span><code>:ls to list all the buffers 
 :bp to move to previous buffer
 :bn to move to next buffer
@@ -510,20 +561,20 @@ Ctrl-^ is to switch alternate buffers
 :wa write all buffers 
 </code></pre>
 
-<h4>RECORDING</h4>
+<h4 id="recording">Recording</h4>
 <pre class="code literal-block"><span></span><code>qq is to start recording commands - use <span class="o">(</span>a-z<span class="o">)</span> to record
 @q to execute <span class="nb">command</span> in recording
 n@q to execute <span class="nb">command</span> n <span class="nb">times</span>
 qqq to remove recorded <span class="nb">command</span>
 </code></pre>
 
-<h4>ABBREVIATION</h4>
+<h4 id="abbreviation">Abbreviation</h4>
 <pre class="code literal-block"><span></span><code>:abbr USA United States of America - to <span class="nb">set</span> the abbreviation
 <span class="nb">type</span> USA <span class="o">(</span>in insert mode<span class="o">)</span> space will give you USA.
 :unabbr USA to <span class="nb">unset</span> the abbreaviation
 </code></pre>
 
-<h4>SPELL CHECKING</h4>
+<h4 id="spell-checking">Spell checking</h4>
 <pre class="code literal-block"><span></span><code>:set spell - to on spell checking
 :set nospell - to off spell checking
 <span class="nv">z</span><span class="o">=</span> to get the spell corrections
@@ -531,7 +582,7 @@ qqq to remove recorded <span class="nb">command</span>
 <span class="o">]</span>s to next misspell
 </code></pre>
 
-<h4>INDENTING XML</h4>
+<h4 id="indenting-xml">Indenting xml</h4>
 <pre class="code literal-block"><span></span><code>nJ - join n lines with one space in between
 ggVGJ - to join all the lines with one space in between 
 ggVg :j - to join all the lines with one space in between  
@@ -541,7 +592,7 @@ ggVg :j! - to join as it is
 <span class="nv">gg</span><span class="o">=</span>G or <span class="nv">ggVG</span><span class="o">=</span> 
 </code></pre>
 
-<h4>INCREMENTING AND DECREMENTING</h4>
+<h4 id="incrementing-and-decrementing">Incrementing and decrementing</h4>
 <pre class="code literal-block"><span></span><code>:nput <span class="o">=</span>range<span class="o">(</span><span class="m">1</span>,10<span class="o">)</span> - puts <span class="m">1</span> to <span class="m">10</span> numbers in incrementing order at line n
 :nunmap &lt;C-A&gt; will make Ctrl A <span class="o">(</span>in windows to non map from SELECT ALL<span class="o">)</span>
 
@@ -561,21 +612,21 @@ exe will execute strings in <span class="s2">""</span>
 line<span class="o">(</span><span class="s2">"."</span><span class="o">)</span> gives the number of current line
 </code></pre>
 
-<h4>In insert mode, auto completion</h4>
+<h4 id="in-insert-mode-auto-completion">In insert mode, auto completion</h4>
 <pre class="code literal-block"><span></span><code>Ctrl-n or Ctrl p - <span class="k">for</span> matching words under cursor
 Ctrl-w to delete the word under the cursor
 Ctrl-r register - to paste the register contents
 Ctrl-w l or Ctrl-w Ctrl-l to match the lines under the cursor 
 </code></pre>
 
-<h4>SORTING</h4>
+<h4 id="sorting">Sorting</h4>
 <pre class="code literal-block"><span></span><code>:sort to sort alphabetically
 :sort! to reverse the order
 :sort n to sort numbers
 :sort u to remove duplicates
 </code></pre>
 
-<h4>Tracing</h4>
+<h4 id="tracing">Tracing</h4>
 <pre class="code literal-block"><span></span><code><span class="sb">``</span> to go back to last position
 <span class="err">'</span>. to go back to the last modified line
 <span class="sb">`</span>. to go back to the last exact position
@@ -585,16 +636,104 @@ C-i to move front positions <span class="k">if</span> any <span class="o">(</spa
 :history to know the previous commands
 </code></pre>
 
-<h4>Using back reference while substitue</h4>
+<h4 id="using-back-reference-while-substitue">Using back reference while substitue</h4>
 <pre class="code literal-block"><span></span><code><span class="se">\(</span>^.*$<span class="se">\)</span> - <span class="k">select</span> whole line 
 :%s/<span class="se">\(</span>^.*$<span class="se">\)</span>/blah <span class="se">\1</span> blah/g - *POWERFUL* on every line add blah at first and last
 :%s/<span class="se">\(</span>raj<span class="se">\)\(</span>shekar<span class="se">\)</span>/<span class="se">\2\1</span>/g - Swapping <span class="m">2</span> numbers with <span class="nb">help</span> of back reference
 </code></pre>
 
-<h4>Editing at column</h4>
+<h4 id="editing-at-column">Editing at column</h4>
 <pre class="code literal-block"><span></span><code>Ctrl+q - column mode
 /<span class="se">\%</span>25c - <span class="k">select</span> 25th column
 /<span class="se">\%</span>&gt;25c - <span class="k">select</span> all after 25th column
+</code></pre>
+
+<h4 id="plugin-managers">Plugin Managers</h4>
+<p>There are majorly 2 plugin mangers
+- <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a>
+- <a href="https://github.com/junegunn/vim-plug">Vim-plug</a></p>
+<h4 id="interesting-plugins">Interesting Plugins</h4>
+<p>Below are few interesting vim plugins <br>
+Note: Below are in Vundle format, you can directly go to github to know more about plugin by appending <code>https://gihub.com/</code>
+For git</p>
+<pre class="code literal-block"><span></span><code><span class="c">" git</span>
+Plugin <span class="s1">'airblade/vim-gitgutter'</span>
+Plugin <span class="s1">'tpope/vim-fugitive'</span>
+Plugin <span class="s1">'junegunn/gv.vim'</span>
+Plugin <span class="s1">'tpope/vim-rhubarb'</span>
+</code></pre>
+
+<p>For color schemes</p>
+<pre class="code literal-block"><span></span><code><span class="c">" color schemes</span>
+Plugin <span class="s1">'altercation/vim-colors-solarized'</span>
+Plugin <span class="s1">'joshdick/onedark.vim'</span>
+Plugin <span class="s1">'tomasr/molokai'</span>
+Plugin <span class="s1">'dracula/vim'</span>
+Plugin <span class="s1">'rakr/vim-one'</span>
+</code></pre>
+
+<p>For ctags, code navigation like IDE</p>
+<pre class="code literal-block"><span></span><code><span class="c">" ctags cscope</span>
+Plugin <span class="s1">'amitab/vim-unite-cscope'</span>
+Plugin <span class="s1">'craigemery/vim-autotag'</span>
+</code></pre>
+
+<p>For quick navigation</p>
+<pre class="code literal-block"><span></span><code><span class="c">" motions</span>
+Plugin <span class="s1">'easymotion/vim-easymotion'</span>
+Plugin <span class="s1">'geoffharcourt/vim-matchit'</span>
+Plugin <span class="s1">'honza/vim-snippets'</span>
+Plugin <span class="s1">'Raimondi/delimitMate'</span>
+Plugin <span class="s1">'tpope/vim-repeat'</span>
+Plugin <span class="s1">'tpope/vim-surround'</span>
+Plugin <span class="s1">'tpope/vim-unimpaired'</span>
+Plugin <span class="s1">'tpope/vim-markdown'</span>
+Plugin <span class="s1">'tpope/vim-rsi'</span>
+Plugin <span class="s1">'AndrewRadev/splitjoin.vim'</span>
+</code></pre>
+
+<p>For Fuzzy finders</p>
+<pre class="code literal-block"><span></span><code><span class="c">" fuzzy finders</span>
+Plugin <span class="s1">'ctrlpvim/ctrlp.vim'</span>
+Plugin <span class="s1">'mileszs/ack.vim'</span>
+Plugin <span class="s1">'junegunn/fzf'</span><span class="p">,</span> { <span class="s1">'dir'</span>: <span class="s1">'~/.fzf'</span><span class="p">,</span> <span class="s1">'do'</span>: <span class="s1">'./install --all'</span> }
+Plugin <span class="s1">'junegunn/fzf.vim'</span>
+</code></pre>
+
+<p>For folder side bars</p>
+<pre class="code literal-block"><span></span><code><span class="c">" file and folder</span>
+Plugin <span class="s1">'scrooloose/nerdcommenter'</span>
+Plugin <span class="s1">'scrooloose/nerdtree'</span>
+Plugin <span class="s1">'Xuyuanp/nerdtree-git-plugin'</span>
+</code></pre>
+
+<p>For vim UI changes &amp; syntax</p>
+<pre class="code literal-block"><span></span><code><span class="c">" sytax</span>
+Plugin <span class="s1">'vim-airline/vim-airline'</span>
+Plugin <span class="s1">'vim-airline/vim-airline-themes'</span>
+Plugin <span class="s1">'xolox/vim-misc'</span>
+Plugin <span class="s1">'xolox/vim-session'</span>
+Plugin <span class="s1">'Yggdroot/indentLine'</span>
+Plugin <span class="s1">'ryanoasis/vim-devicons'</span>
+Plugin <span class="s1">'elzr/vim-json'</span>
+</code></pre>
+
+<p>For Presenting</p>
+<pre class="code literal-block"><span></span><code><span class="c">"Presenting</span>
+Plugin <span class="s1">'sotte/presenting.vim'</span>
+Plugin <span class="s1">'godlygeek/tabular'</span>
+Plugin <span class="s1">'dhruvasagar/vim-table-mode'</span>
+Plugin <span class="s1">'vim-scripts/DrawIt'</span>
+</code></pre>
+
+<p>For tmux integration</p>
+<pre class="code literal-block"><span></span><code>Plugin <span class="s1">'benmills/vimux'</span>
+Plugin <span class="s1">'christoomey/vim-tmux-navigator'</span>
+</code></pre>
+
+<p>For gnupg encryption support</p>
+<pre class="code literal-block"><span></span><code><span class="c">"Encryption</span>
+Plugin <span class="s1">'jamessan/vim-gnupg'</span>
 </code></pre>
 </div>
     </div>

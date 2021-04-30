@@ -19,17 +19,16 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="og:site_name" content="Rajashekar Chintalapati Blog">
 <meta property="og:title" content="Regex">
 <meta property="og:url" content="https://rajashekar.github.io/posts/regex/">
-<meta property="og:description" content='Regex
-Below are few commands and examples of Regular expressions.
+<meta property="og:description" content="Below is overview on Regex standards
 
-1) Dot - . any character except newline 
-2) \w \d \s - word, digit, whitespace
+Below are few commands and examples of Regular expressions.
+1. Dot - . any character except newline 
+
+\w \d \s - word, digit, whitespace
+
 Example:
 substitution 
-a) %s/\(\w\+\)/"\1"/g
-
-before:
-'>
+a">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-06-17T05:41:20-07:00">
 </head>
@@ -96,14 +95,20 @@ bg-dark
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<h4>Regex</h4>
-<p>Below are few commands and examples of Regular expressions.</p>
-<p><img src="../../images/regex_standards.png"></p>
-<p>1) Dot - <code>.</code> any character except newline </p>
-<p>2) <code>\w</code> <code>\d</code> <code>\s</code> - word, digit, whitespace</p>
+<h3 id="_1"><img src="../../images/regular_expressions.png" style="display: block;margin-left: auto;margin-right: auto;"></h3>
+<!-- TEASER_END -->
+
+<p>Below is overview on Regex standards
+<img src="../../images/regex_standards.png" width="50%" style="display: block;margin-left: auto;margin-right: auto;"></p>
+<p>Below are few commands and examples of Regular expressions.
+1. Dot - <code>.</code> any character except newline </p>
+<ol start="2">
+<li>
+<code>\w</code> <code>\d</code> <code>\s</code> - word, digit, whitespace</li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="n">Example</span><span class="o">:</span>
 <span class="n">substitution</span> 
-<span class="n">a</span><span class="o">)</span> <span class="o">%</span><span class="n">s</span><span class="sr">/\(\w\+\)/"\1"/g</span>
+<span class="n">a</span><span class="o">.</span> <span class="o">%</span><span class="n">s</span><span class="sr">/\(\w\+\)/"\1"/g</span>
 
 <span class="n">before</span><span class="o">:</span>
 <span class="n">test</span> <span class="n">test</span> <span class="n">test</span>
@@ -111,7 +116,7 @@ bg-dark
 <span class="n">after</span><span class="o">:</span>
 <span class="s2">"test"</span> <span class="s2">"test"</span> <span class="s2">"test"</span>
 
-<span class="n">b</span><span class="o">)</span> <span class="o">%</span><span class="n">s</span><span class="sr">/\(\d\+\)/"\1"/g</span>
+<span class="n">b</span><span class="o">.</span> <span class="o">%</span><span class="n">s</span><span class="sr">/\(\d\+\)/"\1"/g</span>
 <span class="n">before</span><span class="o">:</span>
 <span class="n">test</span> <span class="n">test</span> <span class="n">test</span> 
 <span class="mi">123</span> <span class="mi">123</span> <span class="mi">1234</span> <span class="mi">123456</span>
@@ -121,20 +126,47 @@ bg-dark
 <span class="s2">"123"</span> <span class="s2">"123"</span> <span class="s2">"1234"</span> <span class="s2">"123456"</span>
 </code></pre>
 
-<!-- TEASER_END -->
-<p>3) <code>\W</code> <code>\D</code> <code>\S</code> not word, digit, whitespace</p>
-<p>4) <code>[abc]</code> any of a, b, or c</p>
-<p>5) <code>[^abc]</code> not a, b, or c</p>
-<p>6) <code>[a-g]</code> character between a &amp; g</p>
-<p>7) <code>^abc$</code> start / end of the string</p>
-<p>8) <code>\t</code> <code>\n</code> <code>\r</code> tab, linefeed, carriage return</p>
-<p>9) <code>a*</code>  0 or more</p>
-<p>10) <code>a+</code>  1 or more</p>
-<p>11) <code>a?</code> 0 or 1</p>
-<p>12) <code>a{5}</code>  exactly 5</p>
-<p>13) <code>a{2,}</code> 2 or more</p>
-<p>14) <code>a{3,5}</code> - matches 3, 4, 5</p>
-<p>15) <code>&amp;</code> Back reference without grouping </p>
+<ol start="3">
+<li>
+<p><code>\W</code> <code>\D</code> <code>\S</code> not word, digit, whitespace</p>
+</li>
+<li>
+<p><code>[abc]</code> any of a, b, or c</p>
+</li>
+<li>
+<p><code>[^abc]</code> not a, b, or c</p>
+</li>
+<li>
+<p><code>[a-g]</code> character between a &amp; g</p>
+</li>
+<li>
+<p><code>^abc$</code> start / end of the string</p>
+</li>
+<li>
+<p><code>\t</code> <code>\n</code> <code>\r</code> tab, linefeed, carriage return</p>
+</li>
+<li>
+<p><code>a*</code>  0 or more</p>
+</li>
+<li>
+<p><code>a+</code>  1 or more</p>
+</li>
+<li>
+<p><code>a?</code> 0 or 1</p>
+</li>
+<li>
+<p><code>a{5}</code>  exactly 5</p>
+</li>
+<li>
+<p><code>a{2,}</code> 2 or more</p>
+</li>
+<li>
+<p><code>a{3,5}</code> - matches 3, 4, 5</p>
+</li>
+<li>
+<p><code>&amp;</code> Back reference without grouping </p>
+</li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="ss">"&amp;"</span><span class="o">/</span><span class="k">g</span>
 
 <span class="k">before</span><span class="p">:</span>
@@ -144,8 +176,10 @@ bg-dark
 <span class="ss">"test"</span> <span class="o">|</span> <span class="ss">"test"</span> <span class="o">|</span> <span class="ss">"test"</span> <span class="o">|</span> <span class="ss">"test"</span> <span class="o">|</span> <span class="ss">"test"</span> <span class="o">|</span> <span class="ss">"test"</span>
 </code></pre>
 
-<p>16) Grouping - <code>(abc)</code>
-<code>\1</code> backreference</p>
+<ol start="16">
+<li>Grouping - <code>(abc)</code>
+<code>\1</code> backreference</li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="n">Example</span> <span class="o">-</span> 
 <span class="o">^/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="p">(</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="p">)</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="err">\</span><span class="mi">1</span><span class="err">$</span>
 
@@ -158,7 +192,10 @@ bg-dark
 <span class="o">/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="o">/</span><span class="n">test</span>
 </code></pre>
 
-<p>17) non-capturing group - <code>(?:abc)</code></p>
+<ol start="17">
+<li>non-capturing group - <code>(?:abc)</code>
+</li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="n">Example</span> <span class="o">-</span> 
 <span class="o">^/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="p">(</span><span class="o">?</span><span class="p">:</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">test</span><span class="p">)</span><span class="o">/</span><span class="err">\</span><span class="mi">1</span><span class="err">$</span>
 
@@ -171,8 +208,10 @@ bg-dark
 <span class="o">/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="o">/</span><span class="n">test</span>
 </code></pre>
 
-<p>18) Negative lookahead - <code>(?!abc)</code>
-Example - </p>
+<ol start="18">
+<li>Negative lookahead - <code>(?!abc)</code>
+Example - </li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="o">^/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="p">(</span><span class="o">?!</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="p">).</span><span class="o">*</span><span class="n">jsp$</span>
 
 <span class="n">matches</span> <span class="o">-</span> 
@@ -184,8 +223,10 @@ Example - </p>
 <span class="o">/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="o">?</span><span class="n">xid</span><span class="o">=</span><span class="mi">123</span><span class="o">&amp;</span><span class="n">redirectURL</span><span class="o">=</span><span class="n">test</span><span class="p">.</span><span class="n">jsp</span>
 </code></pre>
 
-<p>19) Postive lookahead - <code>(?=abc)</code>
-Example - </p>
+<ol start="19">
+<li>Postive lookahead - <code>(?=abc)</code>
+Example - </li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="o">^/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="p">(</span><span class="o">?=</span><span class="n">cart</span><span class="p">.</span><span class="n">jsp</span><span class="p">).</span><span class="o">*</span><span class="n">jsp$</span>
 
 <span class="n">matches</span> <span class="o">-</span> 
@@ -197,7 +238,10 @@ Example - </p>
 <span class="o">/</span><span class="n">sams</span><span class="o">/</span><span class="n">cart</span><span class="o">/</span><span class="n">saveForLater</span><span class="p">.</span><span class="n">jsp</span>
 </code></pre>
 
-<p>20) Named Capturing Group - <code>(?P&lt;abc&gt;.*) or {?&lt;abc&gt;.*)</code></p>
+<ol start="20">
+<li>Named Capturing Group - <code>(?P&lt;abc&gt;.*) or {?&lt;abc&gt;.*)</code>
+</li>
+</ol>
 <pre class="code literal-block"><span></span><code><span class="n">Example</span><span class="p">:</span> 
 
 <span class="p">([</span><span class="o">^|</span><span class="p">]</span><span class="o">+</span><span class="err">\</span><span class="o">|</span><span class="p">)</span><span class="err">{</span><span class="mi">3</span><span class="err">}</span><span class="p">(</span><span class="o">?</span><span class="n">P</span><span class="o">&lt;</span><span class="n">xyz</span><span class="o">&gt;</span><span class="p">[</span><span class="o">^|</span><span class="p">]</span><span class="o">+</span><span class="p">)</span>
@@ -207,7 +251,7 @@ Example - </p>
 <span class="n">xyz</span> <span class="k">is</span> <span class="n">test4</span>
 </code></pre>
 
-<h4>Playgrounds</h4>
+<h4 id="playgrounds">Playgrounds</h4>
 <p>https://regexr.com/37kj6 <br>
 https://www.regexpal.com/ <br>
 https://regex101.com/r/I4moyv/1 <br></p>
