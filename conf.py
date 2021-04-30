@@ -1109,6 +1109,9 @@ MARKDOWN_EXTENSIONS = [
     "markdown.extensions.codehilite",
     "markdown.extensions.extra",
     "markdown.extensions.meta",
+    "markdown.extensions.sane_lists",
+    "markdown.extensions.toc",
+    "markdown.extensions.wikilinks",
 ]
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)

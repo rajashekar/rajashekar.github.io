@@ -9,7 +9,32 @@
 .. type: text
 -->
 
+<img src="/images/emacs.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+---
+<!-- TEASER_END -->
+> The editor wars
+> Note: By combining Emacs with Vim you can do [Evil](https://github.com/emacs-evil/evil) things
 Below are few commands to get familiarize with Emacs Editor
+
+# Table of Contents
+- [Extended commands](#extended-commands)
+- [Dealing with files](#dealing-with-files)
+- [Extending above with with Helm mode](#extending-above-with-with-helm-mode)
+- [Navigation](#navigation) 
+- [Undo](#undo)
+- [Search](#search)
+- [Replace](#replace)
+- [Cut, Copy & Paste](#cut,-copy-&-paste)
+- [Buffers](#buffers)
+- [Capitalize](#capitalize)
+- [Windows](#windows)
+- [Modes](#modes)
+- [In Cygwin After starting X server](#in-cygwin-after-starting-x-server)
+- [Column Editing](#column-editing)
+- [Indenting XML](#indenting-xml)
+- [Macros](#macros)
+- [Plugin Manager](#plugin-manager)
+- [Interesting Plugins](#interesting-plugins)
 
 ### Extended commands
 ```bash
@@ -29,9 +54,8 @@ C-x r m to bookmark the current file
 C-x r b to find the bookmark 
 C-x r l to list all bookmarks
 ```
-<!-- TEASER_END -->
 
-## Extending above with with Helm mode 
+### Extending above with with Helm mode 
 ```bash
 (require 'helm-fuzzy-find)
 (require 'helm-config)
@@ -210,3 +234,45 @@ M-x insert-kbd-macro "a"
 Which will paste the macro a to file, so that you can save 
 and use that macro for future
 ```
+
+### Plugin Manager
+You can use [Cask](https://github.com/cask/cask) to manage your emacs plugins
+
+### Interesting Plugins
+Below are few interesting plugins <br>
+For git
+```emacs
+(depends-on "eshell-git-prompt")
+(depends-on "git-commit")
+(depends-on "git-gutter")
+(depends-on "git-timemachine")
+(depends-on "github-browse-file")
+(depends-on "magit")
+(depends-on "magit-popup")
+(depends-on "helm-ls-git")
+``` 
+For Evil (Emacs+Vim) things
+```emacs
+(depends-on "colemak-evil")
+(depends-on "evil")
+(depends-on "evil-magit")
+(depends-on "evil-surround")
+(depends-on "evil-visual-mark-mode")
+```
+For themes
+```emacs
+(depends-on "dakrone-theme")
+(depends-on "gruvbox-theme")
+(depends-on "atom-dark-theme")
+(depends-on "airline-themes")
+```
+For helm 
+```emacs
+(depends-on "swiper-helm")
+(depends-on "helm")
+(depends-on "helm-ag")
+(depends-on "helm-core")
+(depends-on "helm-fuzzy-find")
+(depends-on "helm-projectile")
+```
+

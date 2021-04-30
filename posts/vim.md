@@ -9,9 +9,54 @@
 .. type: text
 -->
 
+<img src="/images/vi-emacs-final.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+---
+<!-- TEASER_END -->
+Among all the editors I had used, [Vim](https://www.vim.org/) is the best.
 Below are few commands to get familiarize with Vim Editor
+# Table of Contents
+- [How to open file](#how-to-open-file)
+- [How to navigate in file](#how-to-navigate-in-file)
+- [How to search word in file](#how-to-search-word-in-file)
+- [How to save and quit file](#how-to-save-and-quit-file)
+- [How to cut,copy,paste](#how-to-cut,copy,paste)
+- [How to insert text in file](#how-to-insert-text-in-file)
+- [How to undo](#how-to-undo)
+- [How to move out of vi to shell to run unix command](#how-to-move-out-of-vi-to-shell-to-run-unix-command)
+- [How to replace text](#how-to-replace-text) 
+- [Set options](#set-options)
+- [Alternative way to go escape mode](#alternative-way-to-go-escape-mode)
+- [How to split screen](#how-to-split-screen)
+- [To know the status of the program](#to-know-the-status-of-the-program)
+- [To mark some position in program and coming to back to that program](#to-mark-some-position-in-program-and-coming-to-back-to-that-program)
+- [Setting keys for specific options](#setting-keys-for-specific-options)
+- [To clean up control m's in the file](#to-clean-up-control-m's-in-the-file)
+- [Lower case to upper case](#lower-case-to-upper-case)
+- [Indenting a file](#indenting-a-file)
+- [Global command](#global-command)
+- [More useful commands](#more-useful-commands)
+- [Functions](#functions)
+- [Modes](#modes)
+- [Difference](#difference)
+- [Mapping](#mapping)
+- [Encryption](#encryption)
+- [Registers](#registers)
+- [Buffers](#buffers)
+- [Recording](#recording)
+- [Abbreviation](#abbreviation)
+- [Spell checking](#spell-checking)
+- [Indenting xml](#indenting-xml)
+- [Incrementing and decrementing](#incrementing-and-decrementing)
+- [In insert mode, auto completion](#in-insert-mode,-auto-completion)
+- [Sorting](#sorting)
+- [Tracing](#tracing)
+- [Using back reference while substitue](#using-back-reference-while-substitue)
+- [Editing at column](#editing-at-column)
+- [Plugin Manager](#plugin-manager)
+- [Interesting Plugins](#interesting-plugins)
 
-### HOW TO OPEN FILE THRU VI EDITOR
+
+### How to open file
 ```bash
 e filename/vi filename to open file in vi
 view filename to only view the file. restricted to write
@@ -22,7 +67,7 @@ view filename to only view the file. restricted to write
 :e! return to unmodified file
 ```
 <!-- TEASER_END -->
-### HOW TO NAVIGATE IN FILE 
+### How to navigate in file 
 ```bash
 gg to go to start of the program
 G to go to the end of the program
@@ -51,7 +96,7 @@ gT to move to previous tab
 3gt to move to 3rd tab
 ```
 
-### HOW TO SEARCH WORD IN FILE
+### How to search word in file
 ```bash
 /word to find the word
 /\<word\> to find exact word, not worda or worddd
@@ -94,7 +139,7 @@ ngg to go that line n
 :promptr to replace word in windows style
 ```
 
-### HOW TO SAVE AND QUIT FILE
+### How to save and quit file
 ```bash
 :q to quit
 :q! to quit without save
@@ -107,7 +152,7 @@ ZZ to save and exit in command mode (capital Z)
 :w! filename2 to overwrite the existing filename to filename2
 ```
 
-### HOW TO CUT,COPY,PASTE 
+### How to cut,copy,paste 
 ```bash
 dd to delete
 dw to delete the word under cursor
@@ -152,7 +197,7 @@ nGdd to delete the line n
 "bp to paste the content in register b 
 ```
 
-### HOW TO INSERT TEXT IN FILE
+### How to insert text in file
 ```bash
 a to insert mode
 i to insert mode
@@ -164,13 +209,13 @@ O to insert in above line of cursor
 :set ro! to remove readonly mode
 ```
 
-### HOW TO UNDO
+### How to undo
 ```bash
 u to Undo
 Ctrl+r to redo 
 ```
 
-### HOW TO MOVE OUT OF VI TO SHELL TO RUN UNIX COMMAND
+### How to move out of vi to shell to run unix command
 ```bash
 :shell goto shell
 :sh goto shell
@@ -180,7 +225,7 @@ exit or Ctrl+d to return back to vi editor
 RETURN to come back to vi editor
 ```
 
-### HOW TO REPLACE TEXT
+### How to replace text
 ```bash
 :%s/old/new/g  to replace old word/letter with new word without confirmation
 :%s/old/new/gc to replace old with new with confirmation
@@ -204,7 +249,7 @@ g -- globally
 :%s/fred/<C-R>a/g to replace fred with contents of register "a"
 ```
 
-### SET OPTIONS
+### Set options
 ```bash
 set options
 :set ai for auto indent
@@ -227,12 +272,12 @@ set options
 :set visualbell to set flash
 ```
 
-### ESC
+### Alternative way to go escape mode
 ```bash
 ctrl+[ is also called as escape mode
 ```
 
-### HOW TO SPLIT SCREEN
+### How to split screen
 ```bash
 :split anotherfile // horizontally spliting 
 :sp filename // horizontally spliting
@@ -266,13 +311,13 @@ ctrl-w q to close
 ctrl-w o to close all splits except current window (:only also do the same)
 ```
 
-### TO KNOW THE STATUS OF THE PROGRAM
+### To know the status of the program
 ```bash
 ctrl-G 
 :f 
 ```
 
-### TO MARK SOME POSITION IN PROGRAM AND COMING TO BACK TO THAT PROGRAM (MARKERS)
+### To mark some position in program and coming to back to that program
 ```bash
 mp where the position is marked as p (it can be anything from a-z) 
 to return back to that position p we type 'p
@@ -282,17 +327,17 @@ to return back to that position p we type 'p
 "ap to paste the content in that buffer
 ```
 
-### SETTING KEYS FOR SPECIFIC OPTIONS
+### Setting keys for specific options
 ```bash
 nnormap <key> :set option<cr>
 ```
 
-### TO CLEAN UP CONTROL M'S IN THE FILE 
+### To clean up control m's in the file 
 ```bash
 :%s/<control v><control m>/ /g
 ```
 
-### LOWER CASE TO UPPER CASE
+### Lower case to upper case
 ```bash
 ~    to switch case of charater under the cursor
 g~~ to switch case of whole line
@@ -302,7 +347,7 @@ U   - In visual mode make selected to upper case
 u   - In visual mode make selected to lower case
 ```
 
-### INDENTING A FILE
+### Indenting a file
 ```bash
 == makes the current line indent
 In visual mode select the whole part and then == to indent the selected part
@@ -312,7 +357,7 @@ good settings
 :set et 
 ```
 
-### GLOBAL COMMAND
+### Global command
 ```bash
 :g/pattern - list all the lines having pattern
 Ctrl+x Ctrl+l gives list of lines to insert
@@ -346,7 +391,7 @@ Ctrl+x Ctrl+l gives list of lines to insert
 "rp paste the contents in register r
 ```
 
-### MORE USEFUL COMMANDS
+### More useful commands
 ```bash
 :Ex opens explorer in seperate buffer 
 :Sex open explorer in split
@@ -362,7 +407,7 @@ ggVGg? to rot13 the whole file
 ggg?G to rot13 the whole file
 ```
 
-### FUNCTIONS
+### Functions
 ```bash
 use TABS to complete words 
 function! Tab_Or_Complete()
@@ -376,7 +421,7 @@ endfunction
 :set dictionary="/usr/dict/words"
 ```
 
-### MODES
+### Modes
 ```bash
 Esc - escape mode
 i/I - Insert mode
@@ -402,7 +447,7 @@ A - to add after the selection
 c - to change the value in selection
 ```
 
-### DIFFERENCE 
+### Difference 
 ```bash
 :vsp filename2 - (in filename1)
 :windo diffthis - (find diff between filename1 and filename2)
@@ -410,7 +455,7 @@ do - to obtain the difference for the current line from diff file
 dp - to put the difference for the current line to diff file
 ```
 
-### MAPPING
+### Mapping
 ```bash
 map <F11> : set hls! <Bar> set hls? <CR>
 <CR> : Carriage Return
@@ -421,13 +466,13 @@ map <F11> : set hls! <Bar> set hls? <CR>
 <SILENT> : no hanging shell window
 ```
 
-### ENCRYPTION 
+### Encryption 
 ```bash
 :X to set password for file (powerful)
 :set key= to remove password for file
 ```
 
-### REGISTERS
+### Registers
 ```bash
 :reg to show the registers
 "ay yank current line to register a [26 registers]
@@ -438,7 +483,7 @@ qaq to clear the register a - record nothing
 Ctrl-r register - to paste the contents of the register in insert mode
 ```
 
-### BUFFERS
+### Buffers
 ```bash
 :ls to list all the buffers 
 :bp to move to previous buffer
@@ -457,7 +502,7 @@ Ctrl-^ is to switch alternate buffers
 :wa write all buffers 
 ```
 
-### RECORDING
+### Recording
 ```bash
 qq is to start recording commands - use (a-z) to record
 @q to execute command in recording
@@ -465,14 +510,14 @@ n@q to execute command n times
 qqq to remove recorded command
 ```
 
-### ABBREVIATION
+### Abbreviation
 ```bash
 :abbr USA United States of America - to set the abbreviation
 type USA (in insert mode) space will give you USA.
 :unabbr USA to unset the abbreaviation
 ```
 
-### SPELL CHECKING
+### Spell checking
 ```bash
 :set spell - to on spell checking
 :set nospell - to off spell checking
@@ -481,7 +526,7 @@ z= to get the spell corrections
 ]s to next misspell
 ```
 
-### INDENTING XML
+### Indenting xml
 ```bash
 nJ - join n lines with one space in between
 ggVGJ - to join all the lines with one space in between 
@@ -492,7 +537,7 @@ ggVg :j! - to join as it is
 gg=G or ggVG= 
 ```
 
-### INCREMENTING AND DECREMENTING 
+### Incrementing and decrementing 
 ```bash
 :nput =range(1,10) - puts 1 to 10 numbers in incrementing order at line n
 :nunmap <C-A> will make Ctrl A (in windows to non map from SELECT ALL)
@@ -521,7 +566,7 @@ Ctrl-r register - to paste the register contents
 Ctrl-w l or Ctrl-w Ctrl-l to match the lines under the cursor 
 ```
 
-### SORTING
+### Sorting
 ```bash
 :sort to sort alphabetically
 :sort! to reverse the order
@@ -552,4 +597,103 @@ C-i to move front positions if any (new)
 Ctrl+q - column mode
 /\%25c - select 25th column
 /\%>25c - select all after 25th column
+```
+
+### Plugin Managers
+There are majorly 2 plugin mangers
+- [Vundle](https://github.com/VundleVim/Vundle.vim)
+- [Vim-plug](https://github.com/junegunn/vim-plug)
+
+### Interesting Plugins
+Below are few interesting vim plugins <br>
+Note: Below are in Vundle format, you can directly go to github to know more about plugin by appending `https://gihub.com/`
+For git
+```vim
+" git
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/gv.vim'
+Plugin 'tpope/vim-rhubarb'
+```
+
+For color schemes
+```vim
+" color schemes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'joshdick/onedark.vim'
+Plugin 'tomasr/molokai'
+Plugin 'dracula/vim'
+Plugin 'rakr/vim-one'
+```
+
+For ctags, code navigation like IDE
+```vim
+" ctags cscope
+Plugin 'amitab/vim-unite-cscope'
+Plugin 'craigemery/vim-autotag'
+```
+
+For quick navigation
+```vim
+" motions
+Plugin 'easymotion/vim-easymotion'
+Plugin 'geoffharcourt/vim-matchit'
+Plugin 'honza/vim-snippets'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rsi'
+Plugin 'AndrewRadev/splitjoin.vim'
+```
+
+For Fuzzy finders
+```vim
+" fuzzy finders
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+```
+
+For folder side bars
+```vim
+" file and folder
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+```
+
+For vim UI changes & syntax
+```vim
+" sytax
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+Plugin 'Yggdroot/indentLine'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'elzr/vim-json'
+```
+
+For Presenting
+```vim
+"Presenting
+Plugin 'sotte/presenting.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'vim-scripts/DrawIt'
+```
+
+For tmux integration
+```vim
+Plugin 'benmills/vimux'
+Plugin 'christoomey/vim-tmux-navigator'
+```
+
+For gnupg encryption support
+```vim
+"Encryption
+Plugin 'jamessan/vim-gnupg'
 ```

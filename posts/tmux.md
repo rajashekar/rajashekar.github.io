@@ -9,37 +9,21 @@
 .. type: text
 -->
 
-### Tmux Plugin Manager  
-
-```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```  
-Put this at the bottom of ~/.tmux.conf ($XDG_CONFIG_HOME/tmux/tmux.conf works too):  
-
-```bash
-# List of plugins
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-
-# Other examples:
-# set -g @plugin 'github_username/plugin_name'
-# set -g @plugin 'git@github.com:user/plugin'
-# set -g @plugin 'git@bitbucket.com:user/plugin'
-```
+<img src="/images/command-line.jpeg" style="display: block;margin-left: auto;margin-right: auto;"><br>
+---
 <!-- TEASER_END -->
-
-Type this in terminal if tmux is already running
-```bash
-tmux source ~/.tmux.conf  
-```
-### Installing plugins  
-- Add new plugin to ~/.tmux.conf with set -g @plugin '...'  
-- Press prefix + I (capital i, as in Install) to fetch the plugin.  
-- You're good to go! The plugin was cloned to ~/.tmux/plugins/ dir and sourced.  
-### Uninstalling plugins  
-- Remove (or comment out) plugin from the list.  
-- Press prefix + alt + u (lowercase u as in uninstall) to remove the plugin.  
-- All the plugins are installed to ~/.tmux/plugins/ so alternatively you can find plugin directory there and remove it.  
+How much ever GUI improved on terminal matrix exists. <br>
+# Table of Contents
+- [From Terminal to tmux](#from-terminal-to-tmux)
+- [Inside tmux](#inside-tmux)
+    - [Sessions](#sessions)
+    - [Windows](#windows)
+    - [Panes](#panes)
+    - [Buffers](#buffers)
+- [Plugin Manager](#plugin-manager)
+    - [Installing tpm](#installing-tpm)
+    - [Installing plugins](#installing-plugins)
+    - [Uninstalling plugins](#uninstalling-plugins)
 
 ## From Terminal to tmux  
   - To create new session `tmux new -s sesson-name`  
@@ -85,3 +69,34 @@ tmux source ~/.tmux.conf
   - Copy Mode `ctrl + a ESC`  
   - Command Mode `ctrl + a :`  
   - `:setw setw synchronize-panes` Synchronize panes  
+
+## Plugin Manager
+You can use [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) to handle your tmux plugins
+### Installing tpm
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```  
+Put this at the bottom of ~/.tmux.conf ($XDG_CONFIG_HOME/tmux/tmux.conf works too):  
+### Installing plugins
+- Add new plugin to ~/.tmux.conf with set -g @plugin '...'  
+- Press prefix + I (capital i, as in Install) to fetch the plugin.  
+- You're good to go! The plugin was cloned to ~/.tmux/plugins/ dir and sourced.  
+```bash
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+```
+
+Type this in terminal if tmux is already running
+```bash
+tmux source ~/.tmux.conf  
+```
+### Uninstalling plugins  
+- Remove (or comment out) plugin from the list.  
+- Press prefix + alt + u (lowercase u as in uninstall) to remove the plugin.  
+- All the plugins are installed to ~/.tmux/plugins/ so alternatively you can find plugin directory there and remove it.  

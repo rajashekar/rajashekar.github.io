@@ -9,19 +9,21 @@
 .. type: text
 -->
 
-### Regex
+<img src="/images/regular_expressions.png" style="display: block;margin-left: auto;margin-right: auto;">
+---
+<!-- TEASER_END -->
+
+Below is overview on Regex standards
+<img src="/images/regex_standards.png" width="50%" style="display: block;margin-left: auto;margin-right: auto;"/>
 
 Below are few commands and examples of Regular expressions.
+1. Dot - `.` any character except newline 
 
-<img src="/images/regex_standards.png"/>
-
-1) Dot - `.` any character except newline 
-
-2) `\w` `\d` `\s` - word, digit, whitespace
+2. `\w` `\d` `\s` - word, digit, whitespace
 ```
 Example:
 substitution 
-a) %s/\(\w\+\)/"\1"/g
+a. %s/\(\w\+\)/"\1"/g
 
 before:
 test test test
@@ -29,7 +31,7 @@ test test test
 after:
 "test" "test" "test"
 
-b) %s/\(\d\+\)/"\1"/g
+b. %s/\(\d\+\)/"\1"/g
 before:
 test test test 
 123 123 1234 123456
@@ -38,32 +40,31 @@ after:
 test test test 
 "123" "123" "1234" "123456"
 ```
-<!-- TEASER_END -->
-3) `\W` `\D` `\S` not word, digit, whitespace
+3. `\W` `\D` `\S` not word, digit, whitespace
 
-4) `[abc]` any of a, b, or c
+4. `[abc]` any of a, b, or c
 
-5) `[^abc]` not a, b, or c
+5. `[^abc]` not a, b, or c
 
-6) `[a-g]` character between a & g
+6. `[a-g]` character between a & g
 
-7) `^abc$` start / end of the string
+7. `^abc$` start / end of the string
 
-8) `\t` `\n` `\r` tab, linefeed, carriage return
+8. `\t` `\n` `\r` tab, linefeed, carriage return
 
-9) `a*`  0 or more
+9. `a*`  0 or more
 
-10) `a+`  1 or more
+10. `a+`  1 or more
 
-11) `a?` 0 or 1
+11. `a?` 0 or 1
 
-12) `a{5}`  exactly 5
+12. `a{5}`  exactly 5
 
-13) `a{2,}` 2 or more
+13. `a{2,}` 2 or more
 
-14) `a{3,5}` - matches 3, 4, 5
+14. `a{3,5}` - matches 3, 4, 5
 
-15) `&` Back reference without grouping 
+15. `&` Back reference without grouping 
 ```
 :%s/test/"&"/g
 
@@ -73,7 +74,7 @@ test | test | test | test | test | test
 after:
 "test" | "test" | "test" | "test" | "test" | "test"
 ```
-16) Grouping - `(abc)`
+16. Grouping - `(abc)`
 `\1` backreference
 ```
 Example - 
@@ -88,7 +89,7 @@ Not matches -
 /sams/cart/cart.jsp/test
 ```
 
-17) non-capturing group - `(?:abc)`
+17. non-capturing group - `(?:abc)`
 ```
 Example - 
 ^/sams/cart/(?:cart.jsp)/(test)/\1$
@@ -102,7 +103,7 @@ not matches -
 /sams/cart/cart.jsp/test
 ```
 
-18) Negative lookahead - `(?!abc)`
+18. Negative lookahead - `(?!abc)`
 Example - 
 ```
 ^/sams/cart/(?!cart.jsp).*jsp$
@@ -116,7 +117,7 @@ Not matches -
 /sams/cart/cart.jsp?xid=123&redirectURL=test.jsp
 ```
 
-19) Postive lookahead - `(?=abc)`
+19. Postive lookahead - `(?=abc)`
 Example - 
 ```
 ^/sams/cart/(?=cart.jsp).*jsp$
@@ -130,7 +131,7 @@ not matches -
 /sams/cart/saveForLater.jsp
 ```
 
-20) Named Capturing Group - `(?P<abc>.*) or {?<abc>.*)`
+20. Named Capturing Group - `(?P<abc>.*) or {?<abc>.*)`
 ```
 Example: 
 
@@ -140,7 +141,6 @@ test1 | test2 | test3 | test4 | test5 | test6
 
 xyz is test4
 ```
-
 
 ### Playgrounds
 https://regexr.com/37kj6 <br>
