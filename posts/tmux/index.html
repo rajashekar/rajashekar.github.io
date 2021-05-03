@@ -19,7 +19,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="og:site_name" content="Rajashekar Chintalapati Blog">
 <meta property="og:title" content="Tmux">
 <meta property="og:url" content="https://rajashekar.github.io/posts/tmux/">
-<meta property="og:description" content="How much ever GUI improved on terminal matrix exists. 
+<meta property="og:description" content="With Tmux you can manage multiple sessions/terms &amp; navigate quickly. 
 Table of Contents
 
 From Terminal to tmux
@@ -32,8 +32,7 @@ Buffers
 
 Plugin Manager
 Installing tpm
-Installing plugins
-Uninstalli">
+Installing plu">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2021-04-27T13:16:41-07:00">
 </head>
@@ -104,7 +103,7 @@ bg-dark
 <img src="../../images/command-line.jpeg" style="display: block;margin-left: auto;margin-right: auto;"><br>
 </h3>
 <!-- TEASER_END -->
-<p>How much ever GUI improved on terminal matrix exists. <br></p>
+<p>With Tmux you can manage multiple sessions/terms &amp; navigate quickly. <br></p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#from-terminal-to-tmux">From Terminal to tmux</a></li>
@@ -132,6 +131,12 @@ bg-dark
 <li>To list all tmux sessions - <code>tmux ls</code>  </li>
 </ul>
 <h3 id="inside-tmux">Inside tmux</h3>
+<p>Note that default prefix is <code>ctrl + b</code>, you can change this in tmux.conf - <br></p>
+<pre class="code literal-block"><span></span><code>unbind C-b
+<span class="nb">set</span> -g prefix C-a
+<span class="nb">bind</span> C-a send-prefix
+</code></pre>
+
 <ul>
 <li>Show all shortcuts <code>ctrl + a ?</code>  </li>
 <li>

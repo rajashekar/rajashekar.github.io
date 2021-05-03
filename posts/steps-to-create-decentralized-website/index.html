@@ -91,7 +91,7 @@ bg-dark
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <h3 id="_1">
-<img src="../../images/decentralized-website.jpeg" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+<img src="../../images/decentralized-website.jpg" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
 </h3>
 <!-- TEASER_END -->
 
@@ -112,6 +112,8 @@ bg-dark
 <li><a href="#accessing-through-ens-domain">Accessing through ENS domain</a></li>
 </ul>
 </li>
+<li><a href="#deploying-content-in-multiple-nodes">Deploying content in multiple nodes</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 <hr>
 <h2 id="generating-content-id-cid">Generating Content ID (CID)</h2>
@@ -139,7 +141,7 @@ There are 2 ways to do it, either <br></p>
 <li>Go to http://localhost:5001  <br>
 </li>
 <li>At this point you can upload your file/folder that contains index.html of your site/blog <br><br><blockquote>
-<p>Note: You can use website generators like <a href="https://getnikola.com/">Nikola</a> or <a href="https://jekyllrb.com/">Jekyll</a> or <a href="https://gohugo.io/">Hugo</a> <br>
+<p>Note: You can use website generators like <a href="https://getnikola.com/">Nikola</a> or <a href="https://jekyllrb.com/">Jekyll</a> or <a href="https://gohugo.io/">Hugo</a>. For Complete list of site generators you can check <a href="https://jamstack.org/generators/">jamstack.org</a><br>
 This blog was built using Nikola <br></p>
 </blockquote>
 </li>
@@ -207,6 +209,12 @@ Create account in <a href="https://pinata.cloud/">Pinata Cloud</a> and upload yo
     <br><img src="../../images/brave-eth.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
 </li>
 </ol>
+<hr>
+<h3 id="deploying-content-in-multiple-nodes">Deploying content in multiple nodes</h3>
+<p>One of the advantage of using IPFS protocol is to avoid single point of failure, you can deploy the same content in multiple nodes. Now you have the CID, you can pin the same CID in multiple nodes <br>
+1. If you have CID from pinata.cloud, you can pin the CID in another node by using command  - <code>ipfs pin add &lt;YOUR-CID&gt;</code>
+    <br> or through UI <br><br><img src="../../images/ipfs-cid-ui.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+2. If you have CID through your node, then you can upload to pinata.cloud, like below <br><br><img src="../../images/pinata-cid.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br></p>
 <h3 id="conclusion">Conclusion</h3>
 <p>Done now you have your website/blog running using peer-to-peer network protocal IPFS. <br>
 You can access this blog through <br></p>
