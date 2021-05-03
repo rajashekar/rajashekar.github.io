@@ -16,7 +16,7 @@
 Below is overview on Regex standards
 <img src="/images/regex_standards.png" width="50%" style="display: block;margin-left: auto;margin-right: auto;"/>
 
-Below are few commands and examples of Regular expressions.
+Below are few commands and examples of Regular expressions. <br>
 1. Dot - `.` any character except newline 
 
 2. `\w` `\d` `\s` - word, digit, whitespace

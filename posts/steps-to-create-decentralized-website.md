@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-<img src="/images/decentralized-website.jpeg" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+<img src="/images/decentralized-website.jpg" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
 ---
 <!-- TEASER_END -->
 
@@ -23,6 +23,8 @@ In this blog, we will discuss on how to create decentralized website/blog like [
     -  [Accessing through gateways](#accessing-through-gateways)
     -  [Accessing through custom domain](#accessing-through-custom-domain)
     -  [Accessing through ENS domain](#accessing-through-ens-domain)
+- [Deploying content in multiple nodes](#deploying-content-in-multiple-nodes)
+- [Conclusion](#conclusion)
 ---
 
 # Generating Content ID (CID)
@@ -39,7 +41,7 @@ There are 2 ways to do it, either <br>
 3. Run ipfs daemon - `ipfs daemon` <br>
 4. Go to http://localhost:5001  <br>
 5. At this point you can upload your file/folder that contains index.html of your site/blog <br><br>
-> Note: You can use website generators like [Nikola](https://getnikola.com/) or [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) <br>
+> Note: You can use website generators like [Nikola](https://getnikola.com/) or [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/). For Complete list of site generators you can check [jamstack.org](https://jamstack.org/generators/)<br>
 This blog was built using Nikola <br>
 6. To upload go to http://localhost:5001 and click on files and click on import and choose file or folder that has index.html <br>
     <br><img src="/images/ipfs-folder-upload.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"> <br>
@@ -94,6 +96,16 @@ If you want to go further to access your content through Ethereum blockchain you
 > Note: Publishing this way is expensive since this requires to pay [gas price](https://www.investopedia.com/terms/g/gas-ethereum.asp) every time you modify your site. <br>
 5. Anyone with your .eth domain can access your content, currently there are few browsers like [Brave](https://brave.com/) or [Opera](https://www.opera.com/) can be used to access .eth domains. If you visit any .eth domain in Brave, you will be given below message to enable ENS. Might be in future other browsers will adopt ENS. 
     <br><img src="/images/brave-eth.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
+
+---
+
+## Deploying content in multiple nodes
+One of the advantage of using IPFS protocol is to avoid single point of failure, you can deploy the same content in multiple nodes. Now you have the CID, you can pin the same CID in multiple nodes <br>
+1. If you have CID from pinata.cloud, you can pin the CID in another node by using command  - `ipfs pin add <YOUR-CID>`
+    <br> or through UI <br>
+    <br><img src="/images/ipfs-cid-ui.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"> <br>
+2. If you have CID through your node, then you can upload to pinata.cloud, like below <br>
+    <br><img src="/images/pinata-cid.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"> <br>
 
 ## Conclusion
 Done now you have your website/blog running using peer-to-peer network protocal IPFS. <br>

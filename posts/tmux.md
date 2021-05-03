@@ -12,7 +12,7 @@
 <img src="/images/command-line.jpeg" style="display: block;margin-left: auto;margin-right: auto;"><br>
 ---
 <!-- TEASER_END -->
-How much ever GUI improved on terminal matrix exists. <br>
+With Tmux you can manage multiple sessions/terms & navigate quickly. <br>
 # Table of Contents
 - [From Terminal to tmux](#from-terminal-to-tmux)
 - [Inside tmux](#inside-tmux)
@@ -32,6 +32,12 @@ How much ever GUI improved on terminal matrix exists. <br>
   - To list all tmux sessions - `tmux ls`  
 
 ## Inside tmux  
+Note that default prefix is `ctrl + b`, you can change this in tmux.conf - <br>
+```bash
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+```
   - Show all shortcuts `ctrl + a ?`  
   - ### Sessions  
     - `:new -s newsession` to create new session  

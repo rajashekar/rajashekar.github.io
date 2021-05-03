@@ -12,8 +12,9 @@
 <img src="/images/emacs.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"><br>
 ---
 <!-- TEASER_END -->
-> The editor wars
-> Note: By combining Emacs with Vim you can do [Evil](https://github.com/emacs-evil/evil) things
+> THE EDITOR WARS <br>
+> Note: By combining Emacs with Vim you can do [Evil](https://github.com/emacs-evil/evil) things <br>
+
 Below are few commands to get familiarize with Emacs Editor
 
 # Table of Contents
