@@ -24,6 +24,7 @@ In this blog, we will discuss on how to create decentralized website/blog like [
     -  [Accessing through custom domain](#accessing-through-custom-domain)
     -  [Accessing through ENS domain](#accessing-through-ens-domain)
 - [Deploying content in multiple nodes](#deploying-content-in-multiple-nodes)
+- [Automate publish](#automate-publish)
 - [Conclusion](#conclusion)
 ---
 
@@ -107,6 +108,8 @@ One of the advantage of using IPFS protocol is to avoid single point of failure,
 2. If you have CID through your node, then you can upload to pinata.cloud, like below <br>
     <br><img src="/images/pinata-cid.png" width="70%" style="display: block;margin-left: auto;margin-right: auto;"> <br>
 
+## Automate publish
+You can use [IPFS deploy](https://github.com/ipfs-shipyard/ipfs-deploy) to automate publishing to different IPFS clouds like [Infura](https://infura.io/), [Pinata](https://pinata.cloud/), [Fission](https://fission.codes/) and also set Cloudfare DNS settings.<br>
 ## Conclusion
 Done now you have your website/blog running using peer-to-peer network protocal IPFS. <br>
 You can access this blog through <br>
