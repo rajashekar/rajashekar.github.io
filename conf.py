@@ -138,7 +138,13 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (("/posts/about-me/", "About Me"),),
+    DEFAULT_LANG: (
+        ("/posts/about-me/", "About Me"),
+        (
+            "https://us10.list-manage.com/contact-form?u=122b761fd18225d3fcb24a78f&form_id=97987724fee19220e243acad4c362529",
+            "Contact Me",
+        ),
+    ),
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
