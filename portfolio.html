@@ -9,31 +9,58 @@
 <body class="bg-gray-50">
     <div class="container mx-auto px-4 py-20">
         <header class="text-center mb-16">
-            <h1 class="text-4xl font-bold mb-4">My Projects</h1>
-            <p class="text-gray-600">A showcase of my work</p>
+            
+            <div class="mb-6">
+                <img src="https://avatars.githubusercontent.com/u/1141056?v=4" alt="rajashekar" class="w-32 h-32 rounded-full mx-auto border-4 border-primary/10">
+            </div>
+            
+            <h1 class="text-4xl font-bold mb-4">rajashekar's Portfolio</h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-gray-600 mb-6">A highly skilled Python developer with a keen interest in leveraging Generative AI to solve complex problems and create impactful applications.  Passionate about natural language processing and the application of AI in the realm of creative content, I have experience automating workflows and developing tools that enhance accessibility and inclusivity. My projects demonstrate a commitment to innovative solutions across different domains and a strong focus on practical implementations.</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Python</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Generative AI</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Natural Language Processing (NLP)</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">OpenAI API</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Data Analysis</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Machine Learning</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">TensorFlow</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">ONNX</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Jupyter Notebook</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">PyAudio</span>
+                </div>
+                <div class="text-sm text-gray-500">
+                    Interests: AI-driven content generation, Adaptation of classic literature, Wake word detection systems, Automated summarization, Building inclusive technologies
+                </div>
+            </div>
+            
         </header>
         <div class="grid gap-8 max-w-4xl mx-auto">
             
                 <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">WakeWordDetector</h2>
-                    <p class="text-gray-600 mb-4">Wake Word Detector is an open-source project aimed at creating a customizable wake word detection system. It takes audio as input and triggers actions upon detecting a predefined wake word sequence. The project encompasses various stages, including data preparation, feature extraction, model training, and inference. It offers multiple inference options, such as using Pyaudio, web sockets, ONNX, TensorFlow.js, and TFLite.</p>
+                    <h2 class="text-2xl font-semibold mb-2">reposum</h2>
+                    <p class="text-gray-600 mb-4">This project, 'reposum', automates the process of listing repositories within an organization, summarizing them using OpenAI's API, and publishing the summaries online. It leverages OpenAI's language models to provide concise and informative overviews of each repository's purpose and functionality.</p>
                     <div class="flex gap-2 flex-wrap">
                         
                     </div>
                     <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/rajashekar/WakeWordDetector" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/matmulai/reposum" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
                         
                     </div>
                 </article>
               
                 <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">tmux-fzf-copy</h2>
-                    <p class="text-gray-600 mb-4">tmux-fzf-copy is a tmux plugin that allows users to copy text from the current buffer using fuzzy search with fzf. It provides a quick way to grab and paste any text within the current prompt, inspired by tmux-fzf-url. The plugin enables users to search for words, lines, and quoted text, offering a convenient solution for tasks such as grabbing dynamic pod names or other text where auto-completions are not helpful. Installation via TPM or manually is supported, with customizable keybindings.</p>
+                    <h2 class="text-2xl font-semibold mb-2">diverse_stories</h2>
+                    <p class="text-gray-600 mb-4">The 'diverse_stories' project leverages GenAI to adapt classic, out-of-copyright literary works by integrating diverse characters and cultural contexts. The goal is to reimagine stories to reflect a more inclusive and representative world. The project aims to preserve the original narrative while introducing elements of diversity, promoting a broader understanding and appreciation of different cultures and perspectives.</p>
                     <div class="flex gap-2 flex-wrap">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">cli</span><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">fzf</span><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">tmux</span><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">tmux-plugin</span>
+                        
                     </div>
                     <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/rajashekar/tmux-fzf-copy" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/matmulai/diverse_stories" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
+                        
+                    </div>
+                </article>
+              
+                <article class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-2">WakeWordDetector</h2>
+                    <p class="text-gray-600 mb-4">WakeWordDetector is an open-source project aimed at creating a custom wake word detector. It allows users to configure specific wake words and trigger actions upon their detection. The project involves data preparation, feature extraction, model training and testing, and supports multiple inference methods, including PyAudio, WebSockets, ONNX, TensorFlow.js, and TFLite, catering to various deployment scenarios. The project draws inspiration from existing wake word detection systems like Mozilla's Firefox Voice and its implementation uses techniques like word alignment and data imbalance correction. The goal is to give users a personalized wake word detection solution.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        
+                    </div>
+                    <div class="mt-4 flex gap-4">
+                        <a href="https://github.com/rajashekar/WakeWordDetector" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
                         
                     </div>
                 </article>
