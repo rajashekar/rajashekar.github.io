@@ -5,66 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rajashekar's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    /* Define gradient backgrounds for themes */
+    .bg-gradient-to-br.from-indigo-50.via-white.to-purple-50 {
+      background: linear-gradient(to bottom right, #eef2ff, #ffffff, #faf5ff);
+    }
+    .bg-gradient-to-r.from-indigo-500.to-purple-500 {
+      background: linear-gradient(to right, #6366f1, #a855f7);
+      color: white; /* Ensure text is white on gradient background */
+    }
+    /* Shadow styling for cards */
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card-shadow:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    /* Button styling */
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .icon-button:hover {
+      opacity: 0.8;
+    }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-white">
     <div class="container mx-auto px-4 py-20">
-        <header class="text-center mb-16">
-            
-            <div class="mb-6">
-                <img src="https://avatars.githubusercontent.com/u/1141056?v=4" alt="rajashekar" class="w-32 h-32 rounded-full mx-auto border-4 border-primary/10">
-            </div>
-            
-            <h1 class="text-4xl font-bold mb-4">rajashekar's Portfolio</h1>
-            
-            <div class="max-w-2xl mx-auto">
-                <p class="text-gray-600 mb-6">A highly skilled Python developer with a keen interest in leveraging Generative AI to solve complex problems and create impactful applications.  Passionate about natural language processing and the application of AI in the realm of creative content, I have experience automating workflows and developing tools that enhance accessibility and inclusivity. My projects demonstrate a commitment to innovative solutions across different domains and a strong focus on practical implementations.</p>
-                <div class="flex flex-wrap justify-center gap-4 mb-6">
-                    <span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Python</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Generative AI</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Natural Language Processing (NLP)</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">OpenAI API</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Data Analysis</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Machine Learning</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">TensorFlow</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">ONNX</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">Jupyter Notebook</span><span class="px-3 py-1 bg-primary/10 rounded-full text-sm font-medium">PyAudio</span>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <header class="lg:col-span-4 flex justify-center">
+                <div class="sticky top-8 flex flex-col items-center">
+                    
+                    <div class="mb-6">
+                        <img src="https://avatars.githubusercontent.com/u/1141056?v=4" alt="rajashekar" class="w-32 h-32 rounded-full mx-auto border-4 border-gray-200 shadow-lg">
+                    </div>
+                    
+                    <h1 class="text-4xl font-bold mb-6 text-slate-800">rajashekar's Portfolio</h1>
+                    
+                    <div class="max-w-2xl text-left">
+                        <p class="text-slate-800 mb-8 leading-relaxed">As a skilled developer with a focus on Python and software development, I am passionate about creating tools and libraries that simplify complex tasks and unlock insights through data analysis. With expertise in machine learning, data science, and software engineering, I bring a unique blend of technical expertise to my work.</p>
+                        <div class="flex flex-wrap gap-3  mb-8">
+                            <span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">Python</span><span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span><span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">Data Science</span><span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">Software Engineering</span><span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">GitHub Tools</span><span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-medium">Data Analysis</span>
+                        </div>
+                        <p class="text-slate-800 text-sm mb-8">
+                            <span class="font-medium">Interests:</span> Dimensionality Reduction, Unsupervised Learning, Data Visualization, GitHub Development, Software Development
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="text-sm text-gray-500">
-                    Interests: AI-driven content generation, Adaptation of classic literature, Wake word detection systems, Automated summarization, Building inclusive technologies
-                </div>
+            </header>
+
+            <div class="lg:col-span-8">
+                
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">rmcp</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 16
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/rmcp" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">The rmcp repository hosts a Minecraft server and provides a simplified management interface for the game.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">Load data</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 3
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/pyppur" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">pyppur is a Python library for unsupervised dimensionality reduction through projection pursuit unsupervised methods, aiming to minimize reconstruction loss or distance distortion.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">projection-pursuit</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">reconstruction-loss</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">🤝 Adjacent — Related Repositories Recommender</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 4
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/adjacent" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">adjacent is a tool to list and link related repositories on GitHub. It allows developers to easily discover and connect with other projects that are closely related to their own.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">github-tools</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">recommender</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">related-repos</span>
+                        </div>
+                    </article>
+                  
             </div>
-            
-        </header>
-        <div class="grid gap-8 max-w-4xl mx-auto">
-            
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">reposum</h2>
-                    <p class="text-gray-600 mb-4">This project, 'reposum', automates the process of listing repositories within an organization, summarizing them using OpenAI's API, and publishing the summaries online. It leverages OpenAI's language models to provide concise and informative overviews of each repository's purpose and functionality.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/matmulai/reposum" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">diverse_stories</h2>
-                    <p class="text-gray-600 mb-4">The 'diverse_stories' project leverages GenAI to adapt classic, out-of-copyright literary works by integrating diverse characters and cultural contexts. The goal is to reimagine stories to reflect a more inclusive and representative world. The project aims to preserve the original narrative while introducing elements of diversity, promoting a broader understanding and appreciation of different cultures and perspectives.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/matmulai/diverse_stories" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">WakeWordDetector</h2>
-                    <p class="text-gray-600 mb-4">WakeWordDetector is an open-source project aimed at creating a custom wake word detector. It allows users to configure specific wake words and trigger actions upon their detection. The project involves data preparation, feature extraction, model training and testing, and supports multiple inference methods, including PyAudio, WebSockets, ONNX, TensorFlow.js, and TFLite, catering to various deployment scenarios. The project draws inspiration from existing wake word detection systems like Mozilla's Firefox Voice and its implementation uses techniques like word alignment and data imbalance correction. The goal is to give users a personalized wake word detection solution.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/rajashekar/WakeWordDetector" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
         </div>
     </div>
 </body>
